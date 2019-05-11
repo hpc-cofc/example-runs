@@ -1,0 +1,63 @@
+
+Currently Loaded Modules:
+  1) autotools   3) ohpc               5) openmpi3/3.1.3
+  2) prun/1.2    4) intel/19.0.3.199   6) chem/amber/19-cpu
+
+ 
+
+/home/bt-local/benchmarks/app-benchmarks/AMBER/18/gpuv100
+Fri May 10 21:13:08 EDT 2019
+SLURM_CHECKPOINT_IMAGE_DIR=/var/slurm/checkpoint
+SLURM_NODELIST=gpuv100001
+SLURM_JOB_NAME=jgpuq-test
+SLURMD_NODENAME=gpuv100001
+SLURM_TOPOLOGY_ADDR=gpuv100001
+SLURM_NTASKS_PER_NODE=24
+SLURM_PRIO_PROCESS=0
+SLURM_NODE_ALIASES=(null)
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SLURM_MEM_PER_CPU=4096
+SLURM_NNODES=1
+SLURM_JOBID=902
+SLURM_NTASKS=24
+SLURM_TASKS_PER_NODE=24
+SLURM_WORKING_CLUSTER=openhpc:openhpc:6817:8192
+SLURM_JOB_ID=902
+SLURM_JOB_USER=bt-local
+SLURM_JOB_UID=5000
+SLURM_NODEID=0
+SLURM_SUBMIT_DIR=/home/bt-local/benchmarks/app-benchmarks/AMBER/18/gpuv100
+SLURM_TASK_PID=36127
+SLURM_NPROCS=24
+SLURM_CPUS_ON_NODE=24
+SLURM_PROCID=0
+SLURM_JOB_NODELIST=gpuv100001
+SLURM_LOCALID=0
+SLURM_JOB_GID=5001
+SLURM_JOB_CPUS_PER_NODE=24
+SLURM_CLUSTER_NAME=openhpc
+SLURM_GTIDS=0
+SLURM_SUBMIT_HOST=openhpc.cofc.edu
+SLURM_JOB_PARTITION=gpuq
+SLURM_JOB_NUM_NODES=1
+Fri May 10 21:13:09 2019       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.43       Driver Version: 418.43       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-PCIE...  Off  | 00000000:3B:00.0 Off |                    0 |
+| N/A   34C    P0    35W / 250W |      0MiB / 16130MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+
+The following have been reloaded with a version change:
+  1) chem/amber/19-cpu => chem/amber/19-gpu
+
