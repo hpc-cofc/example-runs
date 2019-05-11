@@ -1,0 +1,8 @@
+# AMBER coordinate files
+*.mdcrd
+
+# Gaussian checkpoint files
+*.chk
+
+# ORCA geom/bs/wf/ files
+*.gbw
