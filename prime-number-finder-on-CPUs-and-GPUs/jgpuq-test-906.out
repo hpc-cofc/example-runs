@@ -1,0 +1,74 @@
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc
+  2) prun/1.2    4) openmpi3/3.1.3   6) cuda/10.1
+
+ 
+
+/home/bt-local/github-hpc-cofc/example-runs/prime-number-finder-on-CPUs-and-GPUs
+Fri May 10 22:27:28 EDT 2019
+SLURM_CHECKPOINT_IMAGE_DIR=/var/slurm/checkpoint
+SLURM_NODELIST=gpuv100001
+SLURM_JOB_NAME=jgpuq-test
+SLURMD_NODENAME=gpuv100001
+SLURM_TOPOLOGY_ADDR=gpuv100001
+SLURM_NTASKS_PER_NODE=24
+SLURM_PRIO_PROCESS=0
+SLURM_NODE_ALIASES=(null)
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SLURM_MEM_PER_CPU=4096
+SLURM_NNODES=1
+SLURM_JOBID=906
+SLURM_NTASKS=24
+SLURM_TASKS_PER_NODE=24
+SLURM_WORKING_CLUSTER=openhpc:openhpc:6817:8192
+SLURM_JOB_ID=906
+SLURM_JOB_USER=bt-local
+SLURM_JOB_UID=5000
+SLURM_NODEID=0
+SLURM_SUBMIT_DIR=/home/bt-local/github-hpc-cofc/example-runs/prime-number-finder-on-CPUs-and-GPUs
+SLURM_TASK_PID=37192
+SLURM_NPROCS=24
+SLURM_CPUS_ON_NODE=24
+SLURM_PROCID=0
+SLURM_JOB_NODELIST=gpuv100001
+SLURM_LOCALID=0
+SLURM_JOB_GID=5001
+SLURM_JOB_CPUS_PER_NODE=24
+SLURM_CLUSTER_NAME=openhpc
+SLURM_GTIDS=0
+SLURM_SUBMIT_HOST=openhpc.cofc.edu
+SLURM_JOB_PARTITION=gpuq
+SLURM_JOB_NUM_NODES=1
+
+The following have been reloaded with a version change:
+  1) openmpi3/3.1.3 => openmpi3/3.1.0
+
+
+The following have been reloaded with a version change:
+  1) cuda/10.1 => cuda/9.2
+
+[Bad input for range parameter (must be <= 500,000)]
+Range has been set to 500,000
+***Outputting results on screen***
+
+[3/3] Running 
+1. [*****]  CUDA Multithreading Sieve of Eratosthenes version
+2. [***]    Simple CPU version
+Running all available options
+
+
+Total number of primes: 41536
+GPU Program Completed in 37 millisecs
+A log file with the current date/time has been placed in the program directory.
+--------------------------------------------------------------------------------
+
+
+Total number of primes: 41536
+
+CPU Program Completed in 278 millisecs
+A log file with the current date/time has been placed in the program directory.
+--------------------------------------------------------------------------------
+Thank you for testing our program :)
+Fork us @ https://github.com/bbershadsky/
+Real Time: 0:01.69 	CPU Usage: 86%

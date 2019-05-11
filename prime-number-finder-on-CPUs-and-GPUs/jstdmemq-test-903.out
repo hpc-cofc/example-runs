@@ -1,0 +1,198 @@
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc
+  2) prun/1.2    4) openmpi3/3.1.3   6) cuda/10.1
+
+ 
+
+/home/bt-local/github-hpc-cofc/example-runs/prime-number-finder-on-CPUs-and-GPUs
+Fri May 10 22:27:28 EDT 2019
+SLURM_CHECKPOINT_IMAGE_DIR=/var/slurm/checkpoint
+SLURM_NODELIST=compute008
+SLURM_JOB_NAME=jstdmemq-test
+SLURMD_NODENAME=compute008
+SLURM_TOPOLOGY_ADDR=compute008
+SLURM_NTASKS_PER_NODE=24
+SLURM_PRIO_PROCESS=0
+SLURM_NODE_ALIASES=(null)
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SLURM_MEM_PER_CPU=4096
+SLURM_NNODES=1
+SLURM_JOBID=903
+SLURM_NTASKS=24
+SLURM_TASKS_PER_NODE=24
+SLURM_WORKING_CLUSTER=openhpc:openhpc:6817:8192
+SLURM_JOB_ID=903
+SLURM_JOB_USER=bt-local
+SLURM_JOB_UID=5000
+SLURM_NODEID=0
+SLURM_SUBMIT_DIR=/home/bt-local/github-hpc-cofc/example-runs/prime-number-finder-on-CPUs-and-GPUs
+SLURM_TASK_PID=204709
+SLURM_NPROCS=24
+SLURM_CPUS_ON_NODE=24
+SLURM_PROCID=0
+SLURM_JOB_NODELIST=compute008
+SLURM_LOCALID=0
+SLURM_JOB_GID=5001
+SLURM_JOB_CPUS_PER_NODE=24
+SLURM_CLUSTER_NAME=openhpc
+SLURM_GTIDS=0
+SLURM_SUBMIT_HOST=openhpc.cofc.edu
+SLURM_JOB_PARTITION=stdmemq
+SLURM_JOB_NUM_NODES=1
+Lmod has detected the following error: Swap failed: "gnu7" is not loaded.
+
+
+
+Number of MPI processes = 2
+10 May 2019 10:27:29 PM
+
+PRIME_MPI
+  C/MPI version
+
+  An MPI example program to count the number of primes.
+  The number of processes is 2
+
+         N        Pi          Time
+
+         1         0        0.000058
+         2         1        0.000002
+         4         2        0.000001
+         8         4        0.000001
+        16         6        0.000001
+        32        11        0.000002
+        64        18        0.000003
+       128        31        0.000006
+       256        54        0.000017
+       512        97        0.000058
+      1024       172        0.000199
+      2048       309        0.000689
+      4096       564        0.002515
+      8192      1028        0.008831
+     16384      1900        0.032197
+     32768      3512        0.118293
+     65536      6542        0.441238
+    131072     12251        1.661458
+    262144     23000        6.271869
+    524288     43390       23.662732
+
+PRIME_MPI - Master process:
+  Normal end of execution.
+
+10 May 2019 10:28:02 PM
+Num Cores: 2 	Real Time: 0:33.11 	CPU Usage: 194%
+Number of MPI processes = 4
+10 May 2019 10:28:02 PM
+
+PRIME_MPI
+  C/MPI version
+
+  An MPI example program to count the number of primes.
+  The number of processes is 4
+
+         N        Pi          Time
+
+         1         0        0.000104
+         2         1        0.000003
+         4         2        0.000003
+         8         4        0.000003
+        16         6        0.000004
+        32        11        0.000003
+        64        18        0.000004
+       128        31        0.000006
+       256        54        0.000011
+       512        97        0.000032
+      1024       172        0.000100
+      2048       309        0.000356
+      4096       564        0.001230
+      8192      1028        0.004407
+     16384      1900        0.016254
+     32768      3512        0.060120
+     65536      6542        0.221805
+    131072     12251        0.838860
+    262144     23000        3.137684
+    524288     43390       11.877905
+
+PRIME_MPI - Master process:
+  Normal end of execution.
+
+10 May 2019 10:28:18 PM
+Num Cores: 4 	Real Time: 0:16.71 	CPU Usage: 318%
+Number of MPI processes = 8
+10 May 2019 10:28:19 PM
+
+PRIME_MPI
+  C/MPI version
+
+  An MPI example program to count the number of primes.
+  The number of processes is 8
+
+         N        Pi          Time
+
+         1         0        0.000144
+         2         1        0.000005
+         4         2        0.000004
+         8         4        0.000003
+        16         6        0.000004
+        32        11        0.000004
+        64        18        0.000004
+       128        31        0.000005
+       256        54        0.000011
+       512        97        0.000020
+      1024       172        0.000064
+      2048       309        0.000186
+      4096       564        0.000684
+      8192      1028        0.002385
+     16384      1900        0.008838
+     32768      3512        0.032707
+     65536      6542        0.121409
+    131072     12251        0.447351
+    262144     23000        1.658784
+    524288     43390        6.278542
+
+PRIME_MPI - Master process:
+  Normal end of execution.
+
+10 May 2019 10:28:28 PM
+Num Cores: 8 	Real Time: 0:09.10 	CPU Usage: 754%
+Number of MPI processes = 16
+10 May 2019 10:28:28 PM
+
+PRIME_MPI
+  C/MPI version
+
+  An MPI example program to count the number of primes.
+  The number of processes is 16
+
+         N        Pi          Time
+
+         1         0        0.000196
+         2         1        0.000007
+         4         2        0.000005
+         8         4        0.000004
+        16         6        0.000004
+        32        11        0.000005
+        64        18        0.000005
+       128        31        0.000005
+       256        54        0.000007
+       512        97        0.000016
+      1024       172        0.000045
+      2048       309        0.000116
+      4096       564        0.000397
+      8192      1028        0.001396
+     16384      1900        0.004903
+     32768      3512        0.017752
+     65536      6542        0.063524
+    131072     12251        0.233345
+    262144     23000        0.854676
+    524288     43390        3.244448
+
+PRIME_MPI - Master process:
+  Normal end of execution.
+
+10 May 2019 10:28:32 PM
+Num Cores: 16 	Real Time: 0:04.98 	CPU Usage: 1432%
+Number of MPI processes = 32
+Number of MPI processes = 64
+Number of MPI processes = 128
+Number of MPI processes = 256
