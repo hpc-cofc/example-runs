@@ -17,4 +17,23 @@ You can use the `test-queue.sh` script to run the calculations on different queu
 
 ## Results
 
+Here is a summary from a sample run.
+
+### Sieve of Eratosthenes - GPUs vs CPUs
+See `summary-gpuq.dat`
+
+| Calculation  | time (milliseconds) [lower is better] |
+|:-------------|:----------------|
+|GPU run       | 37  |
+|CPU run       | 278 |
+
+### Brute-force method - CPUs - MPI-parallelized version
+See `summary-stdmemq.dat`
+
+| Number of Cores or MPI processes  | Real time (seconds) [lower is better] | Parallel efficiency (higher is better)  |
+|:------------------------|:----------------|:----------------------|
+|2 	| 33 | 0.97 |
+|4 	| 16 | 0.80	|
+|8 	| 8  | 0.93 |
+|16 	| 5  | 0.88 |
 
