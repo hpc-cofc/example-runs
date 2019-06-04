@@ -11,6 +11,20 @@ This example demonstrates the power of
 - picking the right algorithms
 - GPUs
 
+## Python
+
+A simple Python example
+ 
+
+## R
+
+A simple R example
+ 
+## Matlab
+
+A simple Matlab example
+ 
+
 ## AMBER18 simulation  
 This calculation simulates a 136475-atom biological molecule for 100,000 time steps (200 picoseconds).
 It also demonstrates 
@@ -20,7 +34,8 @@ It also demonstrates
 
 
 ## CM1 atmospheric simulation  
-CM1 is used to model at
+CM1 is an atmospheric physics simulation package. Learn more at the [developer's
+site](http://www2.mmm.ucar.edu/people/bryan/cm1/).
 
 > In scientific terms:  CM1 is a three-dimensional, non-hydrostatic, non-linear, time-dependent numerical model designed for idealized studies of atmospheric phenomena.
 
