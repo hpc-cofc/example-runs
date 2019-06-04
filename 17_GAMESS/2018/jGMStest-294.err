@@ -1,0 +1,11 @@
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi3/3.1.3
+
+cp test.inp /scratch/bt-local/test.F05
+unset echo
+/opt/ohpc/pub/apps/chem/gamess/2018/ddikick.x /opt/ohpc/pub/apps/chem/gamess/2018/gamess.00.x test -ddi 1 24 gpuv100001.cofc.edu:cpus=24 -scr /scratch/bt-local
+unset echo
+ls: No match.
+ls: No match.
+ls: No match.

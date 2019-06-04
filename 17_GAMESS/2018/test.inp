@@ -1,0 +1,27 @@
+!   E(MP2)= -698.9213146493   the harmonic modes are
+!   FREQ=237.62, 311.44, 355.22, 425.01, 477.94, 527.22, 529.86, 810.38,
+!   FREQ=874.12, 1172.88, 1189.11, 1227.07, 1490.56, 3817.79, 3822.07
+!   See B.Njegic, M.S.Gordon  J.Chem.Phys. 125, 224102(2006), Table VII.
+!
+!   this test takes 491 seconds on 2.66 GHz Cloverton ( 1 Apr 2015)
+!   results have been almost unchanged since 2008
+!
+ $CONTRL SCFTYP=RHF mplevl=2 RUNTYP=hessian $END
+ $system mwords=25 memddi=0 $end
+ $GUESS  GUESS=huckel $END
+ $statpt opttol=1.0d-5 $end
+ $force  nvib=2 $end
+ $basis  gbasis=n31 ngauss=6 ndfunc=1 npfunc=1 $end
+ $mp2    code=ims $end
+ $DATA
+sulfuric acid
+Cn 2
+
+S          16.0   0.0000000000   0.0000000000  -0.1685629831
+O           8.0   0.8581804909   0.9168966239   0.8563117705
+O           8.0   0.9670161942  -0.8412410460  -0.8350560171
+H           1.0   0.3023433940   1.6717530402   1.1127562441
+ $end
+
+! TRAVIS-CI MEDIUM
+
