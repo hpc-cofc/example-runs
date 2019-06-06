@@ -1,7 +1,7 @@
  Entering Gaussian System, Link 0=g16
  Initial command:
- /opt/ohpc/pub/apps/gaussian/16-B01/g16/l1.exe "/scratch/bt-local/Gau-204148.inp" -scrdir="/scratch/bt-local/"
- Entering Link 1 = /opt/ohpc/pub/apps/gaussian/16-B01/g16/l1.exe PID=    204150.
+ /opt/ohpc/pub/apps/chem/gaussian/16-B01/g16/l1.exe "/scratch/bt-local/Gau-215492.inp" -scrdir="/scratch/bt-local/"
+ Entering Link 1 = /opt/ohpc/pub/apps/chem/gaussian/16-B01/g16/l1.exe PID=    215493.
   
  Copyright (c) 1988-2017, Gaussian, Inc.  All Rights Reserved.
   
@@ -74,10 +74,10 @@
  
  ******************************************
  Gaussian 16:  ES64L-G16RevB.01 20-Dec-2017
-                17-Apr-2019 
+                18-Apr-2019 
  ******************************************
- %nproc=12
- Will use up to   12 processors via shared memory.
+ %nproc=20
+ Will use up to   20 processors via shared memory.
  %mem=110gb
  %chk=jneutral-opt.chk
  -----------------------------------------------------------------
@@ -657,7 +657,7 @@
          NMat0=    1 NMatS0=      1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
  Petite list used in FoFCou.
  SCF Done:  E(RB3LYP) =  -774.349051856     A.U. after   17 cycles
-            NFock= 17  Conv=0.40D-08     -V/T= 2.0096
+            NFock= 17  Conv=0.39D-08     -V/T= 2.0096
 
  **********************************************************************
 
@@ -849,7 +849,7 @@
     35  C    0.347451
     38  C   -0.081102
  Electronic spatial extent (au):  <R**2>=           6103.3470
- Charge=             -0.0000 electrons
+ Charge=              0.0000 electrons
  Dipole moment (field-independent basis, Debye):
     X=             -2.0079    Y=             -1.7708    Z=              0.7113  Tot=              2.7701
  Calling FoFJK, ICntrl=      2127 FMM=F ISym2X=0 I1Cent= 0 IOpClX= 0 NMat=1 NMatS=1 NMatT=0.
@@ -1950,7 +1950,7 @@
        nuclear repulsion energy      1408.8616801235 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=     0.000000   -0.000000   -0.000000
+ B after Tr=    -0.000000   -0.000000    0.000000
          Rot=    0.999847   -0.015458    0.001103   -0.008174 Ang=  -2.01 deg.
  ExpMin= 4.38D-02 ExpMax= 5.48D+03 ExpMxC= 8.25D+02 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
  Harris functional with IExCor=  402 and IRadAn=       5 diagonalized for initial guess.
@@ -2513,10 +2513,10 @@
  Rotational constants (GHZ):           0.9816098           0.1850933           0.1744812
    405 basis functions,   696 primitive gaussians,   405 cartesian basis functions
     69 alpha electrons       69 beta electrons
-       nuclear repulsion energy      1414.1153514562 Hartrees.
+       nuclear repulsion energy      1414.1153514415 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=     0.000000   -0.000000    0.000000
+ B after Tr=     0.000000   -0.000000   -0.000000
          Rot=    0.999810   -0.019019    0.003253    0.002905 Ang=  -2.24 deg.
  ExpMin= 4.38D-02 ExpMax= 5.48D+03 ExpMxC= 8.25D+02 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
  Harris functional with IExCor=  402 and IRadAn=       5 diagonalized for initial guess.
@@ -2566,7 +2566,7 @@
      Eigenvalues ---    0.43263   0.43667   0.44112   0.45550   0.50660
      Eigenvalues ---    0.87395   0.95086
  Quartic linear search produced a step of  0.40918.
- Iteration  1 RMS(Cart)=  0.11965128 RMS(Int)=  0.00315597
+ Iteration  1 RMS(Cart)=  0.11965129 RMS(Int)=  0.00315597
  Iteration  2 RMS(Cart)=  0.01301933 RMS(Int)=  0.00024692
  Iteration  3 RMS(Cart)=  0.00008216 RMS(Int)=  0.00024550
  Iteration  4 RMS(Cart)=  0.00000001 RMS(Int)=  0.00024550
@@ -3080,10 +3080,10 @@
  Rotational constants (GHZ):           0.9795241           0.1851023           0.1744284
    405 basis functions,   696 primitive gaussians,   405 cartesian basis functions
     69 alpha electrons       69 beta electrons
-       nuclear repulsion energy      1414.9220448555 Hartrees.
+       nuclear repulsion energy      1414.9220448463 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=    -0.000000    0.000000    0.000000
+ B after Tr=    -0.000000   -0.000000    0.000000
          Rot=    0.999848   -0.016571    0.005343   -0.000419 Ang=  -2.00 deg.
  ExpMin= 4.38D-02 ExpMax= 5.48D+03 ExpMxC= 8.25D+02 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
  Harris functional with IExCor=  402 and IRadAn=       5 diagonalized for initial guess.
@@ -3546,13 +3546,13 @@
     28  C    4.115953   5.814126   6.132145   6.902982   6.006145
     29  C    4.368916   6.010206   5.825493   6.878351   5.768613
     30  C    5.246768   6.973152   7.526791   8.242853   7.385228
-    31  C    5.604734   7.256838   6.988119   8.157720   6.960987
+    31  C    5.604735   7.256838   6.988119   8.157720   6.960987
     32  H    3.924268   5.410641   4.856456   6.012700   4.844102
     33  C    6.316279   8.073694   8.453316   9.332823   8.346931
     34  H    5.501231   7.164797   8.007746   8.538373   7.828453
     35  C    6.494228   8.223326   8.240674   9.320075   8.185164
     36  H    6.083509   7.633703   7.056505   8.366630   7.077289
-    37  H    7.220830   8.978886   9.499520  10.330653   9.381081
+    37  H    7.220830   8.978887   9.499520  10.330653   9.381081
     38  C    7.885812   9.601593   9.514181  10.686940   9.485970
     39  H    8.241599   9.976244  10.270605  11.346517  10.092813
     40  H    8.079260   9.731736   9.436659  10.710723   9.423624
@@ -3647,10 +3647,10 @@
  Rotational constants (GHZ):           0.9738544           0.1857450           0.1749849
    405 basis functions,   696 primitive gaussians,   405 cartesian basis functions
     69 alpha electrons       69 beta electrons
-       nuclear repulsion energy      1415.6755294908 Hartrees.
+       nuclear repulsion energy      1415.6755294776 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=    -0.000000   -0.000000   -0.000000
+ B after Tr=     0.000000    0.000000   -0.000000
          Rot=    0.999918    0.011634    0.005435    0.000063 Ang=   1.47 deg.
  ExpMin= 4.38D-02 ExpMax= 5.48D+03 ExpMxC= 8.25D+02 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
  Harris functional with IExCor=  402 and IRadAn=       5 diagonalized for initial guess.
@@ -3700,7 +3700,7 @@
      Eigenvalues ---    0.43253   0.43637   0.44113   0.45571   0.51126
      Eigenvalues ---    0.86004   0.92029
  En-DIIS/RFO-DIIS/Sim-DIIS IScMMF=       -3 using points:     6    5
- RFO step:  Lambda=-1.83714489D-03.
+ RFO step:  Lambda=-1.83714488D-03.
  DidBck=T Rises=T En-DIIS coefs:    0.48995    0.51005
  Iteration  1 RMS(Cart)=  0.04102374 RMS(Int)=  0.00039969
  Iteration  2 RMS(Cart)=  0.00083266 RMS(Int)=  0.00008326
@@ -4215,10 +4215,10 @@
  Rotational constants (GHZ):           0.9753533           0.1848945           0.1741787
    405 basis functions,   696 primitive gaussians,   405 cartesian basis functions
     69 alpha electrons       69 beta electrons
-       nuclear repulsion energy      1414.0508659586 Hartrees.
+       nuclear repulsion energy      1414.0508659541 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=     0.000000    0.000000   -0.000000
+ B after Tr=    -0.000000   -0.000000   -0.000000
          Rot=    0.999969    0.007444   -0.002744   -0.000101 Ang=   0.91 deg.
  ExpMin= 4.38D-02 ExpMax= 5.48D+03 ExpMxC= 8.25D+02 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
  Harris functional with IExCor=  402 and IRadAn=       5 diagonalized for initial guess.
@@ -4230,7 +4230,7 @@
          NMat0=    1 NMatS0=      1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
  Petite list used in FoFCou.
  SCF Done:  E(RB3LYP) =  -774.408537091     A.U. after   13 cycles
-            NFock= 13  Conv=0.78D-08     -V/T= 2.0098
+            NFock= 13  Conv=0.79D-08     -V/T= 2.0098
  Calling FoFJK, ICntrl=      2127 FMM=F ISym2X=0 I1Cent= 0 IOpClX= 0 NMat=1 NMatS=1 NMatT=0.
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -4636,7 +4636,7 @@
     31  C    7.104401   6.524871   7.935907   6.521283   6.418024
     32  H    4.957196   5.174611   5.968995   4.645931   4.992259
     33  C    8.367712   6.271007   8.679827   7.415235   6.488054
-    34  H    7.713945   4.567514   7.596626   6.621637   5.145739
+    34  H    7.713945   4.567514   7.596626   6.621637   5.145740
     35  C    8.291561   7.006975   8.904500   7.513711   7.023536
     36  H    7.293600   7.349018   8.351419   6.889257   7.117952
     37  H    9.386949   6.938175   9.580507   8.348204   7.226266
@@ -4783,10 +4783,10 @@
  Rotational constants (GHZ):           0.9747320           0.1853255           0.1745587
    405 basis functions,   696 primitive gaussians,   405 cartesian basis functions
     69 alpha electrons       69 beta electrons
-       nuclear repulsion energy      1414.7911089014 Hartrees.
+       nuclear repulsion energy      1414.7911088996 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=     0.000000   -0.000000    0.000000
+ B after Tr=     0.000000    0.000000    0.000000
          Rot=    0.999912    0.013269    0.000572    0.000185 Ang=   1.52 deg.
  ExpMin= 4.38D-02 ExpMax= 5.48D+03 ExpMxC= 8.25D+02 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
  Harris functional with IExCor=  402 and IRadAn=       5 diagonalized for initial guess.
@@ -4836,7 +4836,7 @@
      Eigenvalues ---    0.43256   0.43611   0.44101   0.45642   0.51177
      Eigenvalues ---    0.76232   0.90516
  En-DIIS/RFO-DIIS/Sim-DIIS IScMMF=       -3 using points:     8    7    6    5
- RFO step:  Lambda=-6.75129215D-05.
+ RFO step:  Lambda=-6.75129200D-05.
  DidBck=F Rises=F RFO-DIIS coefs:    0.95513    0.47598   -0.20154   -0.22957
  Iteration  1 RMS(Cart)=  0.02013871 RMS(Int)=  0.00017280
  Iteration  2 RMS(Cart)=  0.00024981 RMS(Int)=  0.00008231
@@ -5351,10 +5351,10 @@
  Rotational constants (GHZ):           0.9744359           0.1853183           0.1745668
    405 basis functions,   696 primitive gaussians,   405 cartesian basis functions
     69 alpha electrons       69 beta electrons
-       nuclear repulsion energy      1414.7851656641 Hartrees.
+       nuclear repulsion energy      1414.7851656638 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=     0.000000   -0.000000    0.000000
+ B after Tr=    -0.000000   -0.000000    0.000000
          Rot=    0.999981    0.006155    0.000439    0.000153 Ang=   0.71 deg.
  ExpMin= 4.38D-02 ExpMax= 5.48D+03 ExpMxC= 8.25D+02 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
  Harris functional with IExCor=  402 and IRadAn=       5 diagonalized for initial guess.
@@ -5366,7 +5366,7 @@
          NMat0=    1 NMatS0=      1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
  Petite list used in FoFCou.
  SCF Done:  E(RB3LYP) =  -774.408687075     A.U. after   14 cycles
-            NFock= 14  Conv=0.30D-08     -V/T= 2.0098
+            NFock= 14  Conv=0.31D-08     -V/T= 2.0098
  Calling FoFJK, ICntrl=      2127 FMM=F ISym2X=0 I1Cent= 0 IOpClX= 0 NMat=1 NMatS=1 NMatT=0.
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -5404,7 +5404,7 @@
      Eigenvalues ---    0.43253   0.43680   0.44117   0.45756   0.50243
      Eigenvalues ---    0.71900   0.90498
  En-DIIS/RFO-DIIS/Sim-DIIS IScMMF=       -3 using points:     9    8    7    6    5
- RFO step:  Lambda=-1.19411166D-05.
+ RFO step:  Lambda=-1.19411165D-05.
  DidBck=F Rises=F RFO-DIIS coefs:    1.23458   -0.13401   -0.17453    0.03440    0.03957
  Iteration  1 RMS(Cart)=  0.00858615 RMS(Int)=  0.00002066
  Iteration  2 RMS(Cart)=  0.00003365 RMS(Int)=  0.00001336
@@ -5919,10 +5919,10 @@
  Rotational constants (GHZ):           0.9736868           0.1854334           0.1747060
    405 basis functions,   696 primitive gaussians,   405 cartesian basis functions
     69 alpha electrons       69 beta electrons
-       nuclear repulsion energy      1414.9038566551 Hartrees.
+       nuclear repulsion energy      1414.9038566566 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=     0.000000    0.000000   -0.000000
+ B after Tr=     0.000000    0.000000    0.000000
          Rot=    0.999998    0.002019    0.000427    0.000055 Ang=   0.24 deg.
  ExpMin= 4.38D-02 ExpMax= 5.48D+03 ExpMxC= 8.25D+02 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
  Harris functional with IExCor=  402 and IRadAn=       5 diagonalized for initial guess.
@@ -5934,7 +5934,7 @@
          NMat0=    1 NMatS0=      1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
  Petite list used in FoFCou.
  SCF Done:  E(RB3LYP) =  -774.408693031     A.U. after   12 cycles
-            NFock= 12  Conv=0.80D-08     -V/T= 2.0098
+            NFock= 12  Conv=0.81D-08     -V/T= 2.0098
  Calling FoFJK, ICntrl=      2127 FMM=F ISym2X=0 I1Cent= 0 IOpClX= 0 NMat=1 NMatS=1 NMatT=0.
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -5972,7 +5972,7 @@
      Eigenvalues ---    0.43260   0.43694   0.44078   0.45884   0.50802
      Eigenvalues ---    0.71688   0.90536
  En-DIIS/RFO-DIIS/Sim-DIIS IScMMF=       -3 using points:    10    9    8    7    6    5
- RFO step:  Lambda=-3.23776100D-06.
+ RFO step:  Lambda=-3.23776097D-06.
  DidBck=F Rises=F RFO-DIIS coefs:    0.98898    0.19893   -0.10465   -0.20956    0.05790
                   RFO-DIIS coefs:    0.06841
  Iteration  1 RMS(Cart)=  0.00204217 RMS(Int)=  0.00002342
@@ -6488,13 +6488,13 @@
  Rotational constants (GHZ):           0.9735716           0.1854560           0.1747280
    405 basis functions,   696 primitive gaussians,   405 cartesian basis functions
     69 alpha electrons       69 beta electrons
-       nuclear repulsion energy      1414.9356594135 Hartrees.
+       nuclear repulsion energy      1414.9356594140 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=    -0.000000   -0.000000    0.000000
+ B after Tr=     0.000000    0.000000   -0.000000
          Rot=    1.000000    0.000546    0.000102    0.000051 Ang=   0.06 deg.
  SCF Done:  E(RB3LYP) =  -774.408694455     A.U. after   11 cycles
-            NFock= 11  Conv=0.53D-08     -V/T= 2.0098
+            NFock= 11  Conv=0.52D-08     -V/T= 2.0098
  Calling FoFJK, ICntrl=      2127 FMM=F ISym2X=0 I1Cent= 0 IOpClX= 0 NMat=1 NMatS=1 NMatT=0.
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -6532,7 +6532,7 @@
      Eigenvalues ---    0.43206   0.43638   0.44021   0.45880   0.50315
      Eigenvalues ---    0.79536   0.90061
  En-DIIS/RFO-DIIS/Sim-DIIS IScMMF=       -3 using points:    11   10    9    8    7    6    5
- RFO step:  Lambda=-5.28245463D-07.
+ RFO step:  Lambda=-5.28245460D-07.
  DidBck=F Rises=F RFO-DIIS coefs:    1.01532    0.11365   -0.09428   -0.06251    0.02667
                   RFO-DIIS coefs:    0.00060    0.00054
  Iteration  1 RMS(Cart)=  0.00096656 RMS(Int)=  0.00000068
@@ -7047,13 +7047,13 @@
  Rotational constants (GHZ):           0.9735541           0.1854425           0.1747191
    405 basis functions,   696 primitive gaussians,   405 cartesian basis functions
     69 alpha electrons       69 beta electrons
-       nuclear repulsion energy      1414.9237105158 Hartrees.
+       nuclear repulsion energy      1414.9237105160 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=     0.000000    0.000000    0.000000
+ B after Tr=    -0.000000    0.000000    0.000000
          Rot=    1.000000    0.000018    0.000046   -0.000026 Ang=   0.01 deg.
  SCF Done:  E(RB3LYP) =  -774.408694699     A.U. after   10 cycles
-            NFock= 10  Conv=0.83D-08     -V/T= 2.0098
+            NFock= 10  Conv=0.84D-08     -V/T= 2.0098
  Calling FoFJK, ICntrl=      2127 FMM=F ISym2X=0 I1Cent= 0 IOpClX= 0 NMat=1 NMatS=1 NMatT=0.
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -7091,7 +7091,7 @@
      Eigenvalues ---    0.43185   0.43633   0.43985   0.45943   0.51198
      Eigenvalues ---    0.75867   0.89929
  En-DIIS/RFO-DIIS/Sim-DIIS IScMMF=       -3 using points:    12   11   10    9    8    7    6    5
- RFO step:  Lambda=-7.94410462D-08.
+ RFO step:  Lambda=-7.94410475D-08.
  DidBck=F Rises=F RFO-DIIS coefs:    1.25344   -0.15215   -0.15392    0.04663    0.01102
                   RFO-DIIS coefs:   -0.01146    0.00356    0.00288
  Iteration  1 RMS(Cart)=  0.00044539 RMS(Int)=  0.00000140
@@ -7606,13 +7606,13 @@
  Rotational constants (GHZ):           0.9735686           0.1854390           0.1747154
    405 basis functions,   696 primitive gaussians,   405 cartesian basis functions
     69 alpha electrons       69 beta electrons
-       nuclear repulsion energy      1414.9191338126 Hartrees.
+       nuclear repulsion energy      1414.9191338132 Hartrees.
  NAtoms=   41 NActive=   41 NUniq=   41 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Initial guess from the checkpoint file:  "jneutral-opt.chk"
- B after Tr=    -0.000000   -0.000000   -0.000000
+ B after Tr=     0.000000   -0.000000   -0.000000
          Rot=    1.000000   -0.000140   -0.000016   -0.000003 Ang=  -0.02 deg.
  SCF Done:  E(RB3LYP) =  -774.408694744     A.U. after    9 cycles
-            NFock=  9  Conv=0.58D-08     -V/T= 2.0098
+            NFock=  9  Conv=0.57D-08     -V/T= 2.0098
  Calling FoFJK, ICntrl=      2127 FMM=F ISym2X=0 I1Cent= 0 IOpClX= 0 NMat=1 NMatS=1 NMatT=0.
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -7650,7 +7650,7 @@
      Eigenvalues ---    0.43321   0.43678   0.44001   0.45968   0.51065
      Eigenvalues ---    0.73329   0.90144
  En-DIIS/RFO-DIIS/Sim-DIIS IScMMF=       -3 using points:    13   12   11   10    9    8    7    6    5
- RFO step:  Lambda=-3.01527650D-08.
+ RFO step:  Lambda=-3.01527659D-08.
  DIIS inversion failure, remove point   9.
  RFO-DIIS uses    8 points instead of    9
  DidBck=F Rises=F RFO-DIIS coefs:    1.63034   -0.41300   -0.21045   -0.02583    0.01936
@@ -8615,44 +8615,45 @@
     35  C    0.245383
     38  C   -0.119741
  Electronic spatial extent (au):  <R**2>=           6526.7585
- Charge=              0.0000 electrons
+ Charge=             -0.0000 electrons
  Dipole moment (field-independent basis, Debye):
     X=             -0.3604    Y=             -2.4357    Z=              0.0438  Tot=              2.4626
- 1\1\GINC-BIGMEM001\FOpt\RB3LYP\6-31+G(d)\C18H22O1\BT-LOCAL\17-Apr-2019
+ 1\1\GINC-BIGMEM001\FOpt\RB3LYP\6-31+G(d)\C18H22O1\BT-LOCAL\18-Apr-2019
  \0\\#T b3lyp/6-31+G* integral=UltraFine opt(maxstep=10,maxcycles=200)\
- \4-BMC-optimization\\0,1\O,0.0075901614,0.8003379494,0.0545195014\C,0.
- 0004175257,-0.0621747035,3.4700335718\C,-0.0922156988,1.156032412,2.47
- 97301698\C,1.4918728443,-0.3577947517,3.1038611903\C,1.127168427,2.035
- 298667,2.9260919822\C,2.1935405739,0.9999411686,3.3953505532\C,1.43413
- 85057,-0.49764341,1.5865941273\C,0.400671237,0.5030847248,1.1749784405
- \C,-0.2258963101,0.2974265632,4.9484004005\C,-0.95531922,-1.2185917229
- ,3.1212385026\C,-1.4043713454,1.9084888501,2.3433288138\H,1.9430547984
- ,-1.2172010792,3.6113500234\H,0.8212693261,2.7072026593,3.7358808874\H
- ,1.4803189934,2.6685393808,2.1047694455\H,3.1365661258,1.0874188196,2.
- 8468630114\H,2.4250759588,1.1075672961,4.4606840262\H,0.3689760668,1.1
- 461821129,5.2950365176\H,0.0219261308,-0.5619683721,5.5851577038\H,-1.
- 2805125136,0.5405005114,5.126475415\H,-0.7426987173,-2.0901888929,3.75
- 36151868\H,-0.8789893757,-1.5439447301,2.0789555982\H,-1.9970482099,-0
- .9280490887,3.3034063506\H,-1.3169060374,2.6991526591,1.5900652303\H,-
- 1.6905250502,2.3730482559,3.2946353653\H,-2.2175336632,1.2470522242,2.
- 0236713031\C,2.2091059172,-1.3690988281,0.8924026462\H,2.8653972397,-1
- .9690818042,1.5277210813\C,2.3708609796,-1.7034889075,-0.5233757793\C,
- 1.6803354506,-1.1038486797,-1.596606405\C,3.3047043141,-2.7182603768,-
- 0.835717197\C,1.922793511,-1.5085645732,-2.9088816126\H,0.9568236457,-
- 0.323881669,-1.3924362954\C,3.5388477675,-3.1144578223,-2.1477462761\H
- ,3.8526202885,-3.2010837077,-0.0288318844\C,2.8506669179,-2.5144092166
- ,-3.2149099676\H,1.373712646,-1.027961739,-3.7161369105\H,4.2647558104
- ,-3.9001598916,-2.3488595859\C,3.1139610242,-2.9371530693,-4.640913075
- 6\H,3.0154097818,-4.0233379724,-4.7609558534\H,2.417026087,-2.45707515
- 49,-5.3355858351\H,4.1324080849,-2.6698540909,-4.9528603677\\Version=E
- S64L-G16RevB.01\State=1-A\HF=-774.4086947\RMSD=5.772e-09\RMSF=4.299e-0
- 6\Dipole=0.5435389,-0.4625239,0.6552201\Quadrupole=-3.0836779,-2.16488
- 07,5.2485587,-2.4823106,-3.2550665,4.5908391\PG=C01 [X(C18H22O1)]\\@
+ \4-BMC-optimization\\0,1\O,0.0075901613,0.8003379493,0.0545195014\C,0.
+ 0004175257,-0.0621747034,3.4700335719\C,-0.0922156988,1.156032412,2.47
+ 97301697\C,1.4918728443,-0.3577947517,3.1038611903\C,1.127168427,2.035
+ 298667,2.9260919821\C,2.1935405739,0.9999411686,3.3953505532\C,1.43413
+ 85057,-0.4976434101,1.5865941273\C,0.400671237,0.5030847248,1.17497844
+ 05\C,-0.2258963101,0.2974265633,4.9484004005\C,-0.95531922,-1.21859172
+ 29,3.1212385027\C,-1.4043713453,1.9084888502,2.3433288137\H,1.94305479
+ 84,-1.2172010791,3.6113500234\H,0.8212693261,2.7072026593,3.7358808872
+ \H,1.4803189934,2.6685393808,2.1047694453\H,3.1365661258,1.0874188196,
+ 2.8468630113\H,2.4250759588,1.1075672962,4.4606840261\H,0.3689760669,1
+ .1461821131,5.2950365175\H,0.0219261308,-0.5619683719,5.5851577038\H,-
+ 1.2805125135,0.5405005116,5.126475415\H,-0.7426987174,-2.0901888928,3.
+ 753615187\H,-0.8789893757,-1.5439447301,2.0789555983\H,-1.9970482099,-
+ 0.9280490886,3.3034063507\H,-1.3169060373,2.6991526591,1.5900652302\H,
+ -1.6905250502,2.373048256,3.2946353652\H,-2.2175336632,1.2470522243,2.
+ 0236713031\C,2.2091059172,-1.3690988282,0.8924026462\H,2.8653972397,-1
+ .9690818042,1.5277210813\C,2.3708609796,-1.7034889076,-0.5233757792\C,
+ 1.6803354506,-1.1038486798,-1.5966064049\C,3.3047043141,-2.7182603768,
+ -0.8357171969\C,1.9227935109,-1.5085645734,-2.9088816126\H,0.956823645
+ 6,-0.3238816691,-1.3924362954\C,3.5388477675,-3.1144578223,-2.14774627
+ 61\H,3.8526202886,-3.2010837077,-0.0288318844\C,2.8506669179,-2.514409
+ 2167,-3.2149099676\H,1.373712646,-1.0279617392,-3.7161369105\H,4.26475
+ 58105,-3.9001598916,-2.3488595858\C,3.1139610243,-2.9371530694,-4.6409
+ 130756\H,3.0154097819,-4.0233379725,-4.7609558533\H,2.417026087,-2.457
+ 075155,-5.3355858351\H,4.132408085,-2.6698540909,-4.9528603677\\Versio
+ n=ES64L-G16RevB.01\State=1-A\HF=-774.4086947\RMSD=5.686e-09\RMSF=4.299
+ e-06\Dipole=0.5435389,-0.4625239,0.6552201\Quadrupole=-3.0836779,-2.16
+ 48807,5.2485587,-2.4823106,-3.2550665,4.5908391\PG=C01 [X(C18H22O1)]\\
+ @
 
 
- THERE'S NOTHING WRONG WITH FOLLOWING A TRAIN OF THOUGHT...
- AS LONG AS IT ULTIMATELY PULLS INTO THE STATION.
- Job cpu time:       0 days  2 hours 49 minutes 43.7 seconds.
- Elapsed time:       0 days  0 hours 14 minutes 15.0 seconds.
+ THE LENGTH OF A MEETING IS PROPORTIONAL TO THE
+ SQUARE OF THE PARTICIPANTS.
+ Job cpu time:       0 days  3 hours  3 minutes 55.5 seconds.
+ Elapsed time:       0 days  0 hours  9 minutes 17.9 seconds.
  File lengths (MBytes):  RWF=    104 Int=      0 D2E=      0 Chk=     15 Scr=      1
- Normal termination of Gaussian 16 at Wed Apr 17 17:29:06 2019.
+ Normal termination of Gaussian 16 at Thu Apr 18 09:02:09 2019.

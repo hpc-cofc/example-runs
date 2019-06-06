@@ -12,7 +12,7 @@ set echo
 umask 0027
 echo $SLURM_SUBMIT_DIR
 module list 
-module load gaussian
+module load chem/gaussian
 module list 
 
 echo $PATH
