@@ -2,7 +2,7 @@
 
 Psi4 is a modular open-source suite of ab initio quantum chemistry programs designed for efficient,
 high-accuracy simulations of a variety of molecular properties. It is very easy to use and has an
-optional Python interface. Learn more at (psicode.org)[http://www.psicode.org]
+optional Python interface. Learn more at [psicode.org](http://www.psicode.org)
 
 Here is a quick example of SMP parallel Psi4 job that calculates the interaction energy of water
 dimer using the SAPT2+3(CCD) method.

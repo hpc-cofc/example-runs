@@ -1,6 +1,7 @@
 # Orca 4.1.2
 
-Orca is a powerful computational chemistry package with capabilites to perform semiemipirical, density functional and ab initio methods as well as molecular dynamics simulations.
+Orca is a powerful computational chemistry package with capabilites to perform semiemipirical,
+density functional and ab initio methods as well as molecular dynamics simulations. Learn more at [Orca's website](https://orcaforum.kofo.mpg.de/app.php/portal)
 
 Here is a quick example of an Orca run through a batch scheduler. This example calculates the MP2-F12/VTZ-F12 energy of water dimer.
 

@@ -3,9 +3,9 @@
 Mathematica is a general symbolic and numerical simulation package that is known both for its powerful features and efficiency.
 
 Here is a quick example of interactive serial and parallel calcualtions to print all Mersenne PRime numbers less than 5000.
-This example came from (UChicago)[https://rcc.uchicago.edu/docs/software/environments/mathematica/index.html]
+This example came from [UChicago](https://rcc.uchicago.edu/docs/software/environments/mathematica/index.html)
 
-[![asciicast](https://asciinema.org/a/250322.svg)](https://asciinema.org/a/250322)
+[![asciicast](https://asciinema.org/a/250322.svg)](https://asciinema.org/a/250322?t=10)
 
 While most people use Mathematica in interactive mode running on one CPU core, it does have capabilies to run on HPCs using a batch queue manager.
 We encourage users to do some testing on the login node and do their production runs by submitting
