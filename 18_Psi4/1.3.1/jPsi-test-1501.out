@@ -1,0 +1,22 @@
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own
+
+ 
+
+/home/bt-local/github-hpc-cofc/example-runs/18_Psi/1.3.1
+Thu Jun  6 17:12:59 EDT 2019
+	SAPT ELST ENERGY..................................................PASSED
+	SAPT EXCH ENERGY..................................................PASSED
+	SAPT IND ENERGY...................................................PASSED
+	SAPT DISP ENERGY..................................................PASSED
+	SAPT0 TOTAL ENERGY................................................PASSED
+	SAPT2 TOTAL ENERGY................................................PASSED
+	SAPT2+ TOTAL ENERGY...............................................PASSED
+	SAPT2+(3) TOTAL ENERGY............................................PASSED
+	SAPT2+3 TOTAL ENERGY..............................................PASSED
+	SAPT2+(CCD) TOTAL ENERGY..........................................PASSED
+	SAPT2+(3)(CCD) TOTAL ENERGY.......................................PASSED
+	SAPT2+3(CCD) TOTAL ENERGY.........................................PASSED
+Thu Jun  6 17:13:11 EDT 2019
