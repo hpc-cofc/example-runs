@@ -11,13 +11,13 @@
 #SBATCH --mail-user=<user>@cofc.edu  # Send email notification to this address
 
 module list                 # will list modules loaded by default. In our case, it will be GNU8 compilers and OpenMPI3 MPI libraries
-module swap openmpi3 mpich  # swap the MPI library from the default 'openmpi3' to 'mpich'.
+module load openmpi3        # load OpenMPI3 if it isn't loaded already
 module list                 # will list modules loaded; we'll just use this to check that the modules we selected are indeed loaded
 pwd                         # prints current working directory
 date                        # prints the date and time
 
 # Compile the Fortran source into a binary executable file.
-mpic++ -o hello_world hello_world.c
+mpic++ -o hello_world hello_world.cpp
 
 # and run
 mpirun hello_world

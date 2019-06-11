@@ -11,7 +11,7 @@
 #SBATCH --mail-user=<user>@cofc.edu  # Send email notification to this address
 
 module list                 # will list modules loaded by default. In our case, it will be GNU8 compilers and OpenMPI3 MPI libraries
-module swap openmpi3 mpich  # swap the MPI library from the default 'openmpi3' to 'mpich'.
+module load py2-mpi4py      # swap the MPI library from the default 'openmpi3' to 'mpich'.
 module list                 # will list modules loaded; we'll just use this to check that the modules we selected are indeed loaded
 pwd                         # prints current working directory
 date                        # prints the date and time
