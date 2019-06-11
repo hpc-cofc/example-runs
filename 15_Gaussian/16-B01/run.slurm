@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH -p bigmemq
-#SBATCH -J jbigmem-test
-#SBATCH -o jbigmem-test-%j
+#SBATCH -p debugq
+#SBATCH -J jdebug-test
+#SBATCH -o jdebug-test-%j
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=20
 #SBATCH --export=ALL
@@ -12,7 +12,7 @@ set echo
 umask 0027
 echo $SLURM_SUBMIT_DIR
 module list 
-module load gaussian
+module load chem/gaussian
 module list 
 
 echo $PATH

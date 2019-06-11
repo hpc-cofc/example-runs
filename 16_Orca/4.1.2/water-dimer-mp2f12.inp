@@ -1,0 +1,16 @@
+!RHF RI-MP2-F12 cc-pVDZ-F12 cc-pVDZ-F12-CABS cc-pVTZ/C TIGHTSCF
+!miniprint nopop nomoprint
+%maxcore 64000
+%pal
+   nprocs 16
+   end
+%scf
+   Guess PModel
+   SCFMode Direct
+   MaxDisk 1000
+   end
+%method
+   FrozenCore FC_ELECTRONS
+   end
+%base "water-dimer"
+* xyzfile 0 1 water-dimer.xyz

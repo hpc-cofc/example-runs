@@ -1,4 +1,4 @@
-%nproc=12
+%nproc=20
 %mem=110gb
 %chk=jneutral-opt.chk
 #T b3lyp/6-31+G* integral=UltraFine opt(maxstep=10,maxcycles=200)

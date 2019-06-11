@@ -1,0 +1,142 @@
+
+Host: gpuv100001.cofc.edu
+
+Timers On : Thu Jun  6 17:13:01 2019
+Timers Off: Thu Jun  6 17:13:11 2019
+
+Wall Time:        9.79 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+JK: (A|mn)                          :      1.500u      0.000s      0.043w      1 calls
+JK: (A|Q)^-1/2                      :      6.283u      1.167s      0.215w      1 calls
+JK: (Q|mn)                          :      0.100u      0.033s      0.003w      1 calls
+HF: Form core H                     :      1.000u      0.050s      0.027w      3 calls
+HF: Form S/X                        :      0.283u      0.033s      0.008w      3 calls
+HF: Guess                           :     41.167u      1.383s      1.073w      3 calls
+SAD Guess                           :     39.933u      1.350s      1.040w      3 calls
+HF: Form G                          :      2.317u      0.233s      0.065w     34 calls
+JK: D                               :      0.050u      0.000s      0.001w     34 calls
+JK: USO2AO                          :      0.050u      0.000s      0.001w     34 calls
+JK: JK                              :      2.000u      0.200s      0.054w     34 calls
+JK: J                               :      0.367u      0.000s      0.009w     34 calls
+JK: J1                              :      0.117u      0.000s      0.003w     34 calls
+JK: J2                              :      0.167u      0.000s      0.004w     34 calls
+JK: K                               :      1.067u      0.117s      0.029w     34 calls
+JK: K1                              :      0.733u      0.083s      0.022w     34 calls
+JK: K2                              :      0.250u      0.033s      0.006w     34 calls
+JK: AO2USO                          :      0.000u      0.000s      0.001w     34 calls
+HF: Form F                          :      0.150u      0.017s      0.005w     34 calls
+HF: Form D                          :      0.100u      0.017s      0.002w     34 calls
+HF: DIIS                            :      2.317u      0.067s      0.060w     31 calls
+DIISManager::add_entry              :      0.483u      0.000s      0.014w     31 calls
+DIISManager::extrapolate            :      0.700u      0.017s      0.017w     31 calls
+bMatrix setup                       :      0.267u      0.017s      0.008w     31 calls
+bMatrix pseudoinverse               :      0.133u      0.000s      0.002w     31 calls
+New vector                          :      0.217u      0.000s      0.005w     31 calls
+HF: Form C                          :      2.400u      0.017s      0.062w     31 calls
+DF Integrals                        :     33.483u      1.433s      0.875w      1 calls
+Omega Integrals                     :      0.550u      0.050s      0.015w      1 calls
+Amplitudes                          :     13.317u      0.583s      0.349w      1 calls
+Disp30-Amps                         :      2.783u      0.083s      0.072w      1 calls
+Elst10                              :      0.017u      0.000s      0.000w      1 calls
+Exch10 S^2                          :      0.000u      0.000s      0.000w      1 calls
+Exch10                              :      0.017u      0.017s      0.000w      1 calls
+Ind20,r                             :      1.133u      0.033s      0.030w      1 calls
+Exch-Ind20,r                        :      0.150u      0.017s      0.004w      1 calls
+Disp20                              :      0.050u      0.000s      0.001w      1 calls
+Exch-Disp20                         :      0.383u      0.017s      0.010w      1 calls
+Elst12                              :      0.017u      0.000s      0.000w      1 calls
+Exch11                              :      0.050u      0.000s      0.002w      1 calls
+Exch12                              :      3.833u      0.183s      0.101w      1 calls
+Ind22                               :      1.817u      0.083s      0.048w      1 calls
+Disp21                              :      0.100u      0.000s      0.002w      1 calls
+Disp22 (SDQ)                        :      1.183u      0.050s      0.031w      1 calls
+Disp22 (T)                          :      6.200u      0.083s      0.157w      1 calls
+Disp2(CCD)                          :     54.900u      2.883s      1.451w      1 calls
+CCD Prep                            :      6.317u      0.250s      0.165w      2 calls
+v^4 Prep                            :      3.550u      0.133s      0.092w      2 calls
+v^4 Term                            :     11.917u      0.483s      0.317w     42 calls
+CCD Amps                            :     12.750u      0.467s      0.332w     20 calls
+CCD Disp Prep                       :      0.400u      0.017s      0.010w      1 calls
+CCD Disp Amps                       :      1.300u      0.050s      0.034w      9 calls
+CCD Intra Prep                      :      0.567u      0.017s      0.015w      2 calls
+CCD Intra Amps                      :     13.700u      0.683s      0.362w     20 calls
+Disp22 (T) (CCD)                    :      5.267u      0.050s      0.133w      1 calls
+Elst13                              :      0.017u      0.000s      0.000w      1 calls
+Disp30                              :      0.050u      0.000s      0.001w      1 calls
+ExchDisp30                          :      0.367u      0.000s      0.010w      1 calls
+Ind30                               :      0.000u      0.000s      0.000w      1 calls
+Ind30,r                             :      0.517u      0.033s      0.014w      1 calls
+Exch-Ind30                          :      0.117u      0.000s      0.003w      1 calls
+IndDisp30                           :      0.050u      0.000s      0.001w      1 calls
+ExchIndDisp30                       :      0.533u      0.017s      0.014w      1 calls
+
+--------------------------------------------------------------------------------------
+JK: (A|mn)                          :      1.500u      0.000s      0.043w      1 calls
+JK: (A|Q)^-1/2                      :      6.283u      1.167s      0.215w      1 calls
+JK: (Q|mn)                          :      0.100u      0.033s      0.003w      1 calls
+HF: Form core H                     :      1.000u      0.050s      0.027w      3 calls
+HF: Form S/X                        :      0.283u      0.033s      0.008w      3 calls
+HF: Guess                           :     41.167u      1.383s      1.073w      3 calls
+| SAD Guess                         :     39.933u      1.350s      1.040w      3 calls
+HF: Form G                          :      2.317u      0.233s      0.065w     34 calls
+| JK: D                             :      0.050u      0.000s      0.001w     34 calls
+| JK: USO2AO                        :      0.050u      0.000s      0.001w     34 calls
+| JK: JK                            :      2.000u      0.200s      0.054w     34 calls
+| | JK: J                           :      0.367u      0.000s      0.009w     34 calls
+| | | JK: J1                        :      0.117u      0.000s      0.003w     34 calls
+| | | JK: J2                        :      0.167u      0.000s      0.004w     34 calls
+| | JK: K                           :      1.067u      0.117s      0.029w     34 calls
+| | | JK: K1                        :      0.733u      0.083s      0.022w     34 calls
+| | | JK: K2                        :      0.250u      0.033s      0.006w     34 calls
+| JK: AO2USO                        :      0.000u      0.000s      0.001w     34 calls
+HF: Form F                          :      0.150u      0.017s      0.005w     34 calls
+HF: Form D                          :      0.100u      0.017s      0.002w     34 calls
+HF: DIIS                            :      2.317u      0.067s      0.060w     31 calls
+| DIISManager::add_entry            :      0.483u      0.000s      0.014w     31 calls
+| DIISManager::extrapolate          :      0.700u      0.017s      0.017w     31 calls
+| | bMatrix setup                   :      0.267u      0.017s      0.008w     31 calls
+| | bMatrix pseudoinverse           :      0.133u      0.000s      0.002w     31 calls
+| | New vector                      :      0.217u      0.000s      0.005w     31 calls
+HF: Form C                          :      2.400u      0.017s      0.062w     31 calls
+DF Integrals                        :     33.483u      1.433s      0.875w      1 calls
+Omega Integrals                     :      0.550u      0.050s      0.015w      1 calls
+Amplitudes                          :     13.317u      0.583s      0.349w      1 calls
+| Disp30-Amps                       :      2.783u      0.083s      0.072w      1 calls
+Elst10                              :      0.017u      0.000s      0.000w      1 calls
+Exch10 S^2                          :      0.000u      0.000s      0.000w      1 calls
+Exch10                              :      0.017u      0.017s      0.000w      1 calls
+Ind20,r                             :      1.133u      0.033s      0.030w      1 calls
+Exch-Ind20,r                        :      0.150u      0.017s      0.004w      1 calls
+Disp20                              :      0.050u      0.000s      0.001w      1 calls
+Exch-Disp20                         :      0.383u      0.017s      0.010w      1 calls
+Elst12                              :      0.017u      0.000s      0.000w      1 calls
+Exch11                              :      0.050u      0.000s      0.002w      1 calls
+Exch12                              :      3.833u      0.183s      0.101w      1 calls
+Ind22                               :      1.817u      0.083s      0.048w      1 calls
+Disp21                              :      0.100u      0.000s      0.002w      1 calls
+Disp22 (SDQ)                        :      1.183u      0.050s      0.031w      1 calls
+Disp22 (T)                          :      6.200u      0.083s      0.157w      1 calls
+Disp2(CCD)                          :     54.900u      2.883s      1.451w      1 calls
+| CCD Prep                          :      6.317u      0.250s      0.165w      2 calls
+| | v^4 Prep                        :      3.550u      0.133s      0.092w      2 calls
+| | v^4 Term                        :      0.867u      0.033s      0.023w      2 calls
+| CCD Amps                          :     12.750u      0.467s      0.332w     20 calls
+| | v^4 Term                        :      5.750u      0.167s      0.151w     20 calls
+| CCD Disp Prep                     :      0.400u      0.017s      0.010w      1 calls
+| CCD Disp Amps                     :      1.300u      0.050s      0.034w      9 calls
+| CCD Intra Prep                    :      0.567u      0.017s      0.015w      2 calls
+| CCD Intra Amps                    :     13.700u      0.683s      0.362w     20 calls
+| | v^4 Term                        :      5.300u      0.283s      0.143w     20 calls
+Disp22 (T) (CCD)                    :      5.267u      0.050s      0.133w      1 calls
+Elst13                              :      0.017u      0.000s      0.000w      1 calls
+Disp30                              :      0.050u      0.000s      0.001w      1 calls
+ExchDisp30                          :      0.367u      0.000s      0.010w      1 calls
+Ind30                               :      0.000u      0.000s      0.000w      1 calls
+Ind30,r                             :      0.517u      0.033s      0.014w      1 calls
+Exch-Ind30                          :      0.117u      0.000s      0.003w      1 calls
+IndDisp30                           :      0.050u      0.000s      0.001w      1 calls
+ExchIndDisp30                       :      0.533u      0.017s      0.014w      1 calls
+
+**************************************************************************************
