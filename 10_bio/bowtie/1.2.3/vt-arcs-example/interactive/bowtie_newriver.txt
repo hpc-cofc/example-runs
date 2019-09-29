@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/opt/ohpc/pub/apps/bio/bowtie/1.2.3/bowtie", line 112, in <module>
+    main()
+  File "/opt/ohpc/pub/apps/bio/bowtie/1.2.3/bowtie", line 109, in main
+    os.execv(bin_spec, bowtie_args)
+OSError: [Errno 2] No such file or directory

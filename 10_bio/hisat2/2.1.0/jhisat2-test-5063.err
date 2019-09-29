@@ -1,0 +1,217 @@
+Settings:
+  Output files: "22_20-21M_snp.*.ht2"
+  Line rate: 7 (line is 128 bytes)
+  Lines per side: 1 (side is 128 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Local offset rate: 3 (one in 8)
+  Local fTable chars: 6
+  Local sequence length: 57344
+  Local sequence overlap between two consecutive indexes: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  /opt/ohpc/pub/apps/bio/hisat2/2.1.0/example/reference/22_20-21M.fa
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+  Time to read SNPs and splice sites: 00:00:00
+Generation 0 (907068 -> 907068 nodes, 0 ranks)
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+Generation 1 (910570 -> 910570 nodes, 0 ranks)
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+Generation 2 (917574 -> 917574 nodes, 0 ranks)
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+Generation 3 (931582 -> 931582 nodes, 0 ranks)
+BUILT FROM_INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+RESIZE NODES: 0
+SORT NODES: 0
+MERGE, UPDATE RANK: 0
+Generation 4 (959602 -> 940657 nodes, 803404 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 5 (949741 -> 946004 nodes, 883204 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 6 (953486 -> 950077 nodes, 916044 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 7 (955700 -> 952624 nodes, 932255 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 8 (956721 -> 954036 nodes, 944462 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 9 (956059 -> 954719 nodes, 952732 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 10 (955034 -> 954774 nodes, 954774 ranks)
+Generating edges... 
+NODE.TO -> GENOME POS: 0
+BUILD FROM_INDEX 0
+COUNTED NEW EDGES: 0
+MADE NEW EDGES: 0
+SORTED NEW EDGES: 0
+RE-SORTED NODES: 0
+PROCESS EDGES: 0
+REMOVE Y: 0
+SORT, Make index: 0
+TOTAL: 0
+Allocating ftab, absorbFtab
+Entering GFM loop
+Exited GFM loop
+fchr[A]: 0
+fchr[C]: 224989
+fchr[G]: 476822
+fchr[T]: 729153
+fchr[$]: 958358
+Exiting GFM::buildToDisk()
+Returning from initFromVector
+Wrote 4789374 bytes to primary GFM file: 22_20-21M_snp.1.ht2
+Wrote 238700 bytes to secondary GFM file: 22_20-21M_snp.2.ht2
+Re-opening _in1 and _in2 as input streams
+Returning from GFM constructor
+Returning from initFromVector
+Wrote 678405 bytes to primary GFM file: 22_20-21M_snp.5.ht2
+Wrote 238590 bytes to secondary GFM file: 22_20-21M_snp.6.ht2
+Re-opening _in5 and _in5 as input streams
+Returning from HierEbwt constructor
+Headers:
+    len: 900000
+    gbwtLen: 958359
+    nodes: 954773
+    sz: 450000
+    gbwtSz: 479180
+    lineRate: 7
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 0
+    eftabSz: 0
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 59674
+    offsSz: 238696
+    lineSz: 128
+    sideSz: 128
+    sideGbwtSz: 104
+    sideGbwtLen: 208
+    numSides: 4608
+    numLines: 4608
+    gbwtTotLen: 589824
+    gbwtTotSz: 589824
+    reverse: 0
+    linearFM: No
+Total time for call to driver() for forward index: 00:00:03
+1000 reads; of these:
+  1000 (100.00%) were unpaired; of these:
+    0 (0.00%) aligned 0 times
+    1000 (100.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+100.00% overall alignment rate
+1000 reads; of these:
+  1000 (100.00%) were paired; of these:
+    0 (0.00%) aligned concordantly 0 times
+    1000 (100.00%) aligned concordantly exactly 1 time
+    0 (0.00%) aligned concordantly >1 times
+    ----
+    0 pairs aligned concordantly 0 times; of these:
+      0 (0.00%) aligned discordantly 1 time
+    ----
+    0 pairs aligned 0 times concordantly or discordantly; of these:
+      0 mates make up the pairs; of these:
+        0 (0.00%) aligned 0 times
+        0 (0.00%) aligned exactly 1 time
+        0 (0.00%) aligned >1 times
+100.00% overall alignment rate
+/var/spool/slurmd/job05063/slurm_script: line 30: /opt/ohpc/pub/apps/bio/hisat2/2.1.0/hisat: No such file or directory
+Lmod has detected the following error: The following module(s) are unknown:
+"bio/bcftools"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "bio/bcftools"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+[warning] samtools mpileup option `u` is functional, but deprecated. Please switch to using bcftools mpileup in future.
+/var/spool/slurmd/job05063/slurm_script: line 40: bcftools: command not found
+[E::fai_build3_core] Failed to open FASTA index /opt/ohpc/pub/apps/bio/hisat2/2.1.0/example/reference/22_20-21M.fa.fai : Read-only file system
+/var/spool/slurmd/job05063/slurm_script: line 42: bcftools: command not found

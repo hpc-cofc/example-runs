@@ -1,0 +1,77 @@
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/samtools/1.9
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own   8) bio/bwa/0.7.17
+
+ 
+
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/samtools/1.9
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own   8) bio/bwa/0.7.17
+
+ 
+
+/home/bt-local/benchmarks/apps/bio/bwa/0.7.17/vt-arcs-example/bwa/run
+bwa_article.html
+dmel-all-chromosome-r5.37.fasta
+jBWA-test-5013.out
+read.fasta
+run.slurm
+Thu Sep 26 13:40:41 EDT 2019
+gzip: dmel-all-chromosome-r5.37.fasta.gz: No such file or directory
+[bwa_index] Pack FASTA... 1.03 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=337473074, availableWord=35745488
+[BWTIncConstructFromPacked] 10 iterations done. 58964098 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 108932194 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 153339938 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 192805618 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 227878786 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 259047874 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 286747026 characters processed.
+[BWTIncConstructFromPacked] 80 iterations done. 311362066 characters processed.
+[BWTIncConstructFromPacked] 90 iterations done. 333235922 characters processed.
+[bwt_gen] Finished constructing BWT in 93 iterations.
+[bwa_index] 70.54 seconds elapse.
+[bwa_index] Update BWT... 0.75 sec
+[bwa_index] Pack forward-only FASTA... 0.64 sec
+[bwa_index] Construct SA from BWT and Occ... 34.45 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index dmel-all-chromosome-r5.37.fasta
+[main] Real time: 107.977 sec; CPU: 107.420 sec
+[bwa_aln] 17bp reads: max_diff = 2
+[bwa_aln] 38bp reads: max_diff = 3
+[bwa_aln] 64bp reads: max_diff = 4
+[bwa_aln] 93bp reads: max_diff = 5
+[bwa_aln] 124bp reads: max_diff = 6
+[bwa_aln] 157bp reads: max_diff = 7
+[bwa_aln] 190bp reads: max_diff = 8
+[bwa_aln] 225bp reads: max_diff = 9
+[bwa_aln_core] calculate SA coordinate... 0.00 sec
+[bwa_aln_core] write to the disk... 0.00 sec
+[bwa_aln_core] 1 sequences have been processed.
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa aln -I -t 8 dmel-all-chromosome-r5.37.fasta read.fasta
+[main] Real time: 0.059 sec; CPU: 0.057 sec
+[bwa_aln_core] convert to sequence coordinate... 0.08 sec
+[bwa_aln_core] refine gapped alignments... 0.02 sec
+[bwa_aln_core] print alignments... 0.00 sec
+[bwa_aln_core] 1 sequences have been processed.
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa samse dmel-all-chromosome-r5.37.fasta out.sai read.fasta
+[main] Real time: 0.110 sec; CPU: 0.107 sec
+BWA_NEWRIVER: Normal end of execution.
+bwa_article.html
+dmel-all-chromosome-r5.37.fasta
+dmel-all-chromosome-r5.37.fasta.amb
+dmel-all-chromosome-r5.37.fasta.ann
+dmel-all-chromosome-r5.37.fasta.bwt
+dmel-all-chromosome-r5.37.fasta.pac
+dmel-all-chromosome-r5.37.fasta.sa
+jBWA-test-5013.out
+out.sai
+out.sam
+read.fasta
+run.slurm
+Thu Sep 26 13:42:29 EDT 2019

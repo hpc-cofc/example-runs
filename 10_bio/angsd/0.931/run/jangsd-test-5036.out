@@ -1,0 +1,24 @@
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/vcftools/0.1.16
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own   8) bio/bedtools/2.29.0
+
+ 
+
+
+Currently Loaded Modules:
+  1) autotools    4) openmpi3/3.1.3   7) bio/vcftools/0.1.16
+  2) prun/1.2     5) ohpc             8) bio/bedtools/2.29.0
+  3) gnu8/8.3.0   6) use.own          9) bio/angsd/0.931
+
+ 
+
+/home/bt-local/benchmarks/apps/bio/angsd/0.931/clean
+assotest
+hg19.fa.fai
+jangsd-test-5036.err
+jangsd-test-5036.out
+run.slurm
+Fri Sep 27 16:01:00 EDT 2019
+Done reading beagle
+Fri Sep 27 16:01:00 EDT 2019

@@ -1,0 +1,174 @@
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/vcftools/0.1.16
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own
+
+ 
+
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/vcftools/0.1.16
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own
+
+ 
+
+/home/bt-local/benchmarks/apps/bio/vcftools/0.1.16/run
+input_data.vcf
+jvcftools-test-5030.out
+run.slurm
+Fri Sep 27 12:58:44 EDT 2019
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf input_data.vcf
+
+Warning: Expected at least 2 parts in INFO entry: ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+After filtering, kept 3 out of 3 Individuals
+After filtering, kept 12 out of a possible 12 Sites
+Run Time = 0.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf input_data.vcf
+	--chr 1
+	--to-bp 2000000
+	--from-bp 1000000
+
+Warning: Expected at least 2 parts in INFO entry: ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+After filtering, kept 3 out of 3 Individuals
+After filtering, kept 0 out of a possible 12 Sites
+No data left for analysis!
+Run Time = 0.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf input_data.vcf
+	--chr 1
+	--to-bp 2000000
+	--recode-INFO-all
+	--recode
+	--from-bp 1000000
+
+Warning: Expected at least 2 parts in INFO entry: ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+After filtering, kept 3 out of 3 Individuals
+Outputting VCF file...
+After filtering, kept 0 out of a possible 12 Sites
+No data left for analysis!
+Run Time = 0.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf input_data.vcf
+	--chr 1
+	--to-bp 2000000
+	--out subset
+	--recode
+	--from-bp 1000000
+
+Warning: Expected at least 2 parts in INFO entry: ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+After filtering, kept 3 out of 3 Individuals
+Outputting VCF file...
+After filtering, kept 0 out of a possible 12 Sites
+No data left for analysis!
+Run Time = 0.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf input_data.vcf
+	--recode-INFO-all
+	--out converted_output
+	--recode-bcf
+
+Warning: Expected at least 2 parts in INFO entry: ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+After filtering, kept 3 out of 3 Individuals
+Outputting BCF file...
+After filtering, kept 12 out of a possible 12 Sites
+Run Time = 0.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf input_data.vcf
+	--freq
+	--out output
+
+Warning: Expected at least 2 parts in INFO entry: ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+After filtering, kept 3 out of 3 Individuals
+Outputting Frequency Statistics...
+After filtering, kept 12 out of a possible 12 Sites
+Run Time = 0.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf input_data.vcf
+	--depth
+	--stdout
+
+Warning: Expected at least 2 parts in INFO entry: ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+After filtering, kept 3 out of 3 Individuals
+Outputting Mean Depth by Individual
+After filtering, kept 12 out of a possible 12 Sites
+Run Time = 0.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf input_data.vcf
+	--max-missing 1
+	--out site_depth_summary
+	--site-depth
+
+Warning: Expected at least 2 parts in INFO entry: ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+After filtering, kept 3 out of 3 Individuals
+Outputting Depth for Each Site
+After filtering, kept 11 out of a possible 12 Sites
+Run Time = 0.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf input_data.vcf
+	--ld-window-bp 50000
+	--max-alleles 2
+	--min-alleles 2
+	--hap-r2
+	--out ld_window_50000
+	--phased
+
+Warning: Expected at least 2 parts in INFO entry: ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+After filtering, kept 3 out of 3 Individuals
+Outputting Pairwise LD (phased bi-allelic only)
+Error: Insufficient sites remained after filtering
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf input_data.vcf
+	--chr 1
+	--out output_in_plink
+	--plink
+
+Warning: Expected at least 2 parts in INFO entry: ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+After filtering, kept 3 out of 3 Individuals
+Writing PLINK PED and MAP files ... 
+Done.
+After filtering, kept 0 out of a possible 12 Sites
+No data left for analysis!
+Run Time = 0.00 seconds
+Fri Sep 27 12:58:44 EDT 2019

@@ -1,0 +1,158 @@
+<html>
+
+  <head>
+    <title>
+      bwa
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+  <article id="post-124" class="post-124 page type-page status-publish hentry">
+
+  <header class="entry-header">
+    <h1 class="entry-title">
+      bwa
+    </h1>
+  </header>
+
+  <!-- .entry-header -->
+  <div class="entry-content">
+
+  <h2>
+    Introduction:
+  </h2>
+
+  <p>
+    <b>BWA</b> is a program for fast and accurate alignment of short reads 
+    using the Burrows-Wheeler alignment method.
+  </p>
+    
+  <p>
+    BWA maps low-divergent sequences against a large reference genome, 
+    such as the human genome.  It consists of three algorithms: 
+    <ul>
+      <li>
+        BWA-backtrack;
+      </li>
+      <li>
+        BWA-SW;
+      </li>
+      <li>
+        BWA-MEM;
+      </li>
+    </ul>
+    The first algorithm is designed for Illumina sequence reads up to 
+    100 base pairs, the other two for longer sequences ranged from
+    70bp to 1Mbp.  BWA-MEM and BWA-SW share similar features, such 
+    as long-read support and split alignment, but BWA-MEM, which is 
+    the latest, is generally recommended for high-quality queries 
+    as it is faster and more accurate.  BWA-MEM also has better 
+    performance than BWA-backtrack for 70-100bp Illumina reads.
+  </p>
+
+  <h2>
+    Web Site:
+  </h2>
+
+  <p>
+    The BWA home page at sourceforge.net:<br>
+    <a href = "http://bio-bwa.sourceforge.net/">
+               http://bio-bwa.sourceforge.net/ </a>
+  </p>
+
+  <h2>
+    Reference:
+  </h2>
+
+  <p>
+    <ul>
+      <li>
+        The BWA manual reference pages at sourceforge.net:<br>
+        <a href = "http://bio-bwa.sourceforge.net/bwa.shtml">
+                   http://bio-bwa.sourceforge.net/bwa.shtml </a>
+      </li>
+      <li>
+        H Li, R Durbin,<br>
+        Fast and accurate short read alignment with Burrows-Wheeler 
+        Transform,<br>
+        Bioinformatics,<br>
+        Volume 25, pages 1754-1760, 2009.
+      </li>
+      <li>
+        H Li, R Durbin,<br>
+        Fast and accurate long-read alignment with Burrows-Wheeler 
+        Transform,<br>
+        Bioinformatics, Epub,<br>
+        2010.
+      </li>
+    </ul>
+  </p>
+
+  <h2>
+    Usage:
+  </h2>    
+
+  <p>
+    On any ARC cluster, check the installation details
+    by typing "module spider bwa".
+  </p> 
+
+  <p>
+    BWA requires that the appropriate modules be loaded before it can 
+    be used.  One version of the appropriate commands for use on NewRiver is:
+    <pre>
+module purge
+module load gcc/5.2.0
+module load bwa/0.7.12
+    </pre>
+  </p>
+
+  <h2>
+    Examples:
+  </h2>
+
+  <p>
+    The following batch file demonstrates the use of BWA:
+<pre>
+#! /bin/bash
+#
+#PBS -l walltime=0:05:00
+#PBS -l nodes=1:ppn=1
+#PBS -W group_list=newriver
+#PBS -q open_q
+#PBS -j oe
+#
+cd $PBS_O_WORKDIR
+#
+module purge
+module load gcc/5.2.0
+module load bwa/0.7.12
+#
+#  Index the reference genome.
+#
+bwa index dmel-all-chromosome-r5.37.fasta
+#
+#  Align the reads against the reference.
+#
+bwa aln -I -t 8 dmel-all-chromosome-r5.37.fasta read.fasta > out.sai
+#
+#  Convert the alignment into a SAM file.
+#
+bwa samse dmel-all-chromosome-r5.37.fasta out.sai read.fasta > out.sam
+</pre>
+  </p>
+
+  <p>
+    The database file dmel-all-chromosome-r5.37.fasta is too large to be
+    distributed through our example system.
+    A PARTIAL set of files to carry out a similar process are available in
+    <a href = "https://secure.hosting.vt.edu/www.arc.vt.edu/wp-content/uploads/2017/07/bwa_example.tar.gz">a tar file</a> 
+  </p>
+
+  </div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+  </body>
+
+</html>

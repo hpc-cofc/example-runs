@@ -1,0 +1,28 @@
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/hisat2/2.1.0
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own
+
+ 
+
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/hisat2/2.1.0
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own
+
+ 
+
+/home/bt-local/benchmarks/apps/bio/hisat2/2.1.0
+binary
+eg2.sam
+jhisat2-test-5063.err
+jhisat2-test-5063.out
+run.slurm
+Sat Sep 28 20:22:24 EDT 2019
+step 1
+\n step 2
+\n step 3
+\n step 4
+\n step 5
+\n step 6
+Sat Sep 28 20:22:31 EDT 2019
