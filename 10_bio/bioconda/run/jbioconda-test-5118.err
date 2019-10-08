@@ -1,0 +1,356 @@
+	-> angsd version: 0.931 (htslib: 1.9) build(Aug 28 2019 05:50:59)
+[shared.cpp.changeChr():281] refid:0
+Charnge chr:0
+	-> Done reading data waiting for calculations to finish
+	-> Done waiting for threads
+	-> Output filenames:
+		->"tmp.arg"
+		->"tmp.mafs.gz"
+		->"tmp.lrt0.gz"
+	-> Thu Oct  3 16:58:25 2019
+	-> Arguments and parameters for all analysis are located in .arg file
+	-> Total number of sites analyzed: 1
+	-> Number of sites retained after filtering: 1 
+	[ALL done] cpu-time used =  0.00 sec
+	[ALL done] walltime used =  0.00 sec
+6000 reads; of these:
+  6000 (100.00%) were unpaired; of these:
+    287 (4.78%) aligned 0 times
+    5713 (95.22%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+95.22% overall alignment rate
+10000 reads; of these:
+  10000 (100.00%) were paired; of these:
+    834 (8.34%) aligned concordantly 0 times
+    9166 (91.66%) aligned concordantly exactly 1 time
+    0 (0.00%) aligned concordantly >1 times
+    ----
+    834 pairs aligned concordantly 0 times; of these:
+      42 (5.04%) aligned discordantly 1 time
+    ----
+    792 pairs aligned 0 times concordantly or discordantly; of these:
+      1584 mates make up the pairs; of these:
+        1005 (63.45%) aligned 0 times
+        579 (36.55%) aligned exactly 1 time
+        0 (0.00%) aligned >1 times
+94.97% overall alignment rate
+Building a SMALL index
+Building a LARGE index
+/home/bt-local/.conda/envs/jupyter_3.7/bin/bowtie2-inspect:24: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/home/bt-local/.conda/envs/jupyter_3.7/bin/bowtie2-inspect:24: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+[bwa_index] Pack FASTA... 1.12 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=337473074, availableWord=35745488
+[BWTIncConstructFromPacked] 10 iterations done. 58964098 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 108932194 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 153339938 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 192805618 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 227878786 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 259047874 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 286747026 characters processed.
+[BWTIncConstructFromPacked] 80 iterations done. 311362066 characters processed.
+[BWTIncConstructFromPacked] 90 iterations done. 333235922 characters processed.
+[bwt_gen] Finished constructing BWT in 93 iterations.
+[bwa_index] 73.47 seconds elapse.
+[bwa_index] Update BWT... 0.87 sec
+[bwa_index] Pack forward-only FASTA... 0.68 sec
+[bwa_index] Construct SA from BWT and Occ... 35.19 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index dmel-all-chromosome-r5.37.fasta
+[main] Real time: 111.906 sec; CPU: 111.346 sec
+[bwa_aln] 17bp reads: max_diff = 2
+[bwa_aln] 38bp reads: max_diff = 3
+[bwa_aln] 64bp reads: max_diff = 4
+[bwa_aln] 93bp reads: max_diff = 5
+[bwa_aln] 124bp reads: max_diff = 6
+[bwa_aln] 157bp reads: max_diff = 7
+[bwa_aln] 190bp reads: max_diff = 8
+[bwa_aln] 225bp reads: max_diff = 9
+[bwa_aln_core] calculate SA coordinate... 0.01 sec
+[bwa_aln_core] write to the disk... 0.00 sec
+[bwa_aln_core] 1 sequences have been processed.
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa aln -I -t 8 dmel-all-chromosome-r5.37.fasta read.fasta
+[main] Real time: 0.061 sec; CPU: 0.061 sec
+[bwa_aln_core] convert to sequence coordinate... 0.09 sec
+[bwa_aln_core] refine gapped alignments... 0.02 sec
+[bwa_aln_core] print alignments... 0.00 sec
+[bwa_aln_core] 1 sequences have been processed.
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa samse dmel-all-chromosome-r5.37.fasta out.sai read.fasta
+[main] Real time: 0.122 sec; CPU: 0.119 sec
+which: no hisat in (/home/bt-local/.conda/envs/jupyter_3.7/bin:/opt/ohpc/pub/apps/anaconda/anaconda3-2019.03/condabin:/opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.3/bin:/opt/ohpc/pub/compiler/gcc/8.3.0/bin:/opt/ohpc/pub/utils/prun/1.2:/opt/ohpc/pub/utils/autotools/bin:/opt/ohpc/pub/local/bin:/opt/ohpc/pub/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/bt-local/.composer/vendor/bin:/opt/ibutils/bin:/opt/dell/srvadmin/bin:/opt/thinlinc/bin:/home/bt-local/github-berhane/ResearchTools/scripts:/home/bt-local/github-berhane/ResearchTools/utilities:/home/bt-local/.local/bin:/home/bt-local/bin)
+Settings:
+  Output files: "22_20-21M_snp.*.ht2"
+  Line rate: 7 (line is 128 bytes)
+  Lines per side: 1 (side is 128 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Local offset rate: 3 (one in 8)
+  Local fTable chars: 6
+  Local sequence length: 57344
+  Local sequence overlap between two consecutive indexes: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  /opt/ohpc/pub/apps/bio/hisat2/2.1.0/example/reference/22_20-21M.fa
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+  Time to read SNPs and splice sites: 00:00:00
+Generation 0 (907068 -> 907068 nodes, 0 ranks)
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+Generation 1 (910570 -> 910570 nodes, 0 ranks)
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+Generation 2 (917574 -> 917574 nodes, 0 ranks)
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+Generation 3 (931582 -> 931582 nodes, 0 ranks)
+BUILT FROM_INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+RESIZE NODES: 0
+SORT NODES: 0
+MERGE, UPDATE RANK: 0
+Generation 4 (959602 -> 940657 nodes, 803404 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 5 (949741 -> 946004 nodes, 883204 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 1
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 1
+Generation 6 (953486 -> 950077 nodes, 916044 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 7 (955700 -> 952624 nodes, 932255 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 8 (956721 -> 954036 nodes, 944462 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 9 (956059 -> 954719 nodes, 952732 ranks)
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 0
+BUILD INDEX: 0
+COUNTED NEW NODES: 0
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 0
+MERGEUPDATERANK: 0
+TOTAL TIME: 0
+Generation 10 (955034 -> 954774 nodes, 954774 ranks)
+Generating edges... 
+NODE.TO -> GENOME POS: 0
+BUILD FROM_INDEX 0
+COUNTED NEW EDGES: 0
+MADE NEW EDGES: 0
+SORTED NEW EDGES: 0
+RE-SORTED NODES: 0
+PROCESS EDGES: 0
+REMOVE Y: 0
+SORT, Make index: 0
+TOTAL: 0
+Allocating ftab, absorbFtab
+Entering GFM loop
+Exited GFM loop
+fchr[A]: 0
+fchr[C]: 224989
+fchr[G]: 476822
+fchr[T]: 729153
+fchr[$]: 958358
+Exiting GFM::buildToDisk()
+Returning from initFromVector
+Wrote 4789374 bytes to primary GFM file: 22_20-21M_snp.1.ht2
+Wrote 238700 bytes to secondary GFM file: 22_20-21M_snp.2.ht2
+Re-opening _in1 and _in2 as input streams
+Returning from GFM constructor
+Returning from initFromVector
+Wrote 678405 bytes to primary GFM file: 22_20-21M_snp.5.ht2
+Wrote 238590 bytes to secondary GFM file: 22_20-21M_snp.6.ht2
+Re-opening _in5 and _in5 as input streams
+Returning from HierEbwt constructor
+Headers:
+    len: 900000
+    gbwtLen: 958359
+    nodes: 954773
+    sz: 450000
+    gbwtSz: 479180
+    lineRate: 7
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 0
+    eftabSz: 0
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 59674
+    offsSz: 238696
+    lineSz: 128
+    sideSz: 128
+    sideGbwtSz: 104
+    sideGbwtLen: 208
+    numSides: 4608
+    numLines: 4608
+    gbwtTotLen: 589824
+    gbwtTotSz: 589824
+    reverse: 0
+    linearFM: No
+Total time for call to driver() for forward index: 00:00:03
+1000 reads; of these:
+  1000 (100.00%) were unpaired; of these:
+    0 (0.00%) aligned 0 times
+    1000 (100.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+100.00% overall alignment rate
+1000 reads; of these:
+  1000 (100.00%) were paired; of these:
+    0 (0.00%) aligned concordantly 0 times
+    1000 (100.00%) aligned concordantly exactly 1 time
+    0 (0.00%) aligned concordantly >1 times
+    ----
+    0 pairs aligned concordantly 0 times; of these:
+      0 (0.00%) aligned discordantly 1 time
+    ----
+    0 pairs aligned 0 times concordantly or discordantly; of these:
+      0 mates make up the pairs; of these:
+        0 (0.00%) aligned 0 times
+        0 (0.00%) aligned exactly 1 time
+        0 (0.00%) aligned >1 times
+100.00% overall alignment rate
+/var/spool/slurmd/job05118/slurm_script: line 100: hisat: command not found
+[warning] samtools mpileup option `u` is functional, but deprecated. Please switch to using bcftools mpileup in future.
+[E::fai_build3_core] Failed to open FASTA index /opt/ohpc/pub/apps/bio/hisat2/2.1.0/example/reference/22_20-21M.fa.fai : Read-only file system
+view: invalid option -- 'b'
+
+About:   VCF/BCF conversion, view, subset and filter VCF/BCF files.
+Usage:   bcftools view [options] <in.vcf.gz> [region1 [...]]
+
+Output options:
+    -G,   --drop-genotypes              drop individual genotype information (after subsetting if -s option set)
+    -h/H, --header-only/--no-header     print the header only/suppress the header in VCF output
+    -l,   --compression-level [0-9]     compression level: 0 uncompressed, 1 best speed, 9 best compression [-1]
+          --no-version                  do not append version and command line to the header
+    -o,   --output-file <file>          output file name [stdout]
+    -O,   --output-type <b|u|z|v>       b: compressed BCF, u: uncompressed BCF, z: compressed VCF, v: uncompressed VCF [v]
+    -r, --regions <region>              restrict to comma-separated list of regions
+    -R, --regions-file <file>           restrict to regions listed in a file
+    -t, --targets [^]<region>           similar to -r but streams rather than index-jumps. Exclude regions with "^" prefix
+    -T, --targets-file [^]<file>        similar to -R but streams rather than index-jumps. Exclude regions with "^" prefix
+        --threads <int>                 number of extra (de)compression threads [0]
+
+Subset options:
+    -a, --trim-alt-alleles        trim alternate alleles not seen in the subset
+    -I, --no-update               do not (re)calculate INFO fields for the subset (currently INFO/AC and INFO/AN)
+    -s, --samples [^]<list>       comma separated list of samples to include (or exclude with "^" prefix)
+    -S, --samples-file [^]<file>  file of samples to include (or exclude with "^" prefix)
+        --force-samples           only warn about unknown subset samples
+
+Filter options:
+    -c/C, --min-ac/--max-ac <int>[:<type>]      minimum/maximum count for non-reference (nref), 1st alternate (alt1), least frequent
+                                                   (minor), most frequent (major) or sum of all but most frequent (nonmajor) alleles [nref]
+    -f,   --apply-filters <list>                require at least one of the listed FILTER strings (e.g. "PASS,.")
+    -g,   --genotype [^]<hom|het|miss>          require one or more hom/het/missing genotype or, if prefixed with "^", exclude sites with hom/het/missing genotypes
+    -i/e, --include/--exclude <expr>            select/exclude sites for which the expression is true (see man page for details)
+    -k/n, --known/--novel                       select known/novel sites only (ID is not/is '.')
+    -m/M, --min-alleles/--max-alleles <int>     minimum/maximum number of alleles listed in REF and ALT (e.g. -m2 -M2 for biallelic sites)
+    -p/P, --phased/--exclude-phased             select/exclude sites where all samples are phased
+    -q/Q, --min-af/--max-af <float>[:<type>]    minimum/maximum frequency for non-reference (nref), 1st alternate (alt1), least frequent
+                                                   (minor), most frequent (major) or sum of all but most frequent (nonmajor) alleles [nref]
+    -u/U, --uncalled/--exclude-uncalled         select/exclude sites without a called genotype
+    -v/V, --types/--exclude-types <list>        select/exclude comma-separated list of variant types: snps,indels,mnps,ref,bnd,other [null]
+    -x/X, --private/--exclude-private           select/exclude sites where the non-reference alleles are exclusive (private) to the subset samples
+
+Failed to open eg2.raw.bcf: unknown file type
+[M::mm_idx_gen::0.003*0.99] collected minimizers
+[M::mm_idx_gen::0.004*1.44] sorted minimizers
+[M::main::0.004*1.43] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.005*1.42] mid_occ = 2
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.005*1.40] distinct minimizers: 3111 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.326
+[M::worker_pipeline::0.011*1.12] mapped 1 sequences
+[M::main] Version: 2.17-r941
+[M::main] CMD: minimap2 -a /opt/ohpc/pub/apps/bio/minimap2/2.17/test/MT-human.fa /opt/ohpc/pub/apps/bio/minimap2/2.17/test/MT-orang.fa
+[M::main] Real time: 0.012 sec; CPU: 0.013 sec; Peak RSS: 0.004 GB
+[M::mm_idx_gen::0.003*1.15] collected minimizers
+[M::mm_idx_gen::0.004*1.58] sorted minimizers
+[M::main::0.005*1.44] loaded/built the index for 1 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.005*1.43] distinct minimizers: 3111 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.326
+[M::main] Version: 2.17-r941
+[M::main] CMD: minimap2 -x map-ont -d MT-human-ont.mmi /opt/ohpc/pub/apps/bio/minimap2/2.17/test/MT-human.fa
+[M::main] Real time: 0.007 sec; CPU: 0.007 sec; Peak RSS: 0.003 GB
+[M::main::0.003*1.24] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.003*1.23] mid_occ = 2
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.003*1.22] distinct minimizers: 3111 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.326
+[M::worker_pipeline::0.009*1.10] mapped 1 sequences
+[M::main] Version: 2.17-r941
+[M::main] CMD: minimap2 -a MT-human-ont.mmi /opt/ohpc/pub/apps/bio/minimap2/2.17/test/MT-orang.fa
+[M::main] Real time: 0.010 sec; CPU: 0.011 sec; Peak RSS: 0.008 GB
+sambamba-view: Reference with name chr1 does not exist
+/var/spool/slurmd/job05118/slurm_script: line 137: 282932 Segmentation fault      sambamba view --header --format=json ex1_header.bam

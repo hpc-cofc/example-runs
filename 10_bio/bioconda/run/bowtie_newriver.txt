@@ -1,0 +1,3 @@
+Could not locate a Bowtie index corresponding to basename "e_coli"
+Overall time: 00:00:00
+Command: bowtie -t e_coli e_coli_1000.fq e_coli.map 
