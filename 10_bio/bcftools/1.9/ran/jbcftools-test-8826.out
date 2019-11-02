@@ -1,0 +1,2660 @@
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/htslib/1.9
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own   8) bio/bcftools/1.9
+
+ 
+
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/htslib/1.9
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own   8) bio/bcftools/1.9
+
+ 
+
+/home/bt-local/benchmarks/apps/bio/bcftools/1.9/ran
+jbcftools-test-8826.err
+jbcftools-test-8826.out
+run.slurm
+sim_variants.bcf
+sim_variants.vcf
+Sat Nov  2 09:36:22 EDT 2019
+test_usage:
+	bcftools
+test_tabix:
+	tabix /tmp/dOofRwwXvk/merge.a.vcf.gz 2:3199812-3199812
+.. ok
+
+test_tabix:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/merge.a.bcf 2:3199812-3199812
+.. ok
+
+test_tabix:
+	tabix /tmp/dOofRwwXvk/merge.a.vcf.gz 1:3000151-3000151
+.. ok
+
+test_tabix:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/merge.a.bcf 1:3000151-3000151
+.. ok
+
+test_index:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/large_chrom_csi_limit.vcf.gz chr20:1-2147483647
+.. ok
+
+test_index:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/large_chrom_csi_limit.bcf chr20:1-2147483647
+.. ok
+
+test_index:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/large_chrom_csi_limit.bcf chr20:1-2147483647
+.. ok
+
+test_index:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/large_chrom_csi_limit.vcf.gz chr20:1-2147483647
+.. ok
+
+test_index:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/large_chrom_csi_limit.bcf chr20:1-2147483647
+.. ok
+
+test_index:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/large_chrom_csi_limit.vcf.gz chr20
+.. ok
+
+test_index:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/large_chrom_csi_limit.bcf chr20
+.. ok
+
+test_index:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/large_chrom_csi_limit.bcf chr20
+.. ok
+
+test_index:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/large_chrom_csi_limit.vcf.gz chr20
+.. ok
+
+test_index:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -H /tmp/dOofRwwXvk/large_chrom_csi_limit.bcf chr20
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -s /tmp/dOofRwwXvk/idx.vcf.gz
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -s /tmp/dOofRwwXvk/idx.vcf.gz
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -s /tmp/dOofRwwXvk/idx.bcf
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -n /tmp/dOofRwwXvk/idx.vcf.gz
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -n /tmp/dOofRwwXvk/idx.vcf.gz
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -n /tmp/dOofRwwXvk/idx.bcf
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -s /tmp/dOofRwwXvk/empty.vcf.gz
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -s /tmp/dOofRwwXvk/empty.vcf.gz
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -s /tmp/dOofRwwXvk/empty.bcf
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -n /tmp/dOofRwwXvk/empty.vcf.gz
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -n /tmp/dOofRwwXvk/empty.vcf.gz
+.. ok
+
+test_vcf_idxstats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools index -n /tmp/dOofRwwXvk/empty.bcf
+.. ok
+
+test_vcf_check:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools stats -s - /tmp/dOofRwwXvk/check.vcf.gz | grep -v '^# The command' | grep -v '^# This' | grep -v '^ID	'
+.. ok
+
+test_vcf_check:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/check.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools stats -s - | grep -v '^# The command' | grep -v '^# This' | grep -v '^ID	'
+.. ok
+
+test_vcf_check_merge:
+	/opt/ohpc/pub/src/bio/bcftools/misc/plot-vcfstats -m /tmp/dOofRwwXvk/check.1.chk /tmp/dOofRwwXvk/check.2.chk /tmp/dOofRwwXvk/check.3.chk /tmp/dOofRwwXvk/check.4.chk | grep -v 'plot-vcfstats' | grep -v '^# The command' | grep -v '^# This' | grep -v '^ID	'
+.. ok
+
+test_vcf_stats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools stats -s -  /tmp/dOofRwwXvk/stats.a.vcf.gz /tmp/dOofRwwXvk/stats.b.vcf.gz | grep -v '^#' | grep -v '^ID	'
+.. ok
+
+test_vcf_stats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools stats -s B  /tmp/dOofRwwXvk/stats.a.vcf.gz /tmp/dOofRwwXvk/stats.b.vcf.gz | grep -v '^#' | grep -v '^ID	'
+.. ok
+
+test_vcf_stats:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools stats -s -  /tmp/dOofRwwXvk/stats.counts.vcf.gz | grep -v '^#' | grep -v '^ID	'
+.. ok
+
+test_vcf_isec:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -n =2 /tmp/dOofRwwXvk/isec.a.vcf.gz /tmp/dOofRwwXvk/isec.b.vcf.gz
+.. ok
+
+test_vcf_isec:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -Ob -n =2 /tmp/dOofRwwXvk/isec.a.vcf.gz /tmp/dOofRwwXvk/isec.b.vcf.gz
+.. ok
+
+test_vcf_isec:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -n =2 -i"STRLEN(REF)==2" /tmp/dOofRwwXvk/isec.a.vcf.gz /tmp/dOofRwwXvk/isec.b.vcf.gz
+.. ok
+
+test_vcf_isec:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -Ob -n =2 -i"STRLEN(REF)==2" /tmp/dOofRwwXvk/isec.a.vcf.gz /tmp/dOofRwwXvk/isec.b.vcf.gz
+.. ok
+
+test_vcf_isec:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -n =2 -c both /tmp/dOofRwwXvk/isec.a.vcf.gz /tmp/dOofRwwXvk/isec.b.vcf.gz
+.. ok
+
+test_vcf_isec:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -Ob -n =2 -c both /tmp/dOofRwwXvk/isec.a.vcf.gz /tmp/dOofRwwXvk/isec.b.vcf.gz
+.. ok
+
+test_vcf_isec:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -n =2 -c any /tmp/dOofRwwXvk/isec.a.vcf.gz /tmp/dOofRwwXvk/isec.b.vcf.gz
+.. ok
+
+test_vcf_isec:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -Ob -n =2 -c any /tmp/dOofRwwXvk/isec.a.vcf.gz /tmp/dOofRwwXvk/isec.b.vcf.gz
+.. ok
+
+test_vcf_isec:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -C -c any /tmp/dOofRwwXvk/isec.a.vcf.gz /tmp/dOofRwwXvk/isec.b.vcf.gz
+.. ok
+
+test_vcf_isec:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -Ob -C -c any /tmp/dOofRwwXvk/isec.a.vcf.gz /tmp/dOofRwwXvk/isec.b.vcf.gz
+.. ok
+
+test_vcf_isec2:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec --no-version   -T /tmp/dOofRwwXvk/isec.tab.gz /tmp/dOofRwwXvk/isec.a.vcf.gz
+.. ok
+
+test_vcf_isec2:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools isec -Ob  -T /tmp/dOofRwwXvk/isec.tab.gz /tmp/dOofRwwXvk/isec.a.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --force-samples /tmp/dOofRwwXvk/merge.a.vcf.gz /tmp/dOofRwwXvk/merge.b.vcf.gz /tmp/dOofRwwXvk/merge.c.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --force-samples /tmp/dOofRwwXvk/merge.a.vcf.gz /tmp/dOofRwwXvk/merge.b.vcf.gz /tmp/dOofRwwXvk/merge.c.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --force-samples -Fx /tmp/dOofRwwXvk/merge.a.vcf.gz /tmp/dOofRwwXvk/merge.b.vcf.gz /tmp/dOofRwwXvk/merge.c.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --force-samples -Fx /tmp/dOofRwwXvk/merge.a.vcf.gz /tmp/dOofRwwXvk/merge.b.vcf.gz /tmp/dOofRwwXvk/merge.c.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --force-samples -0 /tmp/dOofRwwXvk/merge.a.vcf.gz /tmp/dOofRwwXvk/merge.b.vcf.gz /tmp/dOofRwwXvk/merge.c.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --force-samples -0 /tmp/dOofRwwXvk/merge.a.vcf.gz /tmp/dOofRwwXvk/merge.b.vcf.gz /tmp/dOofRwwXvk/merge.c.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --force-samples -m none /tmp/dOofRwwXvk/merge.2.a.vcf.gz /tmp/dOofRwwXvk/merge.2.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --force-samples -m none /tmp/dOofRwwXvk/merge.2.a.vcf.gz /tmp/dOofRwwXvk/merge.2.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --force-samples -m both /tmp/dOofRwwXvk/merge.2.a.vcf.gz /tmp/dOofRwwXvk/merge.2.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --force-samples -m both /tmp/dOofRwwXvk/merge.2.a.vcf.gz /tmp/dOofRwwXvk/merge.2.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --force-samples -m all /tmp/dOofRwwXvk/merge.2.a.vcf.gz /tmp/dOofRwwXvk/merge.2.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --force-samples -m all /tmp/dOofRwwXvk/merge.2.a.vcf.gz /tmp/dOofRwwXvk/merge.2.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --force-samples -i TR:sum,TA:sum,TG:sum /tmp/dOofRwwXvk/merge.3.a.vcf.gz /tmp/dOofRwwXvk/merge.3.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --force-samples -i TR:sum,TA:sum,TG:sum /tmp/dOofRwwXvk/merge.3.a.vcf.gz /tmp/dOofRwwXvk/merge.3.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --force-samples -m id /tmp/dOofRwwXvk/merge.4.a.vcf.gz /tmp/dOofRwwXvk/merge.4.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --force-samples -m id /tmp/dOofRwwXvk/merge.4.a.vcf.gz /tmp/dOofRwwXvk/merge.4.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --gvcf - /tmp/dOofRwwXvk/gvcf.merge.1.vcf.gz /tmp/dOofRwwXvk/gvcf.merge.2.vcf.gz /tmp/dOofRwwXvk/gvcf.merge.3.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --gvcf - /tmp/dOofRwwXvk/gvcf.merge.1.vcf.gz /tmp/dOofRwwXvk/gvcf.merge.2.vcf.gz /tmp/dOofRwwXvk/gvcf.merge.3.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --gvcf - /tmp/dOofRwwXvk/merge.gvcf.2.a.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.2.b.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.2.c.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --gvcf - /tmp/dOofRwwXvk/merge.gvcf.2.a.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.2.b.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.2.c.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --gvcf - -i SRC:join /tmp/dOofRwwXvk/merge.gvcf.3.a.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.3.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --gvcf - -i SRC:join /tmp/dOofRwwXvk/merge.gvcf.3.a.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.3.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --gvcf - /tmp/dOofRwwXvk/merge.gvcf.4.a.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.4.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --gvcf - /tmp/dOofRwwXvk/merge.gvcf.4.a.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.4.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version  /tmp/dOofRwwXvk/merge.5.a.vcf.gz /tmp/dOofRwwXvk/merge.5.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob  /tmp/dOofRwwXvk/merge.5.a.vcf.gz /tmp/dOofRwwXvk/merge.5.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version  /tmp/dOofRwwXvk/merge.6.a.vcf.gz /tmp/dOofRwwXvk/merge.6.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob  /tmp/dOofRwwXvk/merge.6.a.vcf.gz /tmp/dOofRwwXvk/merge.6.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --gvcf - /tmp/dOofRwwXvk/merge.gvcf.7.a.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.7.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --gvcf - /tmp/dOofRwwXvk/merge.gvcf.7.a.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.7.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --gvcf - /tmp/dOofRwwXvk/merge.gvcf.8.a.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.8.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --gvcf - /tmp/dOofRwwXvk/merge.gvcf.8.a.vcf.gz /tmp/dOofRwwXvk/merge.gvcf.8.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge --no-version --force-samples /tmp/dOofRwwXvk/merge.7.a.vcf.gz /tmp/dOofRwwXvk/merge.7.b.vcf.gz
+.. ok
+
+test_vcf_merge:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools merge -Ob --force-samples /tmp/dOofRwwXvk/merge.7.a.vcf.gz /tmp/dOofRwwXvk/merge.7.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%CHROM\t%POS\t%REF\t%ALT\t%DP4\t%AN[\t%GT\t%TGT]\n' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%CHROM\t%POS\t%REF\t%ALT\t%DP4\t%AN[\t%GT\t%TGT]\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%RSX\t%VKX\n' /tmp/dOofRwwXvk/query.variantkey.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.variantkey.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%RSX\t%VKX\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XRI\n' -i'XRI[*]>1111' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XRI\n' -i'XRI[*]>1111'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XRF\n' -i'XRF[*]=2e6' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XRF\n' -i'XRF[*]=2e6'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XGS\n' -i'XGS[5]="PQR"' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XGS\n' -i'XGS[5]="PQR"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XGS\n' -i'XGS[*]="GHI"' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XGS\n' -i'XGS[*]="GHI"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XGS\n' -i'XGS[2]~"H"' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XGS\n' -i'XGS[2]~"H"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XGS\n' -i'XGS[3]!~"H" && XGS!="."' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XGS\n' -i'XGS[3]!~"H" && XGS!="."'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XGS\n' -i'XGS[*]~"H"' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XGS\n' -i'XGS[*]~"H"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS %REF %ALT\n' -i'REF~"C" && ALT[*]~"CT"' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS %REF %ALT\n' -i'REF~"C" && ALT[*]~"CT"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS %REF %ALT\n' -i'N_ALT=2' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS %REF %ALT\n' -i'N_ALT=2'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS %AN\n' -i'AN!=2*N_SAMPLES' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS %AN\n' -i'AN!=2*N_SAMPLES'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[ %GL]\n' -i'min(abs(GL[*:0]))=10' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[ %GL]\n' -i'min(abs(GL[*:0]))=10'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS %CIGAR\n' -i'strlen(CIGAR[*])=4' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS %CIGAR\n' -i'strlen(CIGAR[*])=4'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[ %GT]\n' -i'AC[0]=3' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[ %GT]\n' -i'AC[0]=3'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[ %GT]\n' -i'AF[0]=3/4' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[ %GT]\n' -i'AF[0]=3/4'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[ %GT]\n' -i'MAC[0]=1' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[ %GT]\n' -i'MAC[0]=1'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[ %GT]\n' -i'MAF[0]=1/4' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[ %GT]\n' -i'MAF[0]=1/4'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'I8=%I8 I16=%I16 I32=%I32 IF=%IF IA8=%IA8 IA16=%IA16 IA32=%IA32 IAF=%IAF IA8=%IA8{1} IA16=%IA16{1} IA32=%IA32{1} IAF=%IAF{1} [ %F8:%F16:%F32:%FF]\n' /tmp/dOofRwwXvk/view.vectors.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.vectors.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'I8=%I8 I16=%I16 I32=%I32 IF=%IF IA8=%IA8 IA16=%IA16 IA32=%IA32 IAF=%IAF IA8=%IA8{1} IA16=%IA16{1} IA32=%IA32{1} IAF=%IAF{1} [ %F8:%F16:%F32:%FF]\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %GT\n]' -i'GT ="1"' /tmp/dOofRwwXvk/query.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %GT\n]' -i'GT ="1"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %GT\n]' -i'GT!="1"' /tmp/dOofRwwXvk/query.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %GT\n]' -i'GT!="1"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %GT\n]' -e'GT ="1"' /tmp/dOofRwwXvk/query.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %GT\n]' -e'GT ="1"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %GT\n]' -e'GT!="1"' /tmp/dOofRwwXvk/query.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %GT\n]' -e'GT!="1"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XX_A %XX.A %XX.A0 %xx.a0\n' /tmp/dOofRwwXvk/query.2.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%XX_A %XX.A %XX.A0 %xx.a0\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -i'IINT="."'  -f'%POS %IINT\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -i'IINT="."'  -f'%POS %IINT\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -i'IINT!="."' -f'%POS %IINT\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -i'IINT!="."' -f'%POS %IINT\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -e'IINT!="."' -f'%POS %IINT\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -e'IINT!="."' -f'%POS %IINT\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -e'IINT="."'  -f'%POS %IINT\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -e'IINT="."'  -f'%POS %IINT\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -i'IFLT="."'  -f'%POS %IFLT\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -i'IFLT="."'  -f'%POS %IFLT\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -i'IFLT!="."' -f'%POS %IFLT\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -i'IFLT!="."' -f'%POS %IFLT\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -e'IFLT!="."' -f'%POS %IFLT\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -e'IFLT!="."' -f'%POS %IFLT\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -e'IFLT="."'  -f'%POS %IFLT\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -e'IFLT="."'  -f'%POS %IFLT\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -i'ISTR="."'  -f'%POS %ISTR\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -i'ISTR="."'  -f'%POS %ISTR\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -i'ISTR!="."' -f'%POS %ISTR\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -i'ISTR!="."' -f'%POS %ISTR\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -e'ISTR="."'  -f'%POS %ISTR\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -e'ISTR="."'  -f'%POS %ISTR\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -e'ISTR!="."' -f'%POS %ISTR\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -e'ISTR!="."' -f'%POS %ISTR\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -i'FILTER="q11"' -f'%POS %ISTR\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -i'FILTER="q11"' -f'%POS %ISTR\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%LINE' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%LINE'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\n' -i'type="snp"' /tmp/dOofRwwXvk/query.filter-type.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter-type.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\n' -i'type="snp"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\n' -i'type~"snp"' /tmp/dOofRwwXvk/query.filter-type.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter-type.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\n' -i'type~"snp"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\n' -i'type!="snp"' /tmp/dOofRwwXvk/query.filter-type.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter-type.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\n' -i'type!="snp"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\n' -i'type!~"snp"' /tmp/dOofRwwXvk/query.filter-type.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter-type.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\n' -i'type!~"snp"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\n' -i'INFO/TYPE="xxx"' /tmp/dOofRwwXvk/query.filter-type.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter-type.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\n' -i'INFO/TYPE="xxx"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%A_AF\t%B_AF\t%C_AF\n' -i'A_AF>=0.0001 || B_AF >= 0.0001 || C_AF >= 0.0001' /tmp/dOofRwwXvk/filter-missing-floats.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/filter-missing-floats.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%A_AF\t%B_AF\t%C_AF\n' -i'A_AF>=0.0001 || B_AF >= 0.0001 || C_AF >= 0.0001'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%A_AF\t%B_AF\t%C_AF\n' -e'A_AF>=0.0001 || B_AF >= 0.0001 || C_AF >= 0.0001' /tmp/dOofRwwXvk/filter-missing-floats.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/filter-missing-floats.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%A_AF\t%B_AF\t%C_AF\n' -e'A_AF>=0.0001 || B_AF >= 0.0001 || C_AF >= 0.0001'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -i'FMT/FINT!="."' -f'[\t%FINT]\n' /tmp/dOofRwwXvk/missing.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/missing.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -i'FMT/FINT!="."' -f'[\t%FINT]\n'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%GT]\n' -i'GT~"0/[1-9]" || GT~"[1-9]/0"' /tmp/dOofRwwXvk/query.filter.2.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%GT]\n' -i'GT~"0/[1-9]" || GT~"[1-9]/0"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGS\n]\n' -i'FGS[*:1-2,4]="EE"' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGS\n]\n' -i'FGS[*:1-2,4]="EE"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGS\n]\n' -i'"EE"=FGS[*:1-2,4]' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGS\n]\n' -i'"EE"=FGS[*:1-2,4]'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGI\n]\n' -i'FGI[*:1-2,5]=6' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGI\n]\n' -i'FGI[*:1-2,5]=6'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGI\n]\n' -i'6=FGI[*:1-2,5]' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGI\n]\n' -i'6=FGI[*:1-2,5]'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGF\n]\n' -i'FGF[*:1-3,4]=5e-5' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGF\n]\n' -i'FGF[*:1-3,4]=5e-5'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGS\n]\n' -i'FGS[*:4]!="EE"' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGS\n]\n' -i'FGS[*:4]!="EE"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGS\n]\n' -i'FGS[*:4]="."' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGS\n]\n' -i'FGS[*:4]="."'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGS\n]\n' -i'FGS[*:4]!="."' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGS\n]\n' -i'FGS[*:4]!="."'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGI\n]\n' -i'FGI[*:1-2,5]="."' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGI\n]\n' -i'FGI[*:1-2,5]="."'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGI\n]\n' -i'FGI[*:1-2,5]!="."' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %FGI\n]\n' -i'FGI[*:1-2,5]!="."'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP=1 | FMT/DP=2' /tmp/dOofRwwXvk/filter.5.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/filter.5.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP=1 | FMT/DP=2'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP=1 | FMT/DP="."' /tmp/dOofRwwXvk/filter.5.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/filter.5.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP=1 | FMT/DP="."'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP=19' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP=19'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP=19 |  FMT/DP="."' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP=19 |  FMT/DP="."'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP=19 || FMT/DP="."' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP=19 || FMT/DP="."'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP[0]=19' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP[0]=19'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP[0]!=19' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP\n]\n' -i'FMT/DP[0]!=19'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP %GQ\n]\n' -i'FMT/DP=19 &  FMT/GQ=589' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP %GQ\n]\n' -i'FMT/DP=19 &  FMT/GQ=589'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP %GQ\n]\n' -i'FMT/DP=19 && FMT/GQ=1' /tmp/dOofRwwXvk/view.filter.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.filter.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %DP %GQ\n]\n' -i'FMT/DP=19 && FMT/GQ=1'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[\t%GT\n]\n' -i'GT~"1" && GT~"2"' /tmp/dOofRwwXvk/query.filter.3.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.3.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[\t%GT\n]\n' -i'GT~"1" && GT~"2"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[\t%GT\n]\n' -i'GT~"1" &  GT~"2"' /tmp/dOofRwwXvk/query.filter.3.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.3.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[\t%GT\n]\n' -i'GT~"1" &  GT~"2"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[\t%GT]\n' -i'COUNT(GT="het")=1' /tmp/dOofRwwXvk/query.filter.3.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.3.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS[\t%GT]\n' -i'COUNT(GT="het")=1'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS  %SAMPLE  %AD\n]\n' -i'AD[:0]+AD[:1] > 12' /tmp/dOofRwwXvk/filter.5.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/filter.5.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS  %SAMPLE  %AD\n]\n' -i'AD[:0]+AD[:1] > 12'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT[\t%GT]\n' -e'TYPE!="snp" || ALT="*"' /tmp/dOofRwwXvk/query.filter.4.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.4.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT[\t%GT]\n' -e'TYPE!="snp" || ALT="*"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%ID\n' -i 'ID=@/opt/ohpc/pub/src/bio/bcftools/test/query.56.out' /tmp/dOofRwwXvk/view.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/view.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%ID\n' -i 'ID=@/opt/ohpc/pub/src/bio/bcftools/test/query.56.out'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS\t%SAMPLE\t%GT\t%AD\n]' -i'GT="het" & binom(FMT/AD)>0.01' /tmp/dOofRwwXvk/query.filter.5.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.5.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS\t%SAMPLE\t%GT\t%AD\n]' -i'GT="het" & binom(FMT/AD)>0.01'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS\t%SAMPLE\t%GT\t%AD\n]' -i'GT="het" & binom(FMT/AD[:0],FMT/AD[:1])>0.01' /tmp/dOofRwwXvk/query.filter.5.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.5.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS\t%SAMPLE\t%GT\t%AD\n]' -i'GT="het" & binom(FMT/AD[:0],FMT/AD[:1])>0.01'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%AD\n' -i'binom(INFO/AD[0],INFO/AD[1])>0.01' /tmp/dOofRwwXvk/query.filter.5.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.5.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%AD\n' -i'binom(INFO/AD[0],INFO/AD[1])>0.01'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS\n' -i'CHROM="4"' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS\n' -i'CHROM="4"'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%TAG1\n' -i'(TAG1>=-129 && TAG1<=-120) || (TAG1>=-32769 && TAG1<=-32760)' /tmp/dOofRwwXvk/query.negative.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.negative.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%TAG1\n' -i'(TAG1>=-129 && TAG1<=-120) || (TAG1>=-32769 && TAG1<=-32760)'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%TAGV1\n' -i'(TAGV1>=-129 && TAGV1<=-120) || (TAGV1>=-32769 && TAGV1<=-32760)' /tmp/dOofRwwXvk/query.negative.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.negative.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%TAGV1\n' -i'(TAGV1>=-129 && TAGV1<=-120) || (TAGV1>=-32769 && TAGV1<=-32760)'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%TAG2\n' -i'(TAG2>=-129 && TAG2<=-120) || (TAG2>=-32769 && TAG2<=-32760)' /tmp/dOofRwwXvk/query.negative.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.negative.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%TAG2\n' -i'(TAG2>=-129 && TAG2<=-120) || (TAG2>=-32769 && TAG2<=-32760)'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%TAGV2\n' -i'(TAGV2>=-129 && TAGV2<=-120) || (TAGV2>=-32769 && TAGV2<=-32760)' /tmp/dOofRwwXvk/query.negative.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.negative.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%TAGV2\n' -i'(TAGV2>=-129 && TAGV2<=-120) || (TAGV2>=-32769 && TAGV2<=-32760)'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS\t%SAMPLE\t%GQ\n]' -i'N_PASS(GQ<20)==1' /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS\t%SAMPLE\t%GQ\n]' -i'N_PASS(GQ<20)==1'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM\t%POS\t%INFO\t%FORMAT\n' -s D,C /tmp/dOofRwwXvk/query.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM\t%POS\t%INFO\t%FORMAT\n' -s D,C
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %GT %AD %PBINOM(AD)\n]' -i'phred(binom(FMT/AD))>=0' /tmp/dOofRwwXvk/query.pbinom.1.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.pbinom.1.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS %SAMPLE %GT %AD %PBINOM(AD)\n]' -i'phred(binom(FMT/AD))>=0'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\n' -i'POS==16777217 || POS==33554432 || POS=118673904' /tmp/dOofRwwXvk/query.filter.6.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.6.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\n' -i'POS==16777217 || POS==33554432 || POS=118673904'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'sum(II)==6' /tmp/dOofRwwXvk/query.filter.7.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.7.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'sum(II)==6'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'sum(FORMAT/FI)==7' /tmp/dOofRwwXvk/query.filter.7.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.7.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'sum(FORMAT/FI)==7'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'avg(II)==2' /tmp/dOofRwwXvk/query.filter.7.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.7.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'avg(II)==2'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'avg(FORMAT/FI)==1.75' /tmp/dOofRwwXvk/query.filter.7.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.7.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'avg(FORMAT/FI)==1.75'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'mean(II)==2' /tmp/dOofRwwXvk/query.filter.7.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.7.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'mean(II)==2'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'mean(FORMAT/FI)==1.75' /tmp/dOofRwwXvk/query.filter.7.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.7.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'mean(FORMAT/FI)==1.75'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'median(II)==2' /tmp/dOofRwwXvk/query.filter.7.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.7.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'median(II)==2'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'median(FORMAT/FI)==1.5' /tmp/dOofRwwXvk/query.filter.7.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.7.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%II[\t%FI]\n' -i'median(FORMAT/FI)==1.5'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\t%ILEN\n' -i'%ILEN==1' /tmp/dOofRwwXvk/query.filter.8.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.8.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\t%ILEN\n' -i'%ILEN==1'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\t%ILEN\n' -i'ILEN==1' /tmp/dOofRwwXvk/query.filter.8.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.8.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS\t%REF\t%ALT\t%ILEN\n' -i'ILEN==1'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS  %SAMPLE  %AD\n]' -i'FMT/AD[:0] < FMT/AD[:1]' /tmp/dOofRwwXvk/query.filter.9.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.9.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS  %SAMPLE  %AD\n]' -i'FMT/AD[:0] < FMT/AD[:1]'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS  %SAMPLE  %AD\n]' -i'FMT/AD[:0] > FMT/AD[:1]' /tmp/dOofRwwXvk/query.filter.9.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.9.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'[%POS  %SAMPLE  %AD\n]' -i'FMT/AD[:0] > FMT/AD[:1]'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS  %NUM_TAG\n' -i'COUNT(INFO/NUM_TAG)=2' /tmp/dOofRwwXvk/query.filter.10.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.10.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS  %NUM_TAG\n' -i'COUNT(INFO/NUM_TAG)=2'
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS  %STR_TAG\n' -i'COUNT(INFO/STR_TAG)=2' /tmp/dOofRwwXvk/query.filter.10.vcf.gz
+.. ok
+
+test_vcf_query:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/query.filter.10.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%POS  %STR_TAG\n' -i'COUNT(INFO/STR_TAG)=2'
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -cx -f /opt/ohpc/pub/src/bio/bcftools/test/norm.fa /tmp/dOofRwwXvk/norm.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -cx -f /opt/ohpc/pub/src/bio/bcftools/test/norm.fa /tmp/dOofRwwXvk/norm.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -m- /tmp/dOofRwwXvk/norm.split.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -m- /tmp/dOofRwwXvk/norm.split.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -m- /tmp/dOofRwwXvk/norm.split.2.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -m- /tmp/dOofRwwXvk/norm.split.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -m- -f /opt/ohpc/pub/src/bio/bcftools/test/norm.fa /tmp/dOofRwwXvk/norm.split.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -m- -f /opt/ohpc/pub/src/bio/bcftools/test/norm.fa /tmp/dOofRwwXvk/norm.split.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -m+ /tmp/dOofRwwXvk/norm.merge.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -m+ /tmp/dOofRwwXvk/norm.merge.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -m+ /tmp/dOofRwwXvk/norm.merge.2.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -m+ /tmp/dOofRwwXvk/norm.merge.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -m+ /tmp/dOofRwwXvk/norm.merge.3.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -m+ /tmp/dOofRwwXvk/norm.merge.3.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -m+ -s /tmp/dOofRwwXvk/norm.merge.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -m+ -s /tmp/dOofRwwXvk/norm.merge.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -Nc s -f /opt/ohpc/pub/src/bio/bcftools/test/norm.fa /tmp/dOofRwwXvk/norm.setref.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -Nc s -f /opt/ohpc/pub/src/bio/bcftools/test/norm.fa /tmp/dOofRwwXvk/norm.setref.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -f /opt/ohpc/pub/src/bio/bcftools/test/norm.fa /tmp/dOofRwwXvk/norm.telomere.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -f /opt/ohpc/pub/src/bio/bcftools/test/norm.fa /tmp/dOofRwwXvk/norm.telomere.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d snps /tmp/dOofRwwXvk/norm.rmdup.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d snps /tmp/dOofRwwXvk/norm.rmdup.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d indels /tmp/dOofRwwXvk/norm.rmdup.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d indels /tmp/dOofRwwXvk/norm.rmdup.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d both /tmp/dOofRwwXvk/norm.rmdup.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d both /tmp/dOofRwwXvk/norm.rmdup.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d all /tmp/dOofRwwXvk/norm.rmdup.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d all /tmp/dOofRwwXvk/norm.rmdup.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d none /tmp/dOofRwwXvk/norm.rmdup.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d none /tmp/dOofRwwXvk/norm.rmdup.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d exact /tmp/dOofRwwXvk/norm.rmdup.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d exact /tmp/dOofRwwXvk/norm.rmdup.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d none /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d none /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d exact /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d exact /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d indels /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d indels /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d any /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d any /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d both /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d both /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm --no-version  -d snps /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz
+.. ok
+
+test_vcf_norm:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools norm -Ob  -d snps /tmp/dOofRwwXvk/norm.rmdup.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -aUc1 -C1 -s NA00002 -v snps /tmp/dOofRwwXvk/view.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -aUc1 -C1 -s NA00002 -v snps /tmp/dOofRwwXvk/view.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -f PASS -Xks NA00003 /tmp/dOofRwwXvk/view.vcf.gz -r20,Y
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -f PASS -Xks NA00003 /tmp/dOofRwwXvk/view.vcf.gz -r20,Y | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -xs NA00003 /tmp/dOofRwwXvk/view.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -xs NA00003 /tmp/dOofRwwXvk/view.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -i 'QUAL==999 && (FS<20 || FS>=41.02) && ICF>-0.1 && HWE*2>1.2' /tmp/dOofRwwXvk/view.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -i 'QUAL==999 && (FS<20 || FS>=41.02) && ICF>-0.1 && HWE*2>1.2' /tmp/dOofRwwXvk/view.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -p /tmp/dOofRwwXvk/view.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -p /tmp/dOofRwwXvk/view.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -P /tmp/dOofRwwXvk/view.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -P /tmp/dOofRwwXvk/view.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -hm2 -M2 -q0.3 -Q0.7 /tmp/dOofRwwXvk/view.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -hm2 -M2 -q0.3 -Q0.7 /tmp/dOofRwwXvk/view.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -Hu /tmp/dOofRwwXvk/view.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -GVsnps /tmp/dOofRwwXvk/view.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -GVsnps /tmp/dOofRwwXvk/view.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -ne 'INDEL=1 || PV4[0]<0.006' /tmp/dOofRwwXvk/view.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -ne 'INDEL=1 || PV4[0]<0.006' /tmp/dOofRwwXvk/view.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -s ^NA00003 /tmp/dOofRwwXvk/view.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -s ^NA00003 /tmp/dOofRwwXvk/view.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version  /tmp/dOofRwwXvk/view.omitgenotypes.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob  /tmp/dOofRwwXvk/view.omitgenotypes.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -G /tmp/dOofRwwXvk/view.omitgenotypes.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -G /tmp/dOofRwwXvk/view.omitgenotypes.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -HG /tmp/dOofRwwXvk/view.omitgenotypes.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -a /tmp/dOofRwwXvk/many.alleles.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -a /tmp/dOofRwwXvk/many.alleles.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -asA /tmp/dOofRwwXvk/view.vectors.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -asA /tmp/dOofRwwXvk/view.vectors.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -asB /tmp/dOofRwwXvk/view.vectors.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -asB /tmp/dOofRwwXvk/view.vectors.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -asA /tmp/dOofRwwXvk/view.vectors.2.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -asA /tmp/dOofRwwXvk/view.vectors.2.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -i'FMT/FGS[*:0]="AAAAAA"' /tmp/dOofRwwXvk/view.filter.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -i'FMT/FGS[*:2]="C"' /tmp/dOofRwwXvk/view.filter.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -i'FMT/FGS[*:4]="EE"' /tmp/dOofRwwXvk/view.filter.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -i'FMT/FRS[*:1]="BB"' /tmp/dOofRwwXvk/view.filter.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -i'TXT0="text"' /tmp/dOofRwwXvk/view.filter.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -T /opt/ohpc/pub/src/bio/bcftools/test/view.chrs.tab /tmp/dOofRwwXvk/view.chrs.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -T /opt/ohpc/pub/src/bio/bcftools/test/view.chrs.tab /tmp/dOofRwwXvk/view.chrs.vcf.gz  | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -i 'POS>=3062917' /tmp/dOofRwwXvk/filter.2.vcf.gz 1:3062917-3157410
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob -i 'POS>=3062917' /tmp/dOofRwwXvk/filter.2.vcf.gz 1:3062917-3157410 | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -S. -e'TXT0="text"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -S. -e'TXT0="text"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -S. -e'FMT/FRS[*:1]="BB"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -S. -e'FMT/FRS[*:1]="BB"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -S. -e'FMT/FGS[*:0]="AAAAAA"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -S. -e'FMT/FGS[*:0]="AAAAAA"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -S. -e'FMT/FGS[*:1]="BBB"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -S. -e'FMT/FGS[*:1]="BBB"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -S. -e'FMT/FGS[*:4]="EE"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -S. -e'FMT/FGS[*:4]="EE"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -S. -e'FMT/STR="XX"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -S. -e'FMT/STR="XX"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -S. -e'FMT/FILTER="aaa"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.2.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -S. -e'FMT/FILTER="aaa"' /opt/ohpc/pub/src/bio/bcftools/test/view.filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -C5:nonmajor /tmp/dOofRwwXvk/view.minmaxac.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -c6:nonmajor /tmp/dOofRwwXvk/view.minmaxac.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -q0.3:major /tmp/dOofRwwXvk/view.minmaxac.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -i 'Gene.refGene=="RAD21L1"' /tmp/dOofRwwXvk/view.filter.annovar.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -i 'Gene.refGene~"NOD"' /tmp/dOofRwwXvk/view.filter.annovar.vcf.gz 
+.. ok
+
+test_vcf_view:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version -H -i 'LJB2_MutationTaster=="0.291000"' /tmp/dOofRwwXvk/view.filter.annovar.vcf.gz 
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mg0 /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mg0 /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.3.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.3.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.4.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.4.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.5.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.5.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.X.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.X.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ped /opt/ohpc/pub/src/bio/bcftools/test/mpileup.X.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ped /opt/ohpc/pub/src/bio/bcftools/test/mpileup.X.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.2.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.X.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.2.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.X.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv /opt/ohpc/pub/src/bio/bcftools/test/mpileup.NA19213.NA19129.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv /opt/ohpc/pub/src/bio/bcftools/test/mpileup.NA19213.NA19129.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv -G - /opt/ohpc/pub/src/bio/bcftools/test/mpileup.NA19213.NA19129.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv -G - /opt/ohpc/pub/src/bio/bcftools/test/mpileup.NA19213.NA19129.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv /opt/ohpc/pub/src/bio/bcftools/test/mpileup.hwe.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv /opt/ohpc/pub/src/bio/bcftools/test/mpileup.hwe.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv -G - /opt/ohpc/pub/src/bio/bcftools/test/mpileup.hwe.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv -G - /opt/ohpc/pub/src/bio/bcftools/test/mpileup.hwe.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mv -G /opt/ohpc/pub/src/bio/bcftools/test/mpileup.hwe.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.hwe.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mv -G /opt/ohpc/pub/src/bio/bcftools/test/mpileup.hwe.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.hwe.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.tab.gz  /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.tab.gz  /opt/ohpc/pub/src/bio/bcftools/test/mpileup.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.2.tab.gz  /opt/ohpc/pub/src/bio/bcftools/test/mpileup.2.vcf
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.2.tab.gz  /opt/ohpc/pub/src/bio/bcftools/test/mpileup.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.3.tab.gz -i /opt/ohpc/pub/src/bio/bcftools/test/mpileup.3.vcf
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.3.tab.gz -i /opt/ohpc/pub/src/bio/bcftools/test/mpileup.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.4.tab.gz -i /opt/ohpc/pub/src/bio/bcftools/test/mpileup.3.vcf
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.4.tab.gz -i /opt/ohpc/pub/src/bio/bcftools/test/mpileup.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.5.tab.gz -i /opt/ohpc/pub/src/bio/bcftools/test/mpileup.3.vcf
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.5.tab.gz -i /opt/ohpc/pub/src/bio/bcftools/test/mpileup.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.6.tab.gz -i /opt/ohpc/pub/src/bio/bcftools/test/mpileup.4.vcf
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.6.tab.gz -i /opt/ohpc/pub/src/bio/bcftools/test/mpileup.4.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.7.tab.gz -i /opt/ohpc/pub/src/bio/bcftools/test/mpileup.5.vcf
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.7.tab.gz -i /opt/ohpc/pub/src/bio/bcftools/test/mpileup.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.cals.1.tab.gz  /opt/ohpc/pub/src/bio/bcftools/test/mpileup.cals.1.vcf
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.cals.1.tab.gz  /opt/ohpc/pub/src/bio/bcftools/test/mpileup.cals.1.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.cals.2.tab.gz  /opt/ohpc/pub/src/bio/bcftools/test/mpileup.cals.2.vcf
+.. ok
+
+test_vcf_call_cAls:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -mA -C alleles -T /tmp/dOofRwwXvk/mpileup.cals.2.tab.gz  /opt/ohpc/pub/src/bio/bcftools/test/mpileup.cals.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -cv /opt/ohpc/pub/src/bio/bcftools/test/mpileup.c.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -cv /opt/ohpc/pub/src/bio/bcftools/test/mpileup.c.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -cv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.c.X.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -cv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.c.X.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -cv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ped /opt/ohpc/pub/src/bio/bcftools/test/mpileup.c.X.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -cv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ped /opt/ohpc/pub/src/bio/bcftools/test/mpileup.c.X.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call --no-version -cv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.2.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.c.X.vcf
+.. ok
+
+test_vcf_call:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools call -Ob -cv --ploidy-file /opt/ohpc/pub/src/bio/bcftools/test/mpileup.ploidy -S /opt/ohpc/pub/src/bio/bcftools/test/mpileup.2.samples /opt/ohpc/pub/src/bio/bcftools/test/mpileup.c.X.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -mx -g2 -G2 /opt/ohpc/pub/src/bio/bcftools/test/filter.1.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -mx -g2 -G2 /opt/ohpc/pub/src/bio/bcftools/test/filter.1.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'QUAL==59.2 || (INDEL=0 & (FMT/GQ=25 | FMT/DP=10))' -sModified -S. /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'QUAL==59.2 || (INDEL=0 & (FMT/GQ=25 | FMT/DP=10))' -sModified -S. /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'INFO/DP=19' /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'INFO/DP=19' /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'INFO/DP=19' -s XX /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'INFO/DP=19' -s XX /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'INFO/DP=19' -s XX -m+ /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'INFO/DP=19' -s XX -m+ /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'INFO/DP=19' -s XX -mx /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'INFO/DP=19' -s XX -mx /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'INFO/DP=19' -s XX -m+x /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'INFO/DP=19' -s XX -m+x /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'FMT/GT="0/2"' /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'FMT/GT="0/2"' /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'FMT/GT="0/2"' -s XX /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'FMT/GT="0/2"' -s XX /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'FMT/GT="0/2"' -s XX -m+ /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'FMT/GT="0/2"' -s XX -m+ /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'FMT/GT="0/2"' -s XX -mx /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'FMT/GT="0/2"' -s XX -mx /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -e'FMT/GT="0/2"' -s XX -m+x /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -e'FMT/GT="0/2"' -s XX -m+x /opt/ohpc/pub/src/bio/bcftools/test/filter.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%FILTER\t%DP[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'FMT/GT="0/0" && AC[*]=2' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%AC[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'FMT/GT="0/0" && AC[*]=2' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%AC[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'AC[*]=2 && FMT/GT="0/0"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%AC[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'AC[*]=2 && FMT/GT="0/0"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%AC[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'ALT="."' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%AC[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'ALT="."' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%AC[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -S . -i 'FORMAT/TEST3<25' /opt/ohpc/pub/src/bio/bcftools/test/filter.4.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -S . -i 'FORMAT/TEST3<25' /opt/ohpc/pub/src/bio/bcftools/test/filter.4.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -S . -i 'FORMAT/TEST4<25' /opt/ohpc/pub/src/bio/bcftools/test/filter.4.vcf | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -S . -i 'FORMAT/TEST4<25' /opt/ohpc/pub/src/bio/bcftools/test/filter.4.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'GT="A"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'GT="A"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'GT="RR"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'GT="RR"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'GT="RA"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'GT="RA"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'GT="AR"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'GT="AR"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'GT="AA"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'GT="AA"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'GT="aA"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'GT="aA"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'GT="Aa"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'GT="Aa"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'GT="HOM"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'GT="HOM"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'GT="HET"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'GT="HET"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'GT="HAP"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'GT="HAP"' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%GT]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'AD[:1]=11' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%AD]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'AD[:1]=11' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%AD]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'AD[1:]=11' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%AD]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'AD[1:]=11' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%AD]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'FR[0:1]=11' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%FR]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'FR[0:1]=11' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%FR]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'AD[*]="."' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%AD]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'AD[*]="."' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%AD]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'AD[0:0]=="."' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%AD]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'AD[0:0]=="."' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%AD]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'AD[0:0]!="."' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%AD]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'AD[0:0]!="."' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS[\t%AD]\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'QUAL=="."' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%QUAL\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'QUAL=="."' /opt/ohpc/pub/src/bio/bcftools/test/filter.5.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\t%QUAL\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'N_PASS(DP>32)=1' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '[%POS\t%SAMPLE\t%DP\n]'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'N_PASS(DP>32)=1' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '[%POS\t%SAMPLE\t%DP\n]'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'F_PASS(DP>32)=0.5' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '[%POS\t%SAMPLE\t%DP\n]'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'F_PASS(DP>32)=0.5' /opt/ohpc/pub/src/bio/bcftools/test/filter.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '[%POS\t%SAMPLE\t%DP\n]'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'F_MISSING>=1/5' /opt/ohpc/pub/src/bio/bcftools/test/filter.6.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'F_MISSING>=1/5' /opt/ohpc/pub/src/bio/bcftools/test/filter.6.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'F_MISSING>=0.2' /opt/ohpc/pub/src/bio/bcftools/test/filter.6.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'F_MISSING>=0.2' /opt/ohpc/pub/src/bio/bcftools/test/filter.6.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'F_PASS(GT=="mis")>=1/5' /opt/ohpc/pub/src/bio/bcftools/test/filter.6.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'F_PASS(GT=="mis")>=1/5' /opt/ohpc/pub/src/bio/bcftools/test/filter.6.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -i'F_PASS(GT=="mis")>=0.2' /opt/ohpc/pub/src/bio/bcftools/test/filter.6.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\n'
+.. ok
+
+test_vcf_filter:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools filter -Ob -i'F_PASS(GT=="mis")>=0.2' /opt/ohpc/pub/src/bio/bcftools/test/filter.6.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%POS\n'
+.. ok
+
+test_vcf_sort:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools sort -m 0 /opt/ohpc/pub/src/bio/bcftools/test/sort.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%CHROM\t%POS\t%REF,%ALT\n'
+.. ok
+
+test_vcf_sort:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools sort -Ob -m 0 /opt/ohpc/pub/src/bio/bcftools/test/sort.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%CHROM\t%POS\t%REF,%ALT\n'
+.. ok
+
+test_vcf_sort:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools sort -m 1000 /opt/ohpc/pub/src/bio/bcftools/test/sort.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%CHROM\t%POS\t%REF,%ALT\n'
+.. ok
+
+test_vcf_sort:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools sort -Ob -m 1000 /opt/ohpc/pub/src/bio/bcftools/test/sort.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f '%CHROM\t%POS\t%REF,%ALT\n'
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -T /opt/ohpc/pub/src/bio/bcftools/test/regions.tab /tmp/dOofRwwXvk/regions.vcf.gz
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/regions.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -T /opt/ohpc/pub/src/bio/bcftools/test/regions.tab
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -R /opt/ohpc/pub/src/bio/bcftools/test/regions.tab /tmp/dOofRwwXvk/regions.vcf.gz
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -T /tmp/dOofRwwXvk/regions.tab.gz /tmp/dOofRwwXvk/regions.vcf.gz
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/regions.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -T /tmp/dOofRwwXvk/regions.tab.gz
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -R /tmp/dOofRwwXvk/regions.tab.gz /tmp/dOofRwwXvk/regions.vcf.gz
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -T /tmp/dOofRwwXvk/regions.bed /tmp/dOofRwwXvk/regions.vcf.gz
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/regions.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -T /tmp/dOofRwwXvk/regions.bed
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -R /tmp/dOofRwwXvk/regions.bed /tmp/dOofRwwXvk/regions.vcf.gz
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -T /tmp/dOofRwwXvk/regions.bed.gz /tmp/dOofRwwXvk/regions.vcf.gz
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools view -Ob /tmp/dOofRwwXvk/regions.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -T /tmp/dOofRwwXvk/regions.bed.gz
+.. ok
+
+test_vcf_regions:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools query -f'%CHROM %POS %REF,%ALT\n' -R /tmp/dOofRwwXvk/regions.bed.gz /tmp/dOofRwwXvk/regions.vcf.gz
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annotate.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate.hdr -c CHROM,POS,REF,ALT,ID,QUAL,INFO/T_INT,INFO/T_FLOAT,INDEL /opt/ohpc/pub/src/bio/bcftools/test/annotate.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annotate.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate.hdr -c CHROM,POS,REF,ALT,ID,QUAL,INFO/T_INT,INFO/T_FLOAT,INDEL /opt/ohpc/pub/src/bio/bcftools/test/annotate.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annotate2.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate.hdr -c CHROM,POS,-,T_STR /opt/ohpc/pub/src/bio/bcftools/test/annotate.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annotate2.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate.hdr -c CHROM,POS,-,T_STR /opt/ohpc/pub/src/bio/bcftools/test/annotate.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annotate2.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate.hdr -c CHROM,FROM,TO,T_STR /opt/ohpc/pub/src/bio/bcftools/test/annotate.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annotate2.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate.hdr -c CHROM,FROM,TO,T_STR /opt/ohpc/pub/src/bio/bcftools/test/annotate.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots.vcf.gz  -c STR,ID,QUAL,FILTER /tmp/dOofRwwXvk/annotate.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots.vcf.gz  -c STR,ID,QUAL,FILTER /tmp/dOofRwwXvk/annotate.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c ID,QUAL,FILTER,INFO,FMT /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c ID,QUAL,FILTER,INFO,FMT /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c ID,QUAL,+FILTER,+INFO,FMT/GT -s A /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c ID,QUAL,+FILTER,+INFO,FMT/GT -s A /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c ID,QUAL,+FILTER,+INFO,FMT/GT -s "A B" /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c ID,QUAL,+FILTER,+INFO,FMT/GT -s "A B" /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c ID,QUAL,+FILTER,+INFO,FMT/GT -s "A C" /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c ID,QUAL,+FILTER,+INFO,FMT/GT -s "A C" /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c ID,QUAL,+FILTER,+INFO,FMT/GT -s "B C" /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c ID,QUAL,+FILTER,+INFO,FMT/GT -s "B C" /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate   -x ID,QUAL,^FILTER/fltA,FILTER/fltB,^INFO/AA,INFO/BB,^FMT/GT,FMT/PL /opt/ohpc/pub/src/bio/bcftools/test/annotate3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob   -x ID,QUAL,^FILTER/fltA,FILTER/fltB,^INFO/AA,INFO/BB,^FMT/GT,FMT/PL /opt/ohpc/pub/src/bio/bcftools/test/annotate3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate   -x FORMAT /opt/ohpc/pub/src/bio/bcftools/test/annotate3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob   -x FORMAT /opt/ohpc/pub/src/bio/bcftools/test/annotate3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots4.vcf.gz  -c +INFO /tmp/dOofRwwXvk/annotate4.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots4.vcf.gz  -c +INFO /tmp/dOofRwwXvk/annotate4.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots4.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate4.hdr -c CHROM,POS,REF,ALT,+FA,+FR,+IA,+IR,+SA,+SR /opt/ohpc/pub/src/bio/bcftools/test/annotate4.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots4.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate4.hdr -c CHROM,POS,REF,ALT,+FA,+FR,+IA,+IR,+SA,+SR /opt/ohpc/pub/src/bio/bcftools/test/annotate4.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots10.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate10.hdr -c CHROM,POS,FMT/FINT,FMT/FFLT,FMT/FSTR /opt/ohpc/pub/src/bio/bcftools/test/annotate10.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots10.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate10.hdr -c CHROM,POS,FMT/FINT,FMT/FFLT,FMT/FSTR /opt/ohpc/pub/src/bio/bcftools/test/annotate10.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c CHROM,POS,FMT/FINT,FMT/FFLT,FMT/FSTR -s A /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c CHROM,POS,FMT/FINT,FMT/FFLT,FMT/FSTR -s A /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots11.tab.gz  -c CHROM,POS,FMT/FINT,FMT/FFLT,FMT/FSTR -s A /opt/ohpc/pub/src/bio/bcftools/test/annotate2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots11.tab.gz  -c CHROM,POS,FMT/FINT,FMT/FFLT,FMT/FSTR -s A /opt/ohpc/pub/src/bio/bcftools/test/annotate2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c AAA:=IINT,FMT/BBB:=FMT/FINT /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c AAA:=IINT,FMT/BBB:=FMT/FINT /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots2.vcf.gz  -x INFO -c INFO/IINT /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots2.vcf.gz  -x INFO -c INFO/IINT /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots2.vcf.gz  -x INFO -c INFO/IINT -e'POS=3000001' -k /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots2.vcf.gz  -x INFO -c INFO/IINT -e'POS=3000001' -k /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots11.vcf.gz  -c FMT /tmp/dOofRwwXvk/annotate11.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots11.vcf.gz  -c FMT /tmp/dOofRwwXvk/annotate11.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c FMT/newGT:=GT /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots2.vcf.gz  -c FMT/newGT:=GT /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots12.vcf.gz  -c FMT/GT:=newGT /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots12.vcf.gz  -c FMT/GT:=newGT /tmp/dOofRwwXvk/annotate2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots13.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate13.hdr -c CHROM,BEG,END,ABC /opt/ohpc/pub/src/bio/bcftools/test/annotate13.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots13.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate13.hdr -c CHROM,BEG,END,ABC /opt/ohpc/pub/src/bio/bcftools/test/annotate13.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots13.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate13.hdr -c CHROM,BEG,END,ABC -l ABC:append /opt/ohpc/pub/src/bio/bcftools/test/annotate13.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots13.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate13.hdr -c CHROM,BEG,END,ABC -l ABC:append /opt/ohpc/pub/src/bio/bcftools/test/annotate13.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots13.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate13.hdr -c CHROM,BEG,END,ABC -l ABC:unique /opt/ohpc/pub/src/bio/bcftools/test/annotate13.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots13.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate13.hdr -c CHROM,BEG,END,ABC -l ABC:unique /opt/ohpc/pub/src/bio/bcftools/test/annotate13.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate   -x FILTER/XX,INFO/XX --force /opt/ohpc/pub/src/bio/bcftools/test/annotate14.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob   -x FILTER/XX,INFO/XX --force /opt/ohpc/pub/src/bio/bcftools/test/annotate14.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annotate15.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate15.hdr -s SAMPLE1 -c CHROM,FROM,TO,FMT/FOO,BAR /opt/ohpc/pub/src/bio/bcftools/test/annotate15.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annotate15.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate15.hdr -s SAMPLE1 -c CHROM,FROM,TO,FMT/FOO,BAR /opt/ohpc/pub/src/bio/bcftools/test/annotate15.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annotate15.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate15.hdr -s SAMPLE2 -c CHROM,FROM,TO,FMT/FOO,BAR /opt/ohpc/pub/src/bio/bcftools/test/annotate15.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annotate15.tab.gz -h /opt/ohpc/pub/src/bio/bcftools/test/annotate15.hdr -s SAMPLE2 -c CHROM,FROM,TO,FMT/FOO,BAR /opt/ohpc/pub/src/bio/bcftools/test/annotate15.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate   -x FILTER /opt/ohpc/pub/src/bio/bcftools/test/annotate16.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob   -x FILTER /opt/ohpc/pub/src/bio/bcftools/test/annotate16.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annotate17.1.tab.gz  -c CHROM,BEG,END,A,B -l A:append,B:append /opt/ohpc/pub/src/bio/bcftools/test/annotate17.1.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annotate17.1.tab.gz  -c CHROM,BEG,END,A,B -l A:append,B:append /opt/ohpc/pub/src/bio/bcftools/test/annotate17.1.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annotate17.1.tab.gz  -c CHROM,BEG,END,A,B -l A:append,B:append /opt/ohpc/pub/src/bio/bcftools/test/annotate17.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annotate17.1.tab.gz  -c CHROM,BEG,END,A,B -l A:append,B:append /opt/ohpc/pub/src/bio/bcftools/test/annotate17.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annotate17.3.tab.gz  -c CHROM,BEG,END,A,B -l A:append,B:append /opt/ohpc/pub/src/bio/bcftools/test/annotate17.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annotate17.3.tab.gz  -c CHROM,BEG,END,A,B -l A:append,B:append /opt/ohpc/pub/src/bio/bcftools/test/annotate17.3.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annotate18.1.tab.gz  -c CHROM,BEG,END,A,B,C,D,E -l A:sum,B:avg,C:min,D:max,E:append /opt/ohpc/pub/src/bio/bcftools/test/annotate18.1.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annotate18.1.tab.gz  -c CHROM,BEG,END,A,B,C,D,E -l A:sum,B:avg,C:min,D:max,E:append /opt/ohpc/pub/src/bio/bcftools/test/annotate18.1.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annotate18.2.tab.gz  -c CHROM,BEG,END,A,B,C,D,E -l A:sum,B:avg,C:min,D:max,E:append /opt/ohpc/pub/src/bio/bcftools/test/annotate18.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annotate18.2.tab.gz  -c CHROM,BEG,END,A,B,C,D,E -l A:sum,B:avg,C:min,D:max,E:append /opt/ohpc/pub/src/bio/bcftools/test/annotate18.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -a /tmp/dOofRwwXvk/annots9.tab.gz  -c CHROM,POS,REF,ALT,+ID /opt/ohpc/pub/src/bio/bcftools/test/annotate9.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_annotate:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools annotate -Ob -a /tmp/dOofRwwXvk/annots9.tab.gz  -c CHROM,POS,REF,ALT,+ID /opt/ohpc/pub/src/bio/bcftools/test/annotate9.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat --no-version   /tmp/dOofRwwXvk/concat.1.a.vcf.gz /tmp/dOofRwwXvk/concat.1.b.vcf.gz
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat -Ob   /tmp/dOofRwwXvk/concat.1.a.vcf.gz /tmp/dOofRwwXvk/concat.1.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat --no-version   /tmp/dOofRwwXvk/concat.1.a.bcf /tmp/dOofRwwXvk/concat.1.b.bcf
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat -Ob   /tmp/dOofRwwXvk/concat.1.a.bcf /tmp/dOofRwwXvk/concat.1.b.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat --no-version -a  /tmp/dOofRwwXvk/concat.2.a.vcf.gz /tmp/dOofRwwXvk/concat.2.b.vcf.gz
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat -Ob -a  /tmp/dOofRwwXvk/concat.2.a.vcf.gz /tmp/dOofRwwXvk/concat.2.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat --no-version -a  /tmp/dOofRwwXvk/concat.2.a.bcf /tmp/dOofRwwXvk/concat.2.b.bcf
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat -Ob -a  /tmp/dOofRwwXvk/concat.2.a.bcf /tmp/dOofRwwXvk/concat.2.b.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat --no-version -aD  /tmp/dOofRwwXvk/concat.2.a.vcf.gz /tmp/dOofRwwXvk/concat.2.b.vcf.gz
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat -Ob -aD  /tmp/dOofRwwXvk/concat.2.a.vcf.gz /tmp/dOofRwwXvk/concat.2.b.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat --no-version -aD  /tmp/dOofRwwXvk/concat.2.a.bcf /tmp/dOofRwwXvk/concat.2.b.bcf
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat -Ob -aD  /tmp/dOofRwwXvk/concat.2.a.bcf /tmp/dOofRwwXvk/concat.2.b.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat --no-version -l  /tmp/dOofRwwXvk/concat.3.a.vcf.gz /tmp/dOofRwwXvk/concat.3.b.vcf.gz /tmp/dOofRwwXvk/concat.3.0.vcf.gz /tmp/dOofRwwXvk/concat.3.c.vcf.gz /tmp/dOofRwwXvk/concat.3.d.vcf.gz /tmp/dOofRwwXvk/concat.3.e.vcf.gz /tmp/dOofRwwXvk/concat.3.f.vcf.gz
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat -Ob -l  /tmp/dOofRwwXvk/concat.3.a.vcf.gz /tmp/dOofRwwXvk/concat.3.b.vcf.gz /tmp/dOofRwwXvk/concat.3.0.vcf.gz /tmp/dOofRwwXvk/concat.3.c.vcf.gz /tmp/dOofRwwXvk/concat.3.d.vcf.gz /tmp/dOofRwwXvk/concat.3.e.vcf.gz /tmp/dOofRwwXvk/concat.3.f.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat --no-version -l  /tmp/dOofRwwXvk/concat.3.a.bcf /tmp/dOofRwwXvk/concat.3.b.bcf /tmp/dOofRwwXvk/concat.3.0.bcf /tmp/dOofRwwXvk/concat.3.c.bcf /tmp/dOofRwwXvk/concat.3.d.bcf /tmp/dOofRwwXvk/concat.3.e.bcf /tmp/dOofRwwXvk/concat.3.f.bcf
+.. ok
+
+test_vcf_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat -Ob -l  /tmp/dOofRwwXvk/concat.3.a.bcf /tmp/dOofRwwXvk/concat.3.b.bcf /tmp/dOofRwwXvk/concat.3.0.bcf /tmp/dOofRwwXvk/concat.3.c.bcf /tmp/dOofRwwXvk/concat.3.d.bcf /tmp/dOofRwwXvk/concat.3.e.bcf /tmp/dOofRwwXvk/concat.3.f.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view | grep -v ^##bcftools_
+.. ok
+
+test_naive_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat --naive-force /tmp/dOofRwwXvk/naive_concat.0.bcf /tmp/dOofRwwXvk/naive_concat.1.bcf /tmp/dOofRwwXvk/naive_concat.2.bcf /tmp/dOofRwwXvk/naive_concat.3.bcf /tmp/dOofRwwXvk/naive_concat.4.bcf /tmp/dOofRwwXvk/naive_concat.5.bcf /tmp/dOofRwwXvk/naive_concat.6.bcf /tmp/dOofRwwXvk/naive_concat.7.bcf /tmp/dOofRwwXvk/naive_concat.8.bcf /tmp/dOofRwwXvk/naive_concat.9.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view -H
+.. ok
+
+test_naive_concat:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools concat --naive /tmp/dOofRwwXvk/naive_concat.0.vcf.gz /tmp/dOofRwwXvk/naive_concat.1.vcf.gz /tmp/dOofRwwXvk/naive_concat.2.vcf.gz /tmp/dOofRwwXvk/naive_concat.3.vcf.gz /tmp/dOofRwwXvk/naive_concat.4.vcf.gz /tmp/dOofRwwXvk/naive_concat.5.vcf.gz /tmp/dOofRwwXvk/naive_concat.6.vcf.gz /tmp/dOofRwwXvk/naive_concat.7.vcf.gz /tmp/dOofRwwXvk/naive_concat.8.vcf.gz /tmp/dOofRwwXvk/naive_concat.9.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view -H
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.hdr /opt/ohpc/pub/src/bio/bcftools/test/reheader.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /opt/ohpc/pub/src/bio/bcftools/test/reheader.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.hdr | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.hdr /tmp/dOofRwwXvk/reheader.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/reheader.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.hdr | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.hdr /tmp/dOofRwwXvk/reheader.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/reheader.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.hdr | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples /opt/ohpc/pub/src/bio/bcftools/test/reheader.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /opt/ohpc/pub/src/bio/bcftools/test/reheader.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples /tmp/dOofRwwXvk/reheader.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/reheader.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples /tmp/dOofRwwXvk/reheader.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/reheader.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples2 /opt/ohpc/pub/src/bio/bcftools/test/reheader.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /opt/ohpc/pub/src/bio/bcftools/test/reheader.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples2 | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples2 /tmp/dOofRwwXvk/reheader.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/reheader.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples2 | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples2 /tmp/dOofRwwXvk/reheader.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/reheader.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples2 | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples3 /opt/ohpc/pub/src/bio/bcftools/test/reheader.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /opt/ohpc/pub/src/bio/bcftools/test/reheader.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples3 | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples3 /tmp/dOofRwwXvk/reheader.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/reheader.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples3 | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples3 /tmp/dOofRwwXvk/reheader.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/reheader.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples3 | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples4 /opt/ohpc/pub/src/bio/bcftools/test/reheader.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /opt/ohpc/pub/src/bio/bcftools/test/reheader.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples4 | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples4 /tmp/dOofRwwXvk/reheader.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/reheader.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples4 | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples4 /tmp/dOofRwwXvk/reheader.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/reheader.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -s /opt/ohpc/pub/src/bio/bcftools/test/reheader.samples4 | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.empty.hdr /opt/ohpc/pub/src/bio/bcftools/test/empty.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /opt/ohpc/pub/src/bio/bcftools/test/empty.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.empty.hdr | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.empty.hdr /tmp/dOofRwwXvk/empty.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/empty.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.empty.hdr | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.empty.hdr /tmp/dOofRwwXvk/empty.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	cat /tmp/dOofRwwXvk/empty.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.empty.hdr | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -f /opt/ohpc/pub/src/bio/bcftools/test/reheader.fai /opt/ohpc/pub/src/bio/bcftools/test/reheader.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -f /opt/ohpc/pub/src/bio/bcftools/test/reheader.fai /tmp/dOofRwwXvk/reheader.2.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -f /opt/ohpc/pub/src/bio/bcftools/test/reheader.fai /tmp/dOofRwwXvk/reheader.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.2.hdr -f /opt/ohpc/pub/src/bio/bcftools/test/reheader.fai /opt/ohpc/pub/src/bio/bcftools/test/reheader.2.vcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.2.hdr -f /opt/ohpc/pub/src/bio/bcftools/test/reheader.fai /tmp/dOofRwwXvk/reheader.2.bcf | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+test_vcf_reheader:
+	/opt/ohpc/pub/src/bio/bcftools/bcftools reheader -h /opt/ohpc/pub/src/bio/bcftools/test/reheader.2.hdr -f /opt/ohpc/pub/src/bio/bcftools/test/reheader.fai /tmp/dOofRwwXvk/reheader.2.vcf.gz | /opt/ohpc/pub/src/bio/bcftools/bcftools view --no-version
+.. ok
+
+Sat Nov  2 09:36:32 EDT 2019

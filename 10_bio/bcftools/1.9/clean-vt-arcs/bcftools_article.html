@@ -1,0 +1,186 @@
+<html>
+
+  <head>
+    <title>
+      bcftools
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+  <article id="post-124" class="post-124 page type-page status-publish hentry">
+
+  <header class="entry-header">
+    <h1 class="entry-title">
+      bcftools
+    </h1>
+  </header>
+
+  <!-- .entry-header -->
+  <div class="entry-content">
+
+  <h2>
+    Introduction:
+  </h2>
+
+  <p>
+    <b>BCFTOOLS</b> is a collection of tools for variant calling and manipulating 
+    VCF's and BCF's.
+  </p>
+    
+  <p>
+    BCFTOOLS manipulate variant calls in the Variant Call Format (VCF) 
+    and its binary counterpart BCF.  All commands work transparently with 
+    both VCFs and BCFs, both uncompressed and BGZF-compressed.
+  </p>
+
+  <p>
+    The command line tools include:
+    <ul>
+      <li>
+        <b>annotate</b>: edit VCF files, add or remove annotations;
+      </li>
+      <li>
+        <b>call</b>: SNP/indel calling (former "view");
+      </li>
+      <li>
+        <b>cnv</b>: Copy Number Variation caller;
+      </li>
+      <li>
+        <b>concat</b>: concatenate VCF/BCF files from the same set of samples;
+      </li>
+      <li>
+        <b>consensus</b>: create consensus sequence by applying VCF variants;
+      </li>
+      <li>
+        <b>convert</b>: convert VCF/BCF to other formats and back;
+      </li>
+      <li>
+        <b>csq</b>: haplotype aware consequence caller
+      </li>
+      <li>
+        <b>filter</b>: filter VCF/BCF files using fixed thresholds;
+      </li>
+      <li>
+        <b>gtcheck</b>: check sample concordance, detect sample swaps and
+        contamination;
+      </li>
+      <li>
+        <b>index</b>: index VCF/BCF;
+      </li>
+      <li>
+        <b>isec</b>: intersections of VCF/BCF files;
+      </li>
+      <li>
+        <b>merge</b>: merge VCF/BCF files files from non-overlapping sample sets;
+      </li>
+      <li>
+        <b>mpileup</b>: multi-way pileup producing genotype likelihoods;
+      </li>
+      <li>
+        <b>norm</b>: normalize indels;
+      </li>
+      <li>
+        <b>plugin</b>: run user-defined plugin;
+      </li>
+      <li>
+        <b>polysomy</b>: detect contaminations and whole-chromosome aberrations;
+      </li>
+      <li>
+        <b>query</b>: transform VCF/BCF into user-defined formats;
+      </li>
+      <li>
+        <b>reheader</b>: modify VCF/BCF header, change sample names;
+      </li>
+      <li>
+        <b>roh</b>: identify runs of homo/auto-zygosity;
+      </li>
+      <li>
+        <b>stats</b>: produce VCF/BCF stats (former vcfcheck);
+      </li>
+      <li>
+        <b>view</b>: subset, filter and convert VCF and BCF files;
+      </li>
+    </ul>
+  </p>
+
+  <h2>
+    Web Site:
+  </h2>
+
+  <p>
+    The BCFTOOLS download page at htslib.org:<br>
+    <a href = "http://www.htslib.org/download/">
+               http://www.htslib.org/download/ </a>
+  </p>
+
+  <h2>
+    Reference:
+  </h2>
+
+  <p>
+    <ul>
+      <li>
+        The BCFTOOLS documentation page at github:<br>
+        <a href = "https://samtools.github.io/bcftools/bcftools.html">
+                   https://samtools.github.io/bcftools/bcftools.html </a>
+      </li>
+    </ul>
+  </p>
+
+  <h2>
+    Usage:
+  </h2>    
+
+  <p>
+    On any ARC cluster, check the installation details
+    by typing "module spider bcftools".
+  </p> 
+
+  <p>
+    BCFTOOLS requires that the appropriate modules be loaded before it can 
+    be used.  One version of the appropriate commands for use on NewRiver is:
+    <pre>
+module purge
+module load gcc/5.2.0
+module load bcftools/1.2
+    </pre>
+  </p>
+
+  <h2>
+    Examples:
+  </h2>
+
+  <p>
+    The following batch file applies the BCFTOOLS call command to a BCF file,
+    creating a VCF file.
+<pre>
+#! /bin/bash
+#
+#PBS -l walltime=0:05:00
+#PBS -l nodes=1:ppn=1
+#PBS -W group_list=newriver
+#PBS -q open_q
+#PBS -j oe
+#
+cd $PBS_O_WORKDIR
+#
+module purge
+module load gcc/5.2.0
+module load bcftools/1.2
+#
+bcftools call -c -v sim_variants.bcf > sim_variants.vcf
+</pre>
+  </p>
+
+  <p>
+    A complete set of files to carry out a similar process are available in
+    <a href = "https://secure.hosting.vt.edu/www.arc.vt.edu/wp-content/uploads/2017/07/bcftools_example.tar.gz">a tar file</a> 
+  </p>
+
+  </div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+  </body>
+
+</html>

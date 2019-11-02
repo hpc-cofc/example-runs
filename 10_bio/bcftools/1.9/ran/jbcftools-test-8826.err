@@ -1,0 +1,9 @@
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+./test.pl: module IO::Pty not found; skipping usage tests
+Random seed for test_naive_concat: 3663905888
+/bin/bash: /opt/ohpc/pub/src/bio/bcftools/test/rename.out.tmp: Read-only file system
+The command failed: /opt/ohpc/pub/src/bio/bcftools/bcftools query -f'chr%CHROM\t%POS\n' /opt/ohpc/pub/src/bio/bcftools/test/annotate.vcf > /opt/ohpc/pub/src/bio/bcftools/test/rename.out.tmp
+ at ./test.pl line 513.
+	main::error('The command failed: /opt/ohpc/pub/src/bio/bcftools/bcftools q...', '') called at ./test.pl line 622
+	main::cmd('/opt/ohpc/pub/src/bio/bcftools/bcftools query -f\'chr%CHROM\t...') called at ./test.pl line 1206
+	main::test_rename_chrs('HASH(0x2056a68)', 'in', 'annotate') called at ./test.pl line 435
