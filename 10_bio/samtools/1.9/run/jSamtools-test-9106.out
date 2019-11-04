@@ -1,0 +1,30 @@
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own
+
+ 
+
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/samtools/1.9
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own
+
+ 
+
+/home/bt-local/github-hpc-cofc/example-runs/10_bio/samtools/1.9/run
+jSamtools-test-9106.err
+jSamtools-test-9106.out
+run.slurm
+sim_reads_aligned.bam
+sim_reads_aligned.bam.original
+sim_reads_aligned.sam
+Mon Nov  4 09:45:04 EST 2019
+Normal end of execution.
+jSamtools-test-9106.err
+jSamtools-test-9106.out
+run.slurm
+sim_reads_aligned.bam
+sim_reads_aligned.bam.original
+sim_reads_aligned.sam
+Mon Nov  4 09:45:04 EST 2019
