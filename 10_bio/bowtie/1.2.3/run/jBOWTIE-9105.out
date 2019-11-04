@@ -1,0 +1,26 @@
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own
+
+ 
+
+
+Currently Loaded Modules:
+  1) autotools   3) gnu8/8.3.0       5) ohpc      7) bio/bowtie/1.2.3
+  2) prun/1.2    4) openmpi3/3.1.3   6) use.own
+
+ 
+
+/home/bt-local/github-hpc-cofc/example-runs/10_bio/bowtie/1.2.3/run
+bowtie_newriver.txt
+e_coli_1000.fq
+e_coli.map
+indexes
+jBOWTIE-9105.err
+jBOWTIE-9105.out
+README.md
+run.slurm
+Mon Nov  4 09:39:38 EST 2019
+Normal end of execution.
+Mon Nov  4 09:39:42 EST 2019
