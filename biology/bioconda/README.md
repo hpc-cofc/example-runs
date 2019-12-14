@@ -1,5 +1,5 @@
 
-# Installing Bioinformatics Pacakges using Conda Package Manager
+# Installing Bioinformatics Packages using Conda Package Manager
 You can use the `conda` package manager to install a lot of bioinformatics packages from the following channels among others.
 - [bioconda](https://bioconda.github.io/)
 - bioinfo
