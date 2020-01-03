@@ -1,0 +1,133 @@
+<html>
+
+  <head>
+    <title>
+      ncbi-blast+
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+  <article id="post-124" class="post-124 page type-page status-publish hentry">
+
+  <header class="entry-header">
+    <h1 class="entry-title">
+      ncbi-blast+
+    </h1>
+  </header>
+
+  <!-- .entry-header -->
+  <div class="entry-content">
+
+  <h2>
+    Introduction:
+  </h2>
+
+  <p>
+    <b>NCBI-BLAST+</b> is a Basic Local Alignment Search Tool.
+  </p>
+
+  <p>
+    NCBI-BLAST+ is a version of BLAST, probably the most popular tool
+    for sequence similarity searching, which often provides the first 
+    evidence for the function of a newly sequenced gene or piece of sequence.
+  </p>
+
+  <p>
+    In order to perform a search, the target database 
+    must first be formatted and segmented using the <b>makeblastdb</b>
+    program.
+  </p>
+
+  <h2>
+    Web Site:
+  </h2>
+
+  <p>
+    The NCBI-BLAST+ home page at nih.gov:<br>
+    <a href = "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download">
+               https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download </a>
+  </p>
+
+  <h2>
+    Reference:
+  </h2>
+
+  <p>
+    <ul>
+      <li>
+        The NCBI-BLAST+ user manual:<br>
+        <a href = "https://www.ncbi.nlm.nih.gov/books/NBK279690/">
+                   https://www.ncbi.nlm.nih.gov/books/NBK279690/</a>
+      </li>
+    </ul>
+  </p>
+
+  <h2>
+    Usage:
+  </h2>    
+
+  <p>
+    On any ARC cluster, check the installation details
+    by typing "module spider ncbi-blast+".
+  </p> 
+
+  <p>
+    NCBI-BLAST+ requires that the appropriate modules be loaded before it can 
+    be used.  One version of the appropriate commands for use on NewRiver is:
+    <pre>
+module purge
+module load gcc/5.2.0
+module load ncbi-blast+/2.4.0
+    </pre>
+  </p>
+
+  <h2>
+    Examples:
+  </h2>
+
+  <p>
+    The following batch file demonstrates the use of NCBI-BLAST+:
+<pre>
+#! /bin/bash
+#
+#PBS -l walltime=0:05:00
+#PBS -l nodes=1:ppn=1
+#PBS -W group_list=newriver
+#PBS -q open_q
+#PBS -j oe
+#
+cd $PBS_O_WORKDIR
+#
+module purge
+module load gcc/5.2.0
+module load ncbi-blast+/2.4.0
+#
+#  Unzip the database.
+#
+gunzip drosoph.nt.gz
+#
+#  Reformat the database.
+#
+makeblastdb -in drosoph.nt -dbtype nucl -parse_seqids
+#
+#  Run ncbi-blast+ against the test sequence file blast.in
+#
+echo "Running BLASTN."
+blastn -query blast.in -db drosoph.nt -task blastn -out ncbi-blast+_newriver.txt
+</pre>
+  </p>
+
+  <p>
+    The database drosoph.nt.gz is very large, and exceeds the storage
+    limits of our examples system, so it is not made available.
+    A PARTIAL set of files to carry out a similar process are available in
+    <a href = "https://secure.hosting.vt.edu/www.arc.vt.edu/wp-content/uploads/2017/07/ncbi-blast+_example.tar.gz">a tar file</a> 
+  </p>
+
+  </div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+  </body>
+
+</html>
