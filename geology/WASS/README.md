@@ -113,4 +113,4 @@ To run the test in interactive mode on a compute node, please enter the followin
 * run the test by entering the following command
   * `matlab -nodesktop -nodisplay -nosplash < ./test_pipeline.m > ./test_pipeline-batch-mode.out`
 
-Please note that the compute node is reserved to you for the length of time you have requested. If you finish early early, please log out by entering `CTRL-D`.
+Please note that the compute node is reserved to you for the length of time you have requested. If you finish early early, please log out by entering `exit` on the command line.
