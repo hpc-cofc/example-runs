@@ -32,7 +32,9 @@ and [a lot more ... ](https://hpc-cofc.edu/docs)
 
 We have run demos showing the test example provided by the developer can run
 * in interactive mode on the head/master node
-* in batch mode using the SLURM queue manager.
+* in batch mode using the SLURM queue manager
+* in interactive mode using the SLURM queue manager
+
 
 The software is installed in users' local area under `$HOME/gnu83/`. It needs access to MATLAB and CUDA libraries among others.
 
@@ -42,15 +44,17 @@ You can run a quick test on the login/master node of the HPC to make sure things
 
 To run the test in interactive mode, please enter the following commands in a terminal
 * go to the directory containing WASS:
-  * `cd $HOME/gnu83/wass/test`
+  * `cd $HOME/gnu83/wass`
 * make a copy of the `test` directory. We are copying it to `test-random`, but you can pick any name
   * `cp -r test test-random`
+* go into the copy directory
+  * `cd test-random`
 * load up MATLAB and CUDA libraries
   * `module load math/matlab/r2019a cuda/10.1`
 * run the test by entering the following command
-   * `matlab -nodesktop -nodisplay -nosplash < ./test_pipeline.m > ./test_pipeline-batch-mode.out`
+  * `matlab -nodesktop -nodisplay -nosplash < ./test_pipeline.m > ./test_pipeline-interactive-mode.out`
 
-The test takes some 15-20 minutes to complete. When it is complete, you should have a file named `test_pipeline-batch-mode.out` and a directory called `output` in the same test folder.
+The test takes about 15 minutes to complete. When it is complete, you should have a file named `test_pipeline-interactive-mode.out` and a directory called `output` in the same test folder.
 
 
 ### Testing in compute nodes using queue manager
@@ -61,15 +65,12 @@ While testing on the login/master node interactively is acceptable, you should r
 
 To run the test in batch mode on a compute node, please enter the following commands in a terminal
 * go to the directory containing WASS:
-  * `cd $HOME/gnu83/wass/test`
+  * `cd $HOME/gnu83/wass`
 * make a copy of the `test` directory. We are copying it to `test-batch`, but you can pick any name
   * `cp -r test test-batch`
-* edit the batch submission file (lets call it `run.slurm`) below
-* submit it to the queue manager
-  * `sbatch run.slurm`
-* enter `squeue` periodically to see its status. It should finish in 15-20 minutes.  
-
-
+* go into the copy directory
+  * `cd test-random`
+* create/copy/edit the batch submission file (lets call it `run.slurm`) below
 
 ```bash
 #!/bin/bash
@@ -96,21 +97,26 @@ module load cuda/10.1
 
 matlab -nodesktop -nodisplay -nosplash < ./test_pipeline.m > ./test_pipeline-batch-mode.out
 ```
+* submit the batch submission file (`run.slurm`) to the queue manager
+  * `sbatch run.slurm`
+* enter `squeue` periodically to see its status. It should finish in about 15 minutes.  
 
 ### Interactive mode
 
 To run the test in interactive mode on a compute node, please enter the following commands in a terminal
 
-* request for time on a compute nodes
+* request for time on a compute node
   * `run-slurm-interactive.sh`
-* when the compute node is available, you will be logged into a compute nodes
+* when the compute node is available, you will be logged into a compute node
 * go to the directory containing WASS:
-  * `cd $HOME/gnu83/wass/test`
+  * `cd $HOME/gnu83/wass`
 * make a copy of the `test` directory. We are copying it to `test-interactive`, but you can pick any name
   * `cp -r test test-interactive`
+* go into the copy directory
+  * `cd test-interactive`
 * load up MATLAB and CUDA libraries
   * `module load math/matlab/r2019a cuda/10.1`
 * run the test by entering the following command
-  * `matlab -nodesktop -nodisplay -nosplash < ./test_pipeline.m > ./test_pipeline-batch-mode.out`
+  * `matlab -nodesktop -nodisplay -nosplash < ./test_pipeline.m > ./test_pipeline-interactive-mode.out`
 
 Please note that the compute node is reserved to you for the length of time you have requested. If you finish early early, please log out by entering `exit` on the command line.
