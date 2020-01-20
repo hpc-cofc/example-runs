@@ -22,7 +22,7 @@ Its features include :
 Please see our HPC documentation page for information about
 * Accessing the cluster
   * [Using a commandline](https://hpc-cofc.gitbook.io/docs/using-the-hpc/access-hpc)
-  * [Using a remote desktop client](https://hpc-cofc.gitbook.io/docs/using-the-hpc/access-hpc/gui-remote-desktop)
+  * [Using a remote desktop client](https://hpc-cofc.gitbook.io/docs/using-the-hpc/access-hpc/gui-remote-desktop) -- we encourage this approach for any graphics-intensive applications
 * [Transferring data](https://hpc-cofc.gitbook.io/docs/using-the-hpc/transfer-data)
 * [Access software](https://hpc-cofc.gitbook.io/docs/using-the-hpc/modules)
 
@@ -119,4 +119,79 @@ To run the test in interactive mode on a compute node, please enter the followin
 * run the test by entering the following command
   * `matlab -nodesktop -nodisplay -nosplash < ./test_pipeline.m > ./test_pipeline-interactive-mode.out`
 
-Please note that the compute node is reserved to you for the length of time you have requested. If you finish early early, please log out by entering `exit` on the command line.
+Please note that the compute node is reserved to you for the length of time you have requested. If you finish early , please log out by entering `exit` on the command line.
+
+## Running MATLAB
+
+Much like WASS above, you can run MATLAB in the following three modes.
+
+* in interactive mode on the head/master node for light testing
+* in batch mode using the SLURM queue manager for production runs
+* in interactive mode using the SLURM queue manager for resource-intensive tests or production runs
+
+Note: We are assuming you are connecting to the cluster using a [remote desktop (RDP) client](https://hpc-cofc.gitbook.io/docs/using-the-hpc/access-hpc/gui-remote-desktop).
+
+### Interactive mode on login/master node
+
+You can use the following steps to start up a MATLAB session.
+
+* search for MATLAB versions
+  * `module spider matlab`
+  * you will see that there are multiple versions of MATLAB (r2017b, r2018a, ... r2019a)
+* load up the version of MATLAB you want. Let's assume it is version r2019a
+  * `module load math/matlab/r2019a`
+* open matlab
+  * GUI - `matlab`
+  * text-based -  `matlab -nodesktop -nodisplay -nosplash`
+
+### Interactive mode on compute nodes
+
+You can use the following steps to start up a MATLAB session.
+
+* request for time on a compute node
+  * `run-slurm-interactive.sh`
+* when the compute node is available, you will be logged into a compute node
+* search for MATLAB versions
+  * `module spider matlab`
+  * you will see that there are multiple versions of MATLAB (r2017b, r2018a, ... r2019a)
+* load up the version of MATLAB you want. Let's assume it is version r2019a
+  * `module load math/matlab/r2019a`
+* open matlab
+  * GUI - `matlab`
+  * text-based -  `matlab -nodesktop -nodisplay -nosplash`
+
+### Batch mode on compute nodes
+
+You can use the following steps to submit MATLAB calculations to run in batch mode on compute nodes
+
+* go to the directory containing your MATLAB scripts:
+* create/copy/edit the batch submission file (lets call it `run.slurm`) below
+
+```bash
+#!/bin/bash
+#SBATCH -p debugq                # submit to the debug queue
+#SBATCH -J jmlab-test            # name of job
+#SBATCH -o jmlab-test-%j         # name of stdout file
+#SBATCH -e jmlab-test-%j         # name of stderr file
+#SBATCH --nodes=1                # 1 node
+#SBATCH --ntasks-per-node=24     # 24 cores pde node
+#SBATCH --mem-per-cpu=4GB        # 4000MB (4GB) RAM per core
+#SBATCH --export=ALL             # export default environment
+#SBATCH --gres=gpu:v100:0
+#SBATCH -t 0-00:30:00            # run for 0-days, 0 hours, 30 minutes
+
+set echo
+
+umask 0022
+
+cd $SLURM_SUBMIT_DIR
+module list                      # list currently loaded modules
+
+module load math/matlab/r2017b
+
+# Your job-specific details below
+matlab -nodesktop -nodisplay -nosplash < ./simple.m  > output.log
+```
+* Once you have made the necessary changes, submit the job to the queue manager
+  * `sbatch run.slurm`
+* enter `squeue` periodically to see its status.
