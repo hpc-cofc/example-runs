@@ -24,7 +24,7 @@ user@localhost>  module spider mathematica
   math/mathematica:
 ----------------------------------------------------------------------
     Description:
-      Application for computational chemistry and biochemistry
+      Application for symbolic and numerical computation
 
      Versions:
         math/mathematica/12.0
@@ -37,15 +37,12 @@ user@localhost>  module spider mathematica
 ------------------------------------------------------------------------
 ```
 
-## Operation Modes
-### Interactive mode on login node
-
-### Interactive mode on compute nodes
-
-### Batch mode on compute nodes
+## Limitations
+Our current license only allows users to run Mathematica on the login/master node. In the future, we
+do plan to have licenses available to run it in batch or interactive mode in the compute nodes.
 
 
-## How to run
+# Examples
 
-## Results
+See the example above on running Mathematica on the master node.
 
