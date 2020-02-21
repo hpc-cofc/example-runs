@@ -8,10 +8,11 @@ the particular calculations.
 - input file (depends on software package)
 - output file (depends on software package)
 - SLURM batch submission file (generally named <code>run.slurm</code>)
-- SLURM stderr/stdout file (generally named <code>j\<SLURM\_JOB\_NAM\>.o\<SLURM\_JOB\_ID\></code>)
+- SLURM stderr/stdout file (generally named <code>j\<SLURM\_JOB\_NAME\>.o\<SLURM\_JOB\_ID\></code>)
 
 # Structure
 
+```
 ├── 00_MPI-examples
 │   ├── C
 │   ├── C++
@@ -176,7 +177,8 @@ the particular calculations.
     │       └── supercell
     └── openFOAM
         └── 7
- 
+```
+
 <!--
 ## Prime number finder
 This example demonstrates the power of 
