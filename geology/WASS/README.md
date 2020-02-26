@@ -28,7 +28,7 @@ Please see our HPC documentation page for information about
 
 and [a lot more ... ](https://hpc-cofc.edu/docs)
 
-## WASS specific details
+## WASS-specific details
 
 We have run demos showing the test example provided by the developer can run
 * in interactive mode on the head/master node
@@ -195,3 +195,92 @@ matlab -nodesktop -nodisplay -nosplash < ./simple.m  > output.log
 * Once you have made the necessary changes, submit the job to the queue manager
   * `sbatch run.slurm`
 * enter `squeue` periodically to see its status.
+
+
+## Interactive mode on compute nodes with remote visualization
+
+To run WASS in interactive mode on the compute nodes and visualize the results remotely, you would need to follow these steps:
+1. Request resources through SLURM
+2. Once resources have been reserved for you, you can open a second terminal and SSH into the node that you reserved to you and run the necessary commands to start the simulation
+3. To visualize the output via a web browser, there are three possible options
+   * use the reserved node
+   * use the login/master node
+   * use your local computer
+
+The best option is to use our remote desktop client to log into the cluster and do the visualization within a browser on the login/master node.
+
+The steps for all three procedures are outlined below:
+<!--
+re   * use the the best option is to use SSH port forwarding if you want to see it on a browser on your local machine, or pointing your browser to <nodename>:<port_number>
+-->
+
+Here are updated steps:
+
+### Request resources through SLURM
+* In a terminal on the login/master node, execute this command to request resources for interactive use
+```bash
+user@hpc[~]    run-slurm-interactive.sh
+```
+Set run time and cores. Our nodes have different number of cores. The queue manager will reserve the proper node based on the number of cores you request. You should be able to see the name of the reserved node by looking at the Bash prompt. For example, the Bash prompt below indicates indicates that the reserved node is `gpuv100002`
+```bash
+user@gpuv100002[~/]
+```
+* Run the command needed to start a job in the reserved node. For example,
+```bash
+user@gpuv100002[~/]    cd /home/$USER/gnu83/wass/WASSjs/ext/
+user@gpuv100002[~/]    ./launch_redis.sh
+```
+
+### SSH into the reserved node and run the necessary commands
+* In a separate terminal, SSH into the node that is reserved to you, which we'll call `gpuv100002` for this example.
+  * **METHOD 1 - Preferred Method** - If you are using our remote desktop client and are already logged into the HPC, open a second terminal and ssh into the reserved node using following command
+  ```bash
+  user@hpc[~] ssh gpuv100002
+  ```
+  * **METHOD 2** - If you are logged into the HPC from your local computer using a terminal, open a second terminal, log into the HPC first and SSH into the reserved node
+    * two steps
+    ```bash
+    user@localmachine[~] ssh -Y <username>@hpc.cofc.edu
+    user@hpc[~] ssh -Y <username>@<reserved_node>
+    ```
+    * one step using using SSH tunneling to get to the reserved node through the login node
+    ```bash
+    user@localmachine[~] ssh -t -Y <username>@hpc.cofc.edu ssh -Y <reserved_node>
+    ```
+    Eg:
+    ```bash
+    user@localmachine[~]    ssh -t -Y $USER@hpc.cofc.edu ssh -Y gpuv100002
+    ```
+* Execute the necessary commands. For example,
+```bash
+user@gpuv100002[~]  cd /home/$USER/gnu83/wass/WASSjs/
+user@gpuv100002[~]  node Wass.js
+```
+
+### Access visualization and controls using a web browser
+There are three ways you can do this depending on how you are connected to the cluster.
+1. on the reserved node
+2. on the login/master node [**Preferred method**]
+3. on your local computer
+
+* [**METHOD 1**] - On the reserved node, open a web browser and point it to the right currently
+```bash
+user@gpuv100002[~] firefox http://localhost:8080
+```
+Open a second tab and point to the URL to http://localhost:3000 if necessary
+* [**METHOD 2 - Preferred Method**] - if you are using our remote desktop client, you can open a browser on the login/master node and point it to `http://<reserved_host_name>:<port_number>`. For example,
+```bash
+user@hpc[~] firefox http://gpv100002.cofc.edu:8080
+Eg. http://gpv100002.cofc.edu:3000
+```
+Open a second tab and point to the URL to http://gpv100002.cofc.edu:3000 if necessary
+* [**METHOD 3**] - On your local computer, you can set up SSH port forwarding and view the WASS visualizations and controls on your local broswer
+  * Open a terminal on your local computer
+  * Set up SSH port forwarding over all the pertinent ports. For example,
+  ```bash
+  user@localmachine[~]   ssh -NL 3000:gpuv100002.cofc.edu:3000 -NL  8080:gpuv100002.cofc.edu:8080 -NL 6379:gpuv100002.cofc.edu:6379 <username>@hpc.cofc.edu
+  ```
+  Once you enter your credentials for hpc.cofc.edu, the terminal will hang, indicating that port forwarding is established
+* Open a browser on your local computer and point it at `http://localhost:<port_number>` such as `http://localhost:8080` or `http://localhost:3000`
+
+In short, using a remote desktop (RDP) client to set up, run and monitor the simulations is the most convenient o
