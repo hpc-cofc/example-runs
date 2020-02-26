@@ -223,10 +223,10 @@ user@hpc[~]    run-slurm-interactive.sh
 ```
 Set run time and cores. Our nodes have different number of cores. Please see [the hardware specs of
 our nodes first](https://hpc-cofc.gitbook.io/docs/using-the-hpc/scheduling-jobs-1#compute-nodes).
-**NOTE**: _It
-looks like WASS uses up all the CPUs avaible to it. Therefore, unless you know how to control the
-number of CPU cores it used, please request the maximum number of cores per node (80 for bigmemq
-nodes, 40 for stdmemq nodes, 24 for gpuq nodes)._ The queue manager will reserve the proper node
+**VERY IMPORTANT NOTE**: *It
+looks like WASS uses up all the CPU cores availble to it. Therefore, unless you know how to control the
+number of CPU cores it uses, please request the maximum number of cores per node (80 for bigmemq
+nodes, 40 for stdmemq nodes, 24 for gpuq nodes). Otherwise, it will run your simulations along with other users' and oversubscribe the nodes, leading to a significant slowdown in performance and potential hardware failures from sustained overload.* The queue manager will reserve the proper node
 based on the number of cores you request. You should be able to see the name of the reserved node by
 looking at the Bash prompt. For example, the Bash prompt below indicates indicates that the reserved
 node is `gpuv100002`
