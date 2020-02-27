@@ -1,3 +1,21 @@
+- [Intro](#intro)
+- [CofC HPC Notes](#cofc-hpc-notes)
+  * [Initial access and setup](#initial-access-and-setup)
+  * [WASS-specific details](#wass-specific-details)
+    + [Testing in interactive mode on login/master node](#testing-in-interactive-mode-on-login-master-node)
+    + [Testing in compute nodes using queue manager](#testing-in-compute-nodes-using-queue-manager)
+      - [Batch mode](#batch-mode)
+    + [Interactive mode](#interactive-mode)
+  * [Running MATLAB](#running-matlab)
+    + [Interactive mode on login/master node](#interactive-mode-on-login-master-node)
+    + [Interactive mode on compute nodes](#interactive-mode-on-compute-nodes)
+    + [Batch mode on compute nodes](#batch-mode-on-compute-nodes)
+  * [Interactive mode on compute nodes with remote visualization](#interactive-mode-on-compute-nodes-with-remote-visualization)
+    + [Request resources through SLURM](#request-resources-through-slurm)
+    + [SSH into the reserved node and run the necessary commands](#ssh-into-the-reserved-node-and-run-the-necessary-commands)
+    + [Access visualization and controls using a web browser](#access-visualization-and-controls-using-a-web-browser)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 # Intro
