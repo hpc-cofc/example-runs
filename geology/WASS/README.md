@@ -5,7 +5,7 @@
     + [Testing in interactive mode on login/master node](#testing-in-interactive-mode-on-login-master-node)
     + [Testing in compute nodes using queue manager](#testing-in-compute-nodes-using-queue-manager)
       - [Batch mode](#batch-mode)
-    + [Interactive mode](#interactive-mode)
+      - [Interactive mode](#interactive-mode)
   * [Running MATLAB](#running-matlab)
     + [Interactive mode on login/master node](#interactive-mode-on-login-master-node)
     + [Interactive mode on compute nodes](#interactive-mode-on-compute-nodes)
@@ -119,7 +119,7 @@ matlab -nodesktop -nodisplay -nosplash < ./test_pipeline.m > ./test_pipeline-bat
   * `sbatch run.slurm`
 * enter `squeue` periodically to see its status. It should finish in about 15 minutes.  
 
-### Interactive mode
+#### Interactive mode
 
 To run the test in interactive mode on a compute node, please enter the following commands in a terminal
 
