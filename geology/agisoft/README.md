@@ -50,10 +50,11 @@ Once a
 
 ## Example run
 
-There is a beginner level tutorial generating 3D renderings from images. The one that has been tested on our HPC cluster is the doll. 
+There are beginner and intermediate level tutorial generating 3D renderings from images. The one that has been tested on our HPC cluster is the doll. 
 - **Data** - download [the necessary images](https://www.agisoft.com/downloads/sample-data/)
   - pick [the doll](https://www.agisoft.com/datasets/doll.zip) in our case
 - **Instructions** - There are many tutorials for beginner and intermeduiate levels
-  - use the [Tutorial for beginners](./agisoft/PS_1.4_Tutorial_BL_-_3D_Model_Reconstruction.pdf) provided in our GitHub Repo
+  - use the [tutorial for beginners provided in our GitHub Repo](./agisoft/PS_1.4_Tutorial_BL_-_3D_Model_Reconstruction.pdf) 
+
 
 
