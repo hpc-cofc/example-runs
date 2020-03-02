@@ -1,6 +1,6 @@
 # agisoft
 
-## Intro
+# Intro
 
 [Agisoft Photoscan](https://www.agisoft.com) which is rebranded as Agisoft Metashape, is a
 professional tool for a photogrammetry pipeline. It has a lot of features in image processing
@@ -24,10 +24,23 @@ interactively on GPU-containing nodes. To do that, one can take these steps
   scheduler
 - once the GPU-containing node is reserved, open PhotoScan and perform the simulation/processing
 
- 
- 
+### Specific Steps
 
-[Tutorial for beginners]
-https://www.agisoft.com/pdf/PS_1.4_Tutorial%20\(BL\)%20-%203D%20Model%20Reconstruction.pdf
+#### Connect to the HPC using a remote desktop client
+
+We have a dekstop and web version of the FastX remote desktop (RDP) service to access the HPC. Please see [the instructions here](https://hpc-cofc.gitbook.io/docs/using-the-hpc/access-hpc/gui-remote-desktop)
+
+### Open a terminal and load the proper software stack
+
+- Once the RDP session is established, open a terminal within the the remote desktop environment.
+- Go to the location of your images or data for more convenient access
+- Load the Agisoft software by entering `module load geology/agisoft/photoscan`
+
+### Request a node/server to run the calculations in
+
+You are 
+
+Speci
+[Tutorial for beginners](./agisoft/PS_1.4_Tutorial_BL_-_3D_Model_Reconstruction.pdf)
 
 
