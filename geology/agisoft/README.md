@@ -31,6 +31,8 @@ interactively on GPU-containing nodes. To do that, one can take these steps
 
 We have a dekstop and web version of the FastX remote desktop (RDP) service to access the HPC. Please see [the instructions here](https://hpc-cofc.gitbook.io/docs/using-the-hpc/access-hpc/gui-remote-desktop)
 
+The easiest way to open an RDP session us using the web client by going to https://hpc.cofc.edu/rdp
+
 ### Open a terminal and load the proper software stack
 
 - Once the RDP session is established, open a terminal within the the remote desktop environment.
@@ -42,19 +44,24 @@ We have a dekstop and web version of the FastX remote desktop (RDP) service to a
 We have a script called `run-slurm-interactive.sh` to guide you through the process of requesting resource  through the SLURM batch scheduler.
 
 - Execute `run-slurm-interactive.sh` in a terminal. Sensable choices would be
-  - queue - (3. gpuq)
-  - number of hours - your choice although
-  - number of cores - as many as 24, but 
-
-Once a 
+  - queue 
+    - (3. gpuq) - you would want to select this choice to run on nodes with GPUs
+  - number of hours 
+    - your choice between 0 and 48 hours. Please exit (enter `exit` in your terminal window) from the node/server assigned to you when you finish to make sure it is available for others
+  - number of cores 
+    - as many as 24, although you should pick just the number of cores you need to make sure the remaining resources are available to other users.
 
 ## Example run
 
-There are beginner and intermediate level tutorial generating 3D renderings from images. The one that has been tested on our HPC cluster is the doll. 
+There are beginner and intermediate level tutorial generating 3D renderings from images. 
 - **Data** - download [the necessary images](https://www.agisoft.com/downloads/sample-data/)
-  - pick [the doll](https://www.agisoft.com/datasets/doll.zip) in our case
-- **Instructions** - There are many tutorials for beginner and intermeduiate levels
-  - use the [tutorial for beginners provided in our GitHub Repo](./agisoft/PS_1.4_Tutorial_BL_-_3D_Model_Reconstruction.pdf) 
+- **Instructions** - There are many [tutorials for beginner and intermediate levels](https://www.agisoft.com/support/tutorials)
+
+The one that has been tested on our HPC cluster is the "doll" example. Please download the data(images) and instructions
+- **Data** - download [https://www.agisoft.com/datasets/doll.zip](https://www.agisoft.com/datasets/doll.zip)
+- **Instructions** - use the [tutorial for beginners provided in our GitHub Repo](./agisoft/PS_1.4_Tutorial_BL_-_3D_Model_Reconstruction.pdf) 
+
+
 
 
 
