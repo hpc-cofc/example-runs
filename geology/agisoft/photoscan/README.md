@@ -61,7 +61,7 @@ The easiest way to open an RDP session is using the web client by going to https
 
 We have a script called `run-slurm-interactive.sh` to guide you through the process of requesting resource  through the SLURM batch scheduler.
 
-- Execute `run-slurm-interactive.sh` in a terminal. Sensable choices would be
+- Execute `run-slurm-interactive.sh` in a terminal. Sensible choices would be
   - queue 
     - `3. gpuq` - you would want to select this choice to run on nodes with GPUs
   - number of hours 
