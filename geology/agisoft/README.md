@@ -59,7 +59,7 @@ There are beginner and intermediate level tutorials on Photoscan and Metashape
 
 #### Access data and instructions
 For our example run, the one we will use is the "doll" example. Please download the data(images) and instructions
-- **Data** - download [https://www.agisoft.com/datasets/doll.zip](https://www.agisoft.com/datasets/doll.zip)
+- **Data** - download [https://www.agisoft.com/datasets/doll.zip](https://www.agisoft.com/datasets/doll.zip). If you are already logged into the HPC, you can find it at `/opt/ohpc/pub/apps/geology/agisoft/photoscan/Examples/`
 - **Instructions** - use the [tutorial for beginners provided in our GitHub Repo](./agisoft/PS_1.4_Tutorial_BL_-_3D_Model_Reconstruction.pdf) 
 
 #### Open Photoscan and start processing
