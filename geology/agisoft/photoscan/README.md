@@ -13,6 +13,9 @@
     + [Do an example run](#do-an-example-run)
       - [Access data and instructions](#access-data-and-instructions)
       - [Open Photoscan and start processing](#open-photoscan-and-start-processing)
+  * [Demo run](#demo-run)
+    + [Complete demo](#complete-demo)
+    + [Short Asciinema cast](#short-asciinema-cast)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
