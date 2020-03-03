@@ -1,5 +1,23 @@
 # Agisoft Photoscan
 
+- [Agisoft Photoscan](#agisoft-photoscan)
+- [Intro](#intro)
+- [CofC Notes](#cofc-notes)
+  * [License Issues](#license-issues)
+- [How to run Agisoft Photoscan](#how-to-run-agisoft-photoscan)
+  * [General steps](#general-steps)
+  * [Specific Steps](#specific-steps)
+    + [Connect to the HPC using a remote desktop client](#connect-to-the-hpc-using-a-remote-desktop-client)
+    + [Open a terminal and load the proper software stack](#open-a-terminal-and-load-the-proper-software-stack)
+    + [Request a node/server to run the calculations in](#request-a-node-server-to-run-the-calculations-in)
+    + [Do an example run](#do-an-example-run)
+      - [Access data and instructions](#access-data-and-instructions)
+      - [Open Photoscan and start processing](#open-photoscan-and-start-processing)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
 # Intro
 
 [Agisoft Photoscan](https://www.agisoft.com) which is rebranded as Agisoft Metashape, is a
@@ -14,9 +32,9 @@ tools.
 We currently do not have a license for the Pro version of Photoscan/MetaShape and are only running
 the demo version. It is not possible to save one's work without a license.
 
-## How to run Agisoft Photoscan
+# How to run Agisoft Photoscan
 
-### General steps
+## General steps
 As Agisoft is an image processing application that can use GPUs, the best way to run it is
 interactively on GPU-containing nodes. To do that, one can take these steps
 - open a remote desktop session to access the CofC HPC
@@ -25,9 +43,9 @@ interactively on GPU-containing nodes. To do that, one can take these steps
   scheduler
 - once the GPU-containing node is reserved, open PhotoScan and perform the simulation/processing
 
-### Specific Steps
+## Specific Steps
 
-#### Connect to the HPC using a remote desktop client
+### Connect to the HPC using a remote desktop client
 
 We have a dekstop and web version of the FastX remote desktop (RDP) service to access the HPC. Please see [the instructions here](https://hpc-cofc.gitbook.io/docs/using-the-hpc/access-hpc/gui-remote-desktop)
 
@@ -45,7 +63,7 @@ We have a script called `run-slurm-interactive.sh` to guide you through the proc
 
 - Execute `run-slurm-interactive.sh` in a terminal. Sensable choices would be
   - queue 
-    - (3. gpuq) - you would want to select this choice to run on nodes with GPUs
+    - `3. gpuq` - you would want to select this choice to run on nodes with GPUs
   - number of hours 
     - your choice between 0 and 48 hours. Please exit (enter `exit` in your terminal window) from the node/server assigned to you when you finish to make sure it is available for others
   - number of cores 
