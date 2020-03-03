@@ -87,6 +87,6 @@ If you have entered `module load geology/agisoft/photoscan` in the login/master 
 To open Photoscan GUI from your terminal, please enter `photoscan.sh`.
 
 Below is an Asciinema recording of a sample session:
-[![asciicast](https://asciinema.org/a/307000.svg)](https://asciinema.org/a/307000)
+[![asciicast](https://asciinema.org/a/307000.svg)](https://asciinema.org/a/307000?t=1)
 
 Good luck with your computations!
