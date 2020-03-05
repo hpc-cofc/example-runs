@@ -89,7 +89,7 @@ For our example run, the one we will use is the "doll" example. Please download 
 
 #### Open Metashape and start processing
 
-If you have entered `module load geology/agisoft/metashape` in the login/master node earlier, your whole environment is exported to the compute node reserved to you. Therefore, the Metashape binaries and libraries should be in your $PATH. If you want to double-check, you can execute `module list` and confirm that `geology/agisoft/metashape` and `openblas/0.3.6` are listed in the output. If not, please load `module load geology/agisoft/metashape` again.
+If you have entered `module load geology/agisoft/metashape` in the login/master node earlier, your whole environment is exported to the compute node reserved to you. Therefore, the Metashape binaries and libraries should be in your $PATH. If you want to double-check, you can execute `module list` and confirm that `geology/agisoft/metashape` and `openblas/0.3.5` are listed in the output. If not, please load `module load geology/agisoft/metashape` again.
 
 To open Metashape GUI from your terminal, please enter `metashape.sh`.
 
