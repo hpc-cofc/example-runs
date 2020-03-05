@@ -85,7 +85,7 @@ For our example run, the one we will use is the "doll" example. Please download 
 
 #### Open Photoscan and start processing
 
-If you have entered `module load geology/agisoft/photoscan` in the login/master node earlier, your whole environment is exported to the compute node reserved to you. Therefore, the Photoscan binaries and libraries should be in your $PATH. If you want to double-check, you can execute `module list` and confirm that `geology/agisoft/photoscan` and `openblas/0.3.6` are listed in the output. If not, please load `module load geology/agisoft/photoscan` again.
+If you have entered `module load geology/agisoft/photoscan` in the login/master node earlier, your whole environment is exported to the compute node reserved to you. Therefore, the Photoscan binaries and libraries should be in your $PATH. If you want to double-check, you can execute `module list` and confirm that `geology/agisoft/photoscan` and `openblas/0.3.5` are listed in the output. If not, please load `module load geology/agisoft/photoscan` again.
 
 To open Photoscan GUI from your terminal, please enter `photoscan.sh`.
 
