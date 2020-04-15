@@ -106,7 +106,7 @@ You can include these commands in your SLURM batch submission files. Here is an 
 
 module list                   
 module load anaconda3
-source activate jupyter_3.7
+source activate myPython37  # systemwide environments at 'jupyter_3.7'
 
 which samtools
 samtools view -b -S -o sim_reads_aligned.bam sim_reads_aligned.sam
