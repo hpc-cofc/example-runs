@@ -105,13 +105,8 @@ You can include these commands in your SLURM batch submission files. Here is an 
 #SBATCH --mem=32G                # Use as much as xGB memory per core
 
 module list                   
-<<<<<<< HEAD
 module load anaconda/3/2019.03
-source activate jupyter_3.7
-=======
-module load anaconda3
-source activate myPython37  # systemwide environments at 'jupyter_3.7'
->>>>>>> 0c71df5a0182a5d539653ca04e68663850b291a2
+source activate myPython37
 
 which samtools
 samtools view -b -S -o sim_reads_aligned.bam sim_reads_aligned.sam
