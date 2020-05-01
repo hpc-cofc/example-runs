@@ -11,12 +11,12 @@ The main advantages of this approach are
 - you can modify, update, change or delete this environment without needing superuser privileges or affecting any other user/system
 
 The steps involved are
-- load the anaconda3 or miniconda3 module to access the `conda` package manager
+- load the anaconda/3 or miniconda/3 module to access the `conda` package manager
 - **the first time you use the `conda` package manager**, create a Python environment
 - activate that Python environment
 - search for the bioinformatics packages in the proper channels
 - if they are available, install them.
-- after that, you would just need to load anaconda3 or miniconda3 modules and activate the right Python environment to access the packages you installed.
+- after that, you would just need to load anaconda/3 or miniconda/3 modules and activate the right Python environment to access the packages you installed.
 
 These steps are described in detail below.
 
@@ -25,10 +25,10 @@ These steps are described in detail below.
 The `conda` package manager is included in the lightweight `Miniconda` distribution or the bulkier `Anaconda` distribution. We recommend using with `Miniconda` unless you are doing heavy data science. They both depend on Python and we encourage using Python3 since support for Python2 will end over the next year.
 
 ```css
-[user@host]   module load anaconda3/2019.03
+[user@host]   module load anaconda/3/2019.03
 [user@host]   which conda
 
-/opt/ohpc/pub/apps/anaconda/anaconda3-2019.03/condabin/conda
+/opt/ohpc/pub/apps/anaconda/3/2019.03/condabin/conda
 ```
 
 The first time around, there should only be a shared base environment that you do not have the privileges to modify.
@@ -37,7 +37,7 @@ The first time around, there should only be a shared base environment that you d
 [user@host]  conda env list
 # conda environments:
 #
-base                     /opt/ohpc/pub/apps/miniconda/miniconda3
+base                     /opt/ohpc/pub/apps/miniconda/3
 ```
 
 You want to create a custom environment in your local area (`/home/$USER/.conda/envs`) which you will have full control over.
@@ -52,7 +52,7 @@ The most stable and mature version of Python at the moment is Python 3.7.
 [user@host]  conda env list
 # conda environments:
 #
-base                     /opt/ohpc/pub/apps/miniconda/miniconda3
+base                     /opt/ohpc/pub/apps/miniconda/miniconda/3
 myPython37               /home/test-user/.conda/envs/myPython37
 ```
 
@@ -65,7 +65,7 @@ The first thing to do is add the bioconda repository/channel.
 
 
 ```css
-[user@host]   module load anaconda3/2019.03
+[user@host]   module load anaconda/3/2019.03
 [user@host]   source activate myPython37
 [user@host]   conda config --add channels bioconda
 ```
@@ -83,10 +83,10 @@ Once the bioconda repo is added, you can proceed to search and install packages
 ```
 # Using Conda-installed packages
 
-All conda packages you install will be stored in your personal space (`/home/$USER/.conda`). To access these packages, you would need to load the `anaconda3` module and activate the right environment.  Here is an example:
+All conda packages you install will be stored in your personal space (`/home/$USER/.conda`). To access these packages, you would need to load the `anaconda/3` module and activate the right environment.  Here is an example:
 
 ```css
-[user@host]   module load anaconda3/2019.03
+[user@host]   module load anaconda/3/2019.03
 [user@host]   source activate myPython37
 [user@host]   samtools view -bS eg2.sam > eg2.bam
 [user@host]   samtools sort eg2.bam -o eg2.sorted.bam
@@ -105,7 +105,7 @@ You can include these commands in your SLURM batch submission files. Here is an 
 #SBATCH --mem=32G                # Use as much as xGB memory per core
 
 module list                   
-module load anaconda3
+module load anaconda/3/2019.03
 source activate jupyter_3.7
 
 which samtools
