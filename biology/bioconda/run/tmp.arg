@@ -1,7 +1,7 @@
 	-> Command: 
 angsd -doMaf 4 -beagle assotest/test.beagle -fai hg19.fa.fai -yBin assotest/test.phe -doAsso 6 -out tmp -minCount 0 -minHigh 0 -seed 123 
 	-> angsd version: 0.931 (htslib: 1.9) build(Aug 28 2019 05:51:07)
-	-> Thu Oct  3 16:58:25 2019
+	-> Fri May  1 11:35:57 2020
 ----------------
 multiReader.cpp:
 	-nLines	50	(Number of lines to read)

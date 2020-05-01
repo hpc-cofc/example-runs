@@ -8,7 +8,7 @@
 #SBATCH --mem=32G                # Use as much as xGB memory per core
 
 module list                   
-module load anaconda3
+module load anaconda/3
 source activate jupyter_3.7
 echo $PATH
 
@@ -140,6 +140,9 @@ cp eg2.bam ex1_header.bam
 ################# Samtools
 which samtools
 samtools view -b -S -o sim_reads_aligned.bam sim_reads_aligned.sam
+
+
+conda deactivate
 
 ls
 date                        # prints end date and time
